@@ -20,7 +20,7 @@
 				  	   <h4>橱窗互动</h4>
 						<h4>+</h4>
 						<h4>可移动性广告位互动</h4>
-						<span> 互动体验吸引用户定制化流程传递品牌理念</span>	
+						<span> 互动体验吸引用户定制化流程<br>传递品牌理念</span>	
 						 <img src="../assets/images/newretail_chuchuang.png"/>
 				  </div> 
 				 
@@ -61,7 +61,7 @@
 					</div>
 					</div>
 					<div class="intelligent">
-						<img src="../assets/images/newretail_baobiao.png" style="top: 500px;"/>
+						<img src="../assets/images/newretail_baobiao.png" style="top: 540px;"/>
 							<h3 style="width: 265px;">门店全域转化数据可视化报表</h3>							
 					<p>线下人货场全链路触点数据统计追溯线下触点引导全域延伸转化</p>				
 					</div>
@@ -108,14 +108,15 @@
 }
 .h3-content span{
 	display: block;
-	font-size: 18px;
-	line-height: 36px;
+	font-size: 14px;
+	line-height: 28px;
 	color: #666666;
     width: 256px;
     height: 47px;
     margin-left: 370px;
     padding-bottom: 40px;
     text-align: right;
+	margin-top: 40px;
 }
 .h3-content img{
 	position: absolute;
@@ -125,6 +126,7 @@
 }
 h3{
 	font-size: 36px;
+	line-height: 48px;
 	color: #333333;
 	font-family: 'MicrosoftYaHei-Bold';
 }
@@ -137,12 +139,12 @@ h3{
 }
 .interactive-content{
 	width: 990px;
-	font-size: 18px;
-	line-height: 36px;
+	font-size: 14px;
+	line-height: 28px;
 	text-align: center;
 	color: #999999;
 	margin-left: 25%;
-	margin-top: 78px;
+	margin-top: 58px;
 	padding-bottom: 153px;
 	font-family: "microsoft yahei";
 }
@@ -180,11 +182,11 @@ background-color: #F2F9FF;
 }
 .scene-content p{
 	width: 316px;
-	font-size: 18px;
-	line-height: 36px;
+	font-size: 14px;
+	line-height: 28px;
 	color: #666666;
 	margin-left: 1280px;
-	margin-top: 60px;
+	margin-top: 40px;
 	font-family: "microsoft yahei";
 	
 }
@@ -216,9 +218,10 @@ background-color: #F2F9FF;
 .intelligent img{
 	position: absolute;
 	left: 760px;
-	top: 440px;
+	top: 470px;
 }
 .intelligent h3{
+	line-height: 48px;
 	text-align: right;
 	width: 245px;
 	position: absolute;
@@ -229,9 +232,9 @@ background-color: #F2F9FF;
 	width: 195px;
 	position: absolute;
 	left: 455px;
-	top: 740px;
-	font-size: 18px;
-	line-height: 36px;
+	top: 720px;
+	font-size: 14px;
+	line-height: 28px;
 	color: #666666;
 	font-family: "microsoft yahei";
 }

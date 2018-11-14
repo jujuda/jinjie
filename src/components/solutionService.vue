@@ -36,7 +36,7 @@
 					<div class="bg-images"></div>
 					<div class="scene-content">
 						<h3>售后客服</h3>
-					<p> 在商品销售完成后为客户提供服务减少纠纷，优化服务</p>
+					<p> 在商品销售完成后为客户提供服务减少纠纷， 优化服务</p>
 					<img src="../assets/images/service_aftersale.png"/>
 					<div class="img-icon">
 						<img src="../assets/img/squareicon.png" class="img-icon-left"/>
@@ -44,7 +44,7 @@
 					</div>
 					</div>
 					<div class="intelligent">
-						<img src="../assets/images/serivce_temporary.png"/>
+						<img src="../assets/images/serivce_temporary.png" class="imgCenter"/>
 							<h3>临时客服</h3>
 							
 					<p>承接各电商平台活动应急时所需要的客服服务</p>
@@ -57,7 +57,8 @@
 					<div class="bg-images"></div>
 					<div class="scene-content">
 						<h3>一对一客服</h3>
-					<p> 客户专属客服有针对性的只服务于某一客户的客服</p>
+					<p> 客户专属客服有针对性的只服务于<br>某一客户的客服</p>
+					<p></p>
 					<img src="../assets/images/service_onetoone.png"/>
 					<div class="img-icon">
 						<img src="../assets/img/squareicon.png" class="img-icon-left" />
@@ -106,15 +107,15 @@
 	text-align: right;
 	width: 330px;
 	margin-left: 300px;
-	margin-bottom: 58px;
+	margin-bottom: 40px;
 	font-size: 36px;
 	color: #333333;
 	font-family: 'MicrosoftYaHei-Bold';
 }
 .h3-content span{
 	display: block;
-	font-size: 18px;
-	line-height: 36px;
+	font-size: 14px;
+	line-height: 28px;
 	color: #666666;
     width: 256px;
     height: 47px;
@@ -142,12 +143,12 @@ h3{
 }
 .interactive-content{
 	width: 990px;
-	font-size: 18px;
-	line-height: 36px;
+	font-size: 14px;
+	line-height: 28px;
 	text-align: center;
 	color: #999999;
 	margin-left: 25%;
-	margin-top: 78px;
+	margin-top: 58px;
 	padding-bottom: 153px;
 	font-family: "microsoft yahei";
 }
@@ -156,7 +157,7 @@ h3{
 }
 .inter-cont p{
 	text-align: center;
-	margin-left: 835px;
+	margin-left:44%;
 	width: 235px;
 	height: 2px;
 	 background: linear-gradient(to right, white,black,black,black,black,white);
@@ -195,18 +196,23 @@ top:36%;
 background-color: #F2F9FF;
 	
 }
+.scene-content{
+	box-sizing: border-box;
+}
 
 .scene-content h3{
+
 	margin-left: 1280px;
+	padding-top: 100px;
 
 }
 .scene-content p{
 	width: 316px;
-	font-size: 18px;
-	line-height: 36px;
+	font-size: 14px;
+	line-height: 28px;
 	color: #666666;
 	margin-left: 1280px;
-	margin-top: 60px;
+	margin-top: 40px;
 	font-family: "microsoft yahei";
 	
 }
@@ -235,11 +241,17 @@ background-color: #F2F9FF;
 .intelligent{
 	position: relative;
 }
+.intelligent .imgCenter{
+	top:480px;
+	position: absolute;
+	left: 755px;
+}
 .intelligent img{
 	position: absolute;
-	left: 760px;
-	top:535px;
+	left: 755px;
+	top:510px;
 }
+
 .intelligent h3{
 	text-align: right;
 	width: 245px;
@@ -251,9 +263,9 @@ background-color: #F2F9FF;
 	width: 195px;
 	position: absolute;
 	left: 455px;
-	top: 740px;
-	font-size: 18px;
-	line-height: 36px;
+	top: 680px;
+	font-size: 14px;
+	line-height: 28px;
 	color: #666666;
 	font-family: "microsoft yahei";
 }

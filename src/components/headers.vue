@@ -99,8 +99,7 @@ a{
 .menu { 
 	width: 30px; 
 	height: 25px;
-	position: relative;
-	margin-top: 47px; 
+	position: relative; 
 	transition: 1s all ease-in
 }
 

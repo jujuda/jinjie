@@ -94,6 +94,7 @@ h3{
 }
 .content-center h4{
 	font-size: 36px;
+	line-height: 72px;
 	color: #666666;
 	font-family: "microsoft yahei";
 	text-align: center;

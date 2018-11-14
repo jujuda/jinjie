@@ -59,32 +59,7 @@
 		</div>
 </template>
 <style scoped>
-.bounce-enter-active {
-  animation: bounceInUp 1s;
-}
-.bounce-leave-active {
-  animation: bounceInout 1s ease-in-out;
-}
-@keyframes bounceInUp {
-  0% {
-    transform: translateY(150px);
-  }
- 
- 
-  100% {
-    transform:translateY(0);
-  }
-}
-@keyframes bounceInout {
-  0% {
-    transform: translateY(0px);
-  }
- 
- 
-  100% {
-    transform:translateY(150px);
-  }
-}
+
 
  .solution-content{
 	width: 100%;
@@ -209,7 +184,7 @@ h3{
   }
 .foot-banner-img :hover h3{
   transform: translateY(-200px);
- transition-duration: 1s;
+
 }
 .foot-banner-bg .marker{
   position: absolute;
@@ -224,11 +199,11 @@ h3{
 }
 .foot-banner-img :hover .marker{
   opacity: 1;
-  transition-delay: .5s;transition-duration: 1.5s;
+  transition-duration: 1s;
   
 }
 .foot-banner-img :hover p{
-	transition-duration: 2s;
+	transition-duration: 1s;
   transform: translateY(-350px);
   	padding: 30px 75px 70px 70px;
 }

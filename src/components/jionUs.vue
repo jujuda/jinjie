@@ -7,7 +7,7 @@
             
 
       <div class="jion-center">
-             	 <img src="../assets/img/requer-btn.png" class="req-btn"/>
+             	 <img src="../assets/img/requer-btn.png" class="req-btn" @click="showButton1()"/>
              	<div class="recruitment-info">
              		<img src="../assets/images/join_projectmanager.png"/>
              		 <div class="recruit">
@@ -21,7 +21,7 @@
 							4、 跟踪项目的进度，协调项目组成员之间的合作。<br />
             		 	</p>
             		 	<h5>任职要求:</h5>
-             		 	<p>
+             		 	<p v-show="showbtn1">
              		 		1、大专及以上学历，具备4年以上前端开发工作经验，1年以上项目管理及团队合作经验；<br /> 
 							2、熟悉手机软件及互联网产品研发的全过程；<br /> 
 							4、良好的沟通协调和学习能力，敏捷的思维辨证能力，优秀的团队合作精神； <br />
@@ -33,7 +33,7 @@
              </div>
              
               <div class="jion-center">
-             	 <img src="../assets/img/requer-btn.png" class="req-btn"/>
+             	 <img src="../assets/img/requer-btn.png" class="req-btn" @click="showButton2()"/>
              	<div class="recruitment-info">
              		<img src="../assets/images/join_web.png"/>
              		 <div class="recruit">
@@ -46,7 +46,7 @@
 							3、分析并解决软件开发过程中的问。<br /> 
             		 	</p>
             		 	<h5>任职要求:</h5>
-             		 	<p>
+             		 	<p v-show="showbtn2">
              		 		1、精通HTML 5/CSS 3/Javascript等主流WEB前端技术 <br /> 
 							2、熟悉angularJs、vueJs 、Reactjs至少一种框架，并能够对其特性和应用有较深的了解；<br /> 
 							3、精通DIV+CSS布局的HTML代码编写，能够书写符合W3C标准的代码，并有严苛的编码风格和良好的编码习惯；<br /> 
@@ -59,7 +59,7 @@
              	</div>     
              </div>
                    <div class="jion-center">
-             	  <img src="../assets/img/more-btn.png" class="req-btn"/>
+             	  <img src="../assets/img/more-btn.png" class="req-btn" @click="moreButton1()"/>
              	<div class="recruitment-info">
              		<img src="../assets/images/join_web.png"/>
              		 <div class="recruit">
@@ -71,6 +71,9 @@
 							2、维护优化Html页面整体效果；<br />
 							3、参与Web前端用户体验的改进。<br />
             		 	</p>
+						 <div v-show="morebtn1">
+
+						
             		 	<h5>任职要求:</h5>
              		 	<p>
              		 		1、大专及以上学历，具备4年以上前端开发工作经验，1年以上项目管理及团队合作经验；<br /> 
@@ -78,13 +81,14 @@
 							4、良好的沟通协调和学习能力，敏捷的思维辨证能力，优秀的团队合作精神； <br />
 							5、有工作热情，具有良好的沟通技巧和团队合作精神，抗压能力强； <br />
 							6、具有H5/NODE.JS经验者优。<br />						
-            		 	</p>           		 	
+            		 	</p>   
+						  </div>        		 	
              		 </div>          		 
              	</div>     
              </div>
              
                    <div class="jion-center">
-             	  <img src="../assets/img/more-btn.png" class="req-btn"/>
+             	  <img src="../assets/img/more-btn.png" class="req-btn" @click="moreButton2()"/>
              	<div class="recruitment-info">
              		<img src="../assets/images/join_web_h5.png"/>
              		 <div class="recruit">
@@ -96,6 +100,7 @@
 							2、负责H5动画或游戏的功能开发和性能优化；<br />
 							3、负责H5前沿技术研究。<br />
             		 	</p>
+						 <div v-show="morebtn2">
             		 	<h5>任职要求:</h5>
              		 	<p>
              		 		1、大专及以上学历，具备4年以上前端开发工作经验，1年以上项目管理及团队合作经验；<br /> 
@@ -103,12 +108,13 @@
 							4、良好的沟通协调和学习能力，敏捷的思维辨证能力，优秀的团队合作精神； <br />
 							5、有工作热情，具有良好的沟通技巧和团队合作精神，抗压能力强； <br />
 							6、具有H5/NODE.JS经验者优。<br />						
-            		 	</p>           		 	
+            		 	</p>   
+						 </div>        		 	
              		 </div>          		 
              	</div>     
              </div>
                    <div class="jion-center">
-             	 <img src="../assets/img/more-btn.png" class="req-btn"/>
+             	 <img src="../assets/img/more-btn.png" class="req-btn" @click="moreButton3()"/>
              	<div class="recruitment-info">
              		<img src="../assets/images/join_web_cw.png"/>
              		 <div class="recruit">
@@ -120,6 +126,7 @@
 							2、维护优化Html页面整体效果；<br />
 							3、参与Web前端用户体验的改进。<br />
             		 	</p>
+						 <div v-show="morebtn3">
             		 	<h5>任职要求:</h5>
              		 	<p>
              		 		1、大专及以上学历，具备4年以上前端开发工作经验，1年以上项目管理及团队合作经验；<br /> 
@@ -127,12 +134,13 @@
 							4、良好的沟通协调和学习能力，敏捷的思维辨证能力，优秀的团队合作精神； <br />
 							5、有工作热情，具有良好的沟通技巧和团队合作精神，抗压能力强； <br />
 							6、具有H5/NODE.JS经验者优。<br />						
-            		 	</p>           		 	
+            		 	</p> 
+						 </div>          		 	
              		 </div>          		 
              	</div>     
              </div>
                 <div class="jion-center">
-             	 <img src="../assets/img/more-btn.png" class="req-btn"/>
+             	 <img src="../assets/img/more-btn.png" class="req-btn" @click="moreButton4()"/>
              	<div class="recruitment-info">
              		<img src="../assets/images/join_web_bed.png"/>
              		 <div class="recruit">
@@ -144,6 +152,7 @@
 							2.配合前端技术实现功能开发与调试；<br />
 							3.调研，对接第三方api接口。<br />
             		 	</p>
+						 <div v-show="morebtn4">
             		 	<h5>任职要求:</h5>
              		 	<p>
              		 		1、大专及以上学历，具备4年以上前端开发工作经验，1年以上项目管理及团队合作经验；<br /> 
@@ -151,12 +160,13 @@
 							4、良好的沟通协调和学习能力，敏捷的思维辨证能力，优秀的团队合作精神； <br />
 							5、有工作热情，具有良好的沟通技巧和团队合作精神，抗压能力强； <br />
 							6、具有H5/NODE.JS经验者优。<br />						
-            		 	</p>           		 	
+            		 	</p>   
+						 </div>        		 	
              		 </div>          		 
              	</div>     
              </div>
                 <div class="jion-center">
-             	 <img src="../assets/img/more-btn.png" class="req-btn"/>
+             	 <img src="../assets/img/more-btn.png" class="req-btn" @click="moreButton5()"/>
              	<div class="recruitment-info">
              		<img src="../assets/images/join_nodejs.png"/>
              		 <div class="recruit">
@@ -168,6 +178,7 @@
 							2、配合前端开发接口；<br />
 							3、设计并维护数据表。<br />
             		 	</p>
+						 <div v-show="morebtn5">
             		 	<h5>任职要求:</h5>
              		 	<p>
              		 		1、大专及以上学历，具备4年以上前端开发工作经验，1年以上项目管理及团队合作经验；<br /> 
@@ -175,12 +186,13 @@
 							4、良好的沟通协调和学习能力，敏捷的思维辨证能力，优秀的团队合作精神； <br />
 							5、有工作热情，具有良好的沟通技巧和团队合作精神，抗压能力强； <br />
 							6、具有H5/NODE.JS经验者优。<br />						
-            		 	</p>           		 	
+            		 	</p>  
+						 </div>         		 	
              		 </div>          		 
              	</div>     
              </div>
                 <div class="jion-center">
-             	 <img src="../assets/img/more-btn.png" class="req-btn"/>
+             	 <img src="../assets/img/more-btn.png" class="req-btn" @click="moreButton6()"/>
              	<div class="recruitment-info">
              		<img src="../assets/images/join_ste.png"/>
              		 <div class="recruit">
@@ -191,6 +203,7 @@
              		 		1、 在计划时间内完成对软件的功能、性能、安全等各项测试工作，定时汇报测试进度，对所测软件的质量负责；<br />
 							2、 编制测试各个环节的相关文档，包括测试计划、测试用例、测试小结、测试报告<br />
             		 	</p>
+						 <div v-show="morebtn6">
             		 	<h5>任职要求:</h5>
              		 	<p>
              		 		1、大专及以上学历，具备4年以上前端开发工作经验，1年以上项目管理及团队合作经验；<br /> 
@@ -198,7 +211,8 @@
 							4、良好的沟通协调和学习能力，敏捷的思维辨证能力，优秀的团队合作精神； <br />
 							5、有工作热情，具有良好的沟通技巧和团队合作精神，抗压能力强； <br />
 							6、具有H5/NODE.JS经验者优。<br />						
-            		 	</p>           		 	
+            		 	</p>  
+						 </div>         		 	
              		 </div>          		 
              	</div>     
              </div>
@@ -228,7 +242,8 @@
 .jion-center .req-btn{
 	position: absolute;
 	bottom: 85px;
-	left: 285px;
+	left:28%;
+	cursor: pointer;
 }
 .recruitment-info{
 	width: 1200px;
@@ -254,13 +269,14 @@
 }
 .recruit h5{
 	color: #333333;
+	margin-top: 10px;
 }
 .recruit p{
-	width: 890px;
+	width: 830px;
 	font-family: "microsoft yahei";
-	font-size: 18px;
+	font-size: 14px;
 	color: #333333;
-	line-height: 36px;
+	line-height: 28px;
 }
 </style>
 <script>
@@ -271,6 +287,44 @@ export default{
 	components:{
 		footers,
 		headers
+	},
+	data(){
+		return{
+			showbtn1:true,
+			showbtn2:true,
+			morebtn1:false,
+			morebtn2:false,
+			morebtn3:false,
+			morebtn4:false,
+			morebtn5:false,
+			morebtn6:false,
+		}
+	},
+	methods:{
+		showButton1(){
+			this.showbtn1=!this.showbtn1;
+		},
+		showButton2(){
+			this.showbtn2=!this.showbtn2;
+		},
+		moreButton1(){
+			this.morebtn1=!this.morebtn1;
+		},
+		moreButton2(){
+			this.morebtn2=!this.morebtn2;
+		},
+		moreButton3(){
+			this.morebtn3=!this.morebtn3;
+		},
+		moreButton4(){
+			this.morebtn4=!this.morebtn4;
+		},
+		moreButton5(){
+			this.morebtn5=!this.morebtn5;
+		},
+		moreButton6(){
+			this.morebtn6=!this.morebtn6;
+		},
 	}
 }
 </script>

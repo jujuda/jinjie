@@ -111,14 +111,14 @@
 	margin-left: 300px;
 	font-size: 36px;
 	color: #333333;
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 	font-family: 'MicrosoftYaHei-Bold';
 }
 .h3-content span{
 	display: block;
-	font-size: 18px;
+	font-size: 14px;
 	height: 138px;
-	line-height: 36px;
+	line-height: 28px;
 	color: #666666;
     width: 216px;
     margin-left: 420px;
@@ -145,12 +145,12 @@ h3{
 }
 .interactive-content{
 	width: 990px;
-	font-size: 18px;
+	font-size: 14px;
 	line-height: 36px;
 	text-align: center;
 	color: #999999;
 	margin-left: 25%;
-	margin-top: 78px;
+	margin-top: 58px;
 	padding-bottom: 153px;
 	font-family: "microsoft yahei";
 }
@@ -212,11 +212,11 @@ background-color: #F2F9FF;
 
 .scene-content p{
 	width: 316px;
-	font-size: 18px;
-	line-height: 36px;
+	font-size: 14px;
+	line-height: 28px;
 	color: #666666;
 	margin-left: 1280px;
-	margin-top: 60px;
+	margin-top: 40px;
 	font-family: "microsoft yahei";
 	
 }
@@ -253,23 +253,23 @@ background-color: #F2F9FF;
 .intelligent img{
 	position: absolute;
 	left: 760px;
-	top: 365px;
+	top: 450px;
 }
 .intelligent h3{
 	text-align: right;
 	width: 245px;
 	position: absolute;
-	left: 395px;
+	left: 23%;
 	top: 550px;
 }
 .intelligent p{
 	width: 285px;
 	position: absolute;
-	left: 360px;
-	top: 650px;
+	left: 22%;
+	top: 630px;
 	/*padding-bottom: 40px;*/
-	font-size: 18px;
-	line-height: 36px;
+	font-size: 14px;
+	line-height: 28px;
 	color: #666666;
 	font-family: "microsoft yahei";
 }

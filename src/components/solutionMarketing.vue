@@ -42,8 +42,8 @@
 			<div class="scene-marketing">
 					<div class="bg-images"></div>
 					<div class="scene-content">
-						<h3>场景营销</h3>
-					<p>  利用真实场景让用户有代入感以及购物的真实感受刺激用户对商品选择的兴趣和消费</p>
+						<h3>HTML5</h3>
+					<p> 让店铺的个性张扬活力四射<br>外观上更有吸引力</p>
 					<img src="../assets/images/interactivemarketing_html5.png"/>
 					<div class="img-icon">
 						<img src="../assets/img/solutionicon3.png" class="img-icon-left"/>
@@ -51,9 +51,9 @@
 					</div>
 					</div>
 					<div class="intelligent">
-						<img src="../assets/images/interactivemarketing_ar.png"/>
-							<h3>智能推荐</h3>
-					<p>通过用户的购物记录快速推荐相关产品帮助用户选择合适自己的产品增强用户的体验感</p>
+						<img src="../assets/images/interactivemarketing_ar.png" style="top:460px"/>
+							<h3 style="right:520px">A R </h3>
+					<p>利用3D视觉技术更加直观<br>更加真实的表现商品</p>
 					
 				
 					</div>
@@ -101,12 +101,12 @@ h3{
 }
 .interactive-content{
 	width: 990px;
-	font-size: 18px;
-	line-height: 36px;
+	font-size: 14px;
+	line-height: 28px;
 	text-align: center;
 	color: #999999;
 	margin-left: 25%;
-	margin-top: 78px;
+	margin-top: 58px;
 	padding-bottom: 153px;
 	font-family: "microsoft yahei";
 }
@@ -141,13 +141,15 @@ background-color: #F2F9FF;
 .scene-content h3{
 	margin-left: 420px;
 	padding-top: 215px;
+	margin-bottom: 40px;
 }
 .scene-content p{
-	width: 316px;
-	font-size: 18px;
-	line-height: 36px;
+	width: 210px;
+	text-align: right;
+	font-size: 14px;
+	line-height: 28px;
 	color: #666666;
-	margin-left: 324px;
+	margin-left: 19%;
 	font-family: "microsoft yahei";
 	
 }
@@ -178,8 +180,8 @@ background-color: #F2F9FF;
 }
 .intelligent img{
 	position: absolute;
-	left: 360px;
-	top: 390px;
+	left: 375px;
+	top: 430px;
 }
 .intelligent h3{
 	position: absolute;
@@ -190,9 +192,9 @@ background-color: #F2F9FF;
 	width: 255px;
 	position: absolute;
 	right: 385px;
-	top: 640px;
-	font-size: 18px;
-	line-height: 36px;
+	top: 620px;
+	font-size: 14px;
+	line-height: 28px;
 	color: #666666;
 	font-family: "microsoft yahei";
 }

@@ -46,11 +46,15 @@
   <div class="about-right">
   		<h3 :class="view1_show==1?' animated bounceInRight ' : ''">关于我们</h3>
 
-  		<p class="about-p" :class="view1_show==1?' animated bounceInLeft delay-1s ' : ''"></p>
-  		<div class="company-introduction" :class="view1_show==1?' animated bounceInUp delay-2s ' : ''">
+  		<p class="about-p" :class="view1_show==1?' animated bounceInLeft delay-.5s ' : ''"></p>
+  		<div class="company-introduction" :class="view1_show==1?' animated bounceInUp delay-1s ' : ''">
   			安徽进阶信息技术有限公司成立于2018年。是一家专注于利用云计算、移动计算、互联网、大数据、人工智能等高新技术以及增强实现、虚拟实现等可视化技术为企业提供创新互动服务的高科技公司。目前公司主要有三大核心业务领域电商互动解决方案、新零售解决方案、软件技术服务。
   		</div>
-  		<input type="button" name="more-btn" id="more-btn" value="MORE" :class="view1_show==1?' animated zoomInUp delay-3s ' : ''"/>
+		  <router-link to='/aboutUs'>
+		  
+                     <input type="button" name="more-btn" id="more-btn" value="MORE" :class="view1_show==1?' animated zoomInUp delay-1s ' : ''"/>
+		  </router-link>
+  
   	</div>
   </div>
 </div>
@@ -60,30 +64,30 @@
 	    <div class="page">
   <div class="online-retailers">
   	<div class="retailers-left">
-  		<h3 class="retailers-left-title" :class=" view2_show==2?' animated bounceInDown delay-.5s' : ''">电商互动营销</h3>
-  		<p class="retailers-left-content " :class=" view2_show==2?' animated bounceInDown delay-1s' : ''">进阶通过生动有趣的感官互动来实现与消费者的沟通，从而达到消费者对品牌或者商品的深度了解，提升品牌与消费者之间的粘性。</p>
+  		<h3 class="retailers-left-title" :class=" view2_show==2?' animated bounceInDown delay-2s': ''">电商互动营销</h3>
+  		<p class="retailers-left-content " :class=" view2_show==2?' animated bounceInDown delay-2s' : ''">进阶通过生动有趣的感官互动来实现与消费者的沟通，从而达到消费者对品牌或者商品的深度了解，提升品牌与消费者之间的粘性。</p>
   	   <img src="../assets/img/home_dot.png" class="img-round"  :class=" view2_show==2?' animated fadeIn delay-1s' : ''"/>
-  	   <img src="../assets/img/home_auxiliaryline.png" class="img-line" :class=" view2_show==2?' animated fadeIn delay-2s' : ''"/>
+  	   <img src="../assets/img/home_auxiliaryline.png" class="img-line" :class=" view2_show==2?' animated fadeIn delay-1s' : ''"/>
   	</div>
   	<div class="retailers-left">
   		<h3 class="retailers-left-title " :class="view2_show==2?' animated bounceInDown delay-2s' : ''">新零售解决方案</h3>
-  		<p class="retailers-left-content" :class="view2_show==2?' animated bounceInDown delay-3s' : ''">整合线上线下数据，为线下零售店铺提供智能化的解决方案，优化线下零售用户体验，为线下零售提供更丰富更有价值的数据支持</p>
-        <img src="../assets/img/home_dot.png" class="img-round2" :class="view2_show==2?' animated fadeIn delay-2s' : ''"/>
-  	   <img src="../assets/img/home_auxiliaryline_left.png" class="img-line2" :class="view2_show==2?' animated fadeIn delay-3s' : ''"/>
+  		<p class="retailers-left-content" :class="view2_show==2?' animated bounceInDown delay-2s' : ''">整合线上线下数据，为线下零售店铺提供智能化的解决方案，优化线下零售用户体验，为线下零售提供更丰富更有价值的数据支持</p>
+        <img src="../assets/img/home_dot.png" class="img-round2" :class="view2_show==2?' animated fadeIn delay-1s' : ''"/>
+  	   <img src="../assets/img/home_auxiliaryline_left.png" class="img-line2" :class="view2_show==2?' animated fadeIn delay-1s' : ''"/>
   	</div>
   	<div class="retailers-left">
-  		<h3 class="retailers-left-title" :class="view2_show==2?' animated zoomInDown delay-3s' : ''">软件服务</h3>
-  		<p class="retailers-left-content" :class="view2_show==2?' animated zoomInDown delay-4s' : ''">以云计算、物联网、大数据以及人工智能等技术为主，具备自主知识产权，拥有较高的技术水平和能力，主要为电商行业及国家电网提供技术服务与支持工作。</p>
-  	   <img src="../assets/img/home_dot.png" class="img-round3" :class="view2_show==2?' animated fadeIn delay-3s' : ''"/>
-  	   <img src="../assets/img/home_auxiliaryline.png" class="img-line3" :class="view2_show==2?' animated fadeIn delay-4s' : ''"/>
-		 <img src="../assets/img/home_dot.png" class="img-round5" :class="view2_show==2?' animated fadeIn delay-5s' : ''"/>
+  		<h3 class="retailers-left-title" :class="view2_show==2?' animated zoomInDown delay-2s' : ''">软件服务</h3>
+  		<p class="retailers-left-content" :class="view2_show==2?' animated zoomInDown delay-2s' : ''">以云计算、物联网、大数据以及人工智能等技术为主，具备自主知识产权，拥有较高的技术水平和能力，主要为电商行业及国家电网提供技术服务与支持工作。</p>
+  	   <img src="../assets/img/home_dot.png" class="img-round3" :class="view2_show==2?' animated fadeIn delay-1s' : ''"/>
+  	   <img src="../assets/img/home_auxiliaryline.png" class="img-line3" :class="view2_show==2?' animated fadeIn delay-1s' : ''"/>
+		 <img src="../assets/img/home_dot.png" class="img-round5" :class="view2_show==2?' animated fadeIn delay-1s' : ''"/>
   	</div>
   	<div class="retailers-left">
-  		<h3 class="retailers-left-title" :class="view2_show==2?' animated zoomInDown delay-4s' : ''">客服托管</h3>
-  		<p class="retailers-left-content" :class="view2_show==2?' animated zoomInDown delay-5s' : ''">专业的客服团队，快速响应，优质的服务能力，完善的绩效考核，有效提升店铺客服转化的同时为电商企业节省管理成本和财务成本。</p>
-  	<img src="../assets/img/home_dot.png" class="img-round4" :class="view2_show==2?' animated fadeIn delay-4s' : ''"/>
-  	   <img src="../assets/img/home_auxiliaryline.png" class="img-line4" :class="view2_show==2?' animated zoomIn delay-5s' : ''"/>
-		 <img src="../assets/img/home_dot.png" class="img-round4" :class="view2_show==2?' animated fadeIn delay-4s' : ''"/>
+  		<h3 class="retailers-left-title" :class="view2_show==2?' animated zoomInDown delay-2s' : ''">客服托管</h3>
+  		<p class="retailers-left-content" :class="view2_show==2?' animated zoomInDown delay-2s' : ''">专业的客服团队，快速响应，优质的服务能力，完善的绩效考核，有效提升店铺客服转化的同时为电商企业节省管理成本和财务成本。</p>
+  	<img src="../assets/img/home_dot.png" class="img-round4" :class="view2_show==2?' animated fadeIn delay-1s' : ''"/>
+  	   <img src="../assets/img/home_auxiliaryline.png" class="img-line4" :class="view2_show==2?' animated zoomIn delay-1s' : ''"/>
+		 <img src="../assets/img/home_dot.png" class="img-round4" :class="view2_show==2?' animated fadeIn delay-1s' : ''"/>
   	</div>
   	
   </div>
@@ -91,29 +95,25 @@
   </swiper-slide>
   <!--关于新零售我们有话说-->
   <swiper-slide class="swiper-slide" >
-	   <div class="page">
-  <div class="new-retail-banner">
-			<ul>
-				<li id="jamp-page">
-					
-					<div class="des"><h4>智能数据大屏</h4></div>
-					<div class="newbanner" :style="{background:newbanner1}"></div>	
-				</li>
-				<li>
-					<div class="des" ><h4>云货架</h4></div>
-					<div class="newbanner" :style="{background:newbanner2}"></div>	
-				</li>
-				<li>
-					<div class="des"><h4>互动智慧大屏</h4></div>
-					<div class="newbanner" :style="{background:newbanner3}"></div>	
-				</li>
-				<li>
-					<div class="des"><h4>体验智慧大师</h4></div>
-					<div class="newbanner" :style="{background:newbanner4}"></div>	
-				</li>				
-			</ul>
+	   <div class="page clearfix">
+	   	<div class="fl" @click="handlerShowImg(1)" :style="{width:currentClick==1?'100%':currentClick==0?'25%':'0'}">
+	   		<div class="des"><h4>智能数据大屏</h4></div>
+			<div class="newbanner" :style="{background:newbanner1}"></div>	
+	   	</div>
+	   	<div class="fl"  @click="handlerShowImg(2)" :style="{width:currentClick==2?'100%':currentClick==0?'25%':'0'}">
+	   		<div class="des"><h4>云货架</h4></div>
+			<div class="newbanner" :style="{background:newbanner2}"></div>	
+	   	</div>
+	   	<div class="fl" @click="handlerShowImg(3)" :style="{width:currentClick==3?'100%':currentClick==0?'25%':'0'}">
+	   		<div class="des"><h4>互动智慧大屏</h4></div>
+			<div class="newbanner" :style="{background:newbanner3}"></div>	
+	   	</div>
+	   	<div class="fl" @click="handlerShowImg(4)" :style="{width:currentClick==4?'100%':currentClick==0?'25%':'0'}">
+	   		<div class="des"><h4>体验智慧大师</h4></div>
+			<div class="newbanner" :style="{background:newbanner4}"></div>	
+	   	</div>
+			
 		</div>
-	</div>
 		</swiper-slide>
 		  <swiper-slide class="swiper-slide" >
 			   <div class="page">
@@ -152,6 +152,20 @@
 a{
 	text-decoration: none;
 }
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	height: 0;
+	clear: both;
+	zoom: 1;
+}
+
 ul{
 	list-style: none;
 }
@@ -307,20 +321,21 @@ ul{
 }
 .company-introduction{
 	width:356px;
-	height: 228px;
-	font-size: 18px;
-	line-height: 36px;
+	height: 200px;
+	font-size: 14px;
+	line-height: 28px;
 	font-family:"microsoft yahei";
 	color: #999999;
 	position: absolute;
 	right:300px;
-	top: 344px;
-	margin-bottom: 83px;
+	top: 324px;
 	
 }
 #more-btn{
-	margin-top: 655px;
-	margin-left: 435px;
+    position: absolute;
+	z-index:999;
+	right:45%;
+	top:58%;
 	width: 60px;
 	height: 24px;
 	border: none;
@@ -344,12 +359,12 @@ ul{
 	padding: 50px 0 30px 540px;
 }
 .retailers-left-content{
-	width: 395px;
+	width: 330px;
 	height: 78px;
 	color: #999999;
-	line-height: 32px;
-	font-size: 18px;
-	padding: 0 0 323px 418px;
+	line-height: 28px;
+	font-size: 14px;
+	padding: 0 0 200px 418px;
 }
 .retailers-left:nth-child(2){
 	position: absolute;
@@ -396,13 +411,22 @@ ul{
 	left: 1010px;
 	top: 880px;
 }
-.new-retail-banner{width: 100%; height:100%; display: flex;justify-content: space-around;}
-.new-retail-banner ul li{ width: 470px; height: 940px;float: left;position: relative;}
-.newbanner {width: 100%;height: 940px;transition:all 1s; background: no-repeat center;}
+
+.newbanner {width: 100%;
+height: 940px;
+transition:all 1s;
+ background: no-repeat center;
+ }
 
 
-.new-retail-banner ul li div.des{position: absolute; left: 0;top: 0; ;}
-.new-retail-banner ul li div.des h4{width:300px;color: #fff;font-size: 30px;  margin: 780px auto;text-align: center;}
+
+.fl .des h4{color: #fff;
+font-size: 30px;
+ text-align: center;
+ position: absolute;
+ bottom: 120px;
+ margin-left: 8%;
+ }
 .newbanner:hover{ transform: scale(1.1);}
 .footer-home{
 	width: 1920px;
@@ -461,6 +485,7 @@ export default{
 		  newbanner2:'url(' + require('../assets/img/home_cloudshelf.png') + ')',
 		  newbanner3:'url(' + require('../assets/img/home_interactive.png') + ')',
 		  newbanner4:'url(' + require('../assets/img/home_sexperience.png') + ')',
+		  currentClick:0,
 		  widthImg:false,
 		 currentSwiperView_index:0,
 		 view0_show:false,
@@ -555,9 +580,15 @@ export default{
                  
 	// 		   }
 	// },
-	     imgSrc(){
-              this.widthImg=!this.widthImg;
-	     },
+	handlerShowImg(val){
+		if(this.currentClick!=val){
+			this.currentClick = val
+		}else{
+			this.currentClick = 0
+		}
+		console.log(this.currentClick)
+	},
+	    
 
 	 toclient(i){
                 var clientHeight=document.documentElement.clientHeight||document.body.clientHeight;
