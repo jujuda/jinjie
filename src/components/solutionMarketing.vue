@@ -111,9 +111,8 @@ h3{
 	font-family: "microsoft yahei";
 }
 .inter-cont p{
-	position: absolute;
-	right:41%;
-	top: 200px;
+	margin: 0 auto;
+	text-align: center;
 	width: 343px;
 	height: 2px;
 	 background: linear-gradient(to right, white,black,black,black,black,white);

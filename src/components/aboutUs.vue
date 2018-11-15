@@ -12,8 +12,11 @@
 					  安徽进阶信息技术有限公司成立于2018年，是一家专注于利用云计算、移动计算、互联网、大数据、人工智能等高新技术以及增强现实、虚拟现实等可视化技术为企业提供创新互动服务的高科技公司。<br />
                                           目前公司主要有三大核心业务领域：<span>电商互动解决方案、新零售解决方案、软件技术服务。</span>
 				</div>
-				<img src="../assets/images/about_us.png"/>
 				</div>
+				<div>
+						<img src="../assets/images/about_us.png"/>
+				</div>			
+				
 			</div>
 				<div class="banner-center">
 					<h3>轻松开放的工作氛围</h3>
@@ -68,27 +71,28 @@
 }
 .solution-banner{
 	width: 100%;
-	height:100%;
 }
 
 .interactive{
-	position: relative;
+   display: flex;
+   justify-content:center;
 }
+
 .interactive img{
-	position: absolute;
-	top: 80px;
-	right: 360px;
+   /* flex: 1; */
+   padding-left: 100px;
+   padding-top: 80px;
 }
 h3{
 	font-size: 36px;
 	color: #333333;
 	font-family: 'MicrosoftYaHei-Bold';
 }
-.interactive h3{
-	box-sizing: border-box;
-	margin-left: 585px;
-	padding-top: 203px;
+.inter-cont h3{
+	padding-top: 200px;
+	text-align: center;
 	padding-bottom: 40px;
+	margin: 0 auto;
 }
 .interactive-content{
 	width: 390px;
@@ -96,8 +100,8 @@ h3{
 	line-height: 36px;
 	text-align: left;
 	color: #999999;
-	margin-left: 25%;
-	margin-right: 103px;
+	
+	text-align: center;
 	margin-top: 78px;
 	padding-bottom: 153px;
 	font-family: "microsoft yahei";
@@ -110,7 +114,8 @@ h3{
 .inter-cont p{
 	width: 158px;
 	height: 2px;
-	margin-left: 583px;
+	text-align: center;
+	margin: 0 auto;
 	 background: linear-gradient(to right, white,black,black,black,black,white);
 }
  .banner-center{

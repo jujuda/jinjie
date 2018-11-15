@@ -158,8 +158,8 @@ h3{
 	background-color: #F2F9FF;
 }
 .inter-cont p{
-	position: absolute;
-	right:43.5%;
+	margin: 0 auto;
+	text-align: center;
 	top: 200px;
 	width: 235px;
 	height: 2px;

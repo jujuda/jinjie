@@ -156,8 +156,8 @@ h3{
 	background-color: #F2F9FF;
 }
 .inter-cont p{
+	margin: 0 auto;
 	text-align: center;
-	margin-left:44%;
 	width: 235px;
 	height: 2px;
 	 background: linear-gradient(to right, white,black,black,black,black,white);
@@ -249,7 +249,7 @@ background-color: #F2F9FF;
 .intelligent img{
 	position: absolute;
 	left: 755px;
-	top:510px;
+	top:450px;
 }
 
 .intelligent h3{

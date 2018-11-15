@@ -3,7 +3,7 @@
 	<div class="main-head">
 		<headers></headers>
 	  <swiper id="swiperBox" v-bind:options="swiperOption" ref="mySwiper">
-		   <swiper-slide class="swiper-slide" >	
+		   <swiper-slide class="swiper-slide" style="overflow: hidden">	
 			    <div class="page">				
 		<div class="inner-content">
 			<div class="head-nav">
@@ -37,7 +37,7 @@
 	    </div>
 			</swiper-slide>
 		<!--关于我们-->
-		  <swiper-slide class="swiper-slide" >
+		  <swiper-slide class="swiper-slide" style="overflow: hidden">
 			   <div class="page">
   <div class="about-as">
   	<div class="about-left-img">
@@ -95,19 +95,51 @@
   <swiper-slide class="swiper-slide" >
 	   <div class="page clearfix">
 	   	<div class="fl" @click="handlerShowImg(1)" :style="{width:currentClick==1?'100%':currentClick==0?'25%':'0'}">
-	   		<div class="des"><h4>智能数据大屏</h4></div>
+	   		<div class="des" v-show="btnwordshow1"><h4>智能数据大屏</h4></div>
+			   <div class="btnclick" v-show="bottomBanner1">
+				   <h4 class="clickImg">关于新零售我们有话说</h4>
+				   <div class="clickcontent">
+                        <p class="animated bounceInDown ">智能数据大屏</p>
+						<h5 class="animated bounceInUp">整合线上线下数据，为线下零售店铺提供智能化的解决方案，优化线下零售用户体验</h5>
+				   </div>
+			   </div>
 			<div class="newbanner" :style="{background:newbanner1}"></div>	
 	   	</div>
 	   	<div class="fl"  @click="handlerShowImg(2)" :style="{width:currentClick==2?'100%':currentClick==0?'25%':'0'}">
-	   		<div class="des"><h4>云货架</h4></div>
+	   		<div class="des" v-show="btnwordshow2"><h4>云货架</h4></div>
+
+            <div class="btnclick" v-show="bottomBanner2">
+				   <h4 class="clickImg">关于新零售我们有话说</h4>
+				   <div class="clickcontent">
+                        <p class="animated bounceInDown ">智能数据大屏</p>
+						<h5 class="animated bounceInUp" >整合线上线下数据，为线下零售店铺提供智能化的解决方案，优化线下零售用户体验</h5>
+				   </div>
+			   </div>
+
 			<div class="newbanner" :style="{background:newbanner2}"></div>	
 	   	</div>
 	   	<div class="fl" @click="handlerShowImg(3)" :style="{width:currentClick==3?'100%':currentClick==0?'25%':'0'}">
-	   		<div class="des"><h4>互动智慧大屏</h4></div>
+	   		<div class="des" v-show="btnwordshow3"><h4>互动智慧大屏</h4></div>
+			   <div class="btnclick" v-show="bottomBanner3">
+				   <h4 class="clickImg">关于新零售我们有话说</h4>
+				   <div class="clickcontent">
+                        <p class="animated bounceInDown ">智能数据大屏</p>
+						<h5 class="animated bounceInUp">整合线上线下数据，为线下零售店铺提供智能化的解决方案，优化线下零售用户体验</h5>
+						
+				   </div>
+			   </div>
 			<div class="newbanner" :style="{background:newbanner3}"></div>	
 	   	</div>
 	   	<div class="fl" @click="handlerShowImg(4)" :style="{width:currentClick==4?'100%':currentClick==0?'25%':'0'}">
-	   		<div class="des"><h4>体验智慧大师</h4></div>
+	   		<div class="des" v-show="btnwordshow4"><h4>体验智慧大师</h4></div>
+
+			   <div class="btnclick" v-show="bottomBanner4">
+				   <h4 class="clickImg">关于新零售我们有话说</h4>
+				   <div class="clickcontent">
+                        <p class="animated bounceInDown ">智能数据大屏</p>
+						<h5 class="animated bounceInUp">整合线上线下数据，为线下零售店铺提供智能化的解决方案，优化线下零售用户体验</h5>
+				   </div>
+			   </div>
 			<div class="newbanner" :style="{background:newbanner4}"></div>	
 	   	</div>
 			
@@ -130,7 +162,7 @@
 			<div class="footer-phone">
 				<div>电话：0551-6526026</div>
 				<div>邮箱：service@ahjinjie.cn</div>
-				<div>地址：安徽省合肥市经开区中环城A座1623室</div>
+				<div class="address">地址：安徽省合肥市经开区中环城A座1623室</div>
 			</div>
 		</div>
 	</div>
@@ -171,27 +203,20 @@ ul{
 	width: 100%;
 	overflow: hidden;
 }
-.inner-content{
-	width: 1920px;
-	height: 950px;
-}
+
 .head-nav{
 	position: relative;
 	
 }
-
 .swiper-container{
-	width: 1920px;
-	height: 938px;
+	width: 100%;
 }
 .bannerimg .swiper-slide {
   width: 100%;
-  height: 100%;
   overflow: hidden;
 }
 .bannerimg .swiper-slide img {
   width: 100%;
-  height: 100%;
 }
 .h5{
     animation-duration:3s;animation-iteration-count:Infinite;animation-delay: 1s;
@@ -260,7 +285,7 @@ ul{
 	bottom: 60px;
 	left: 50%;
 	z-index: 9999;
-	   -webkit-transform:translate3d(0,0,0);
+	-webkit-transform:translate3d(0,0,0);
     -moz-transform:translate3d(0,0,0);
     transform:translate3d(0,0,0);
     -webkit-animation:play 1.5s linear infinite;
@@ -301,10 +326,6 @@ ul{
 }
 .about-left-img{
 	flex: 1;
-}
-.about-left-img img{
-	width: 100%;
-	height: 100%;
 }
 .about-right{
 	flex: 1;
@@ -421,7 +442,8 @@ margin-bottom: 60px;
 	margin-top: 285px;
 }
 
-.newbanner {width: 100%;
+.newbanner {
+	width: 100%;
 height: 940px;
 transition:all 1s;
  background: no-repeat center;
@@ -435,11 +457,13 @@ font-size: 30px;
  position: absolute;
  bottom: 120px;
  margin-left: 8%;
+ z-index: 999;
  }
 .newbanner:hover{ transform: scale(1.1);}
 .footer-home{
-	width: 1920px;
-	height: 940px;
+	width: 100%;
+	/* height: 940px; */
+	overflow: hidden;
 	background-image: url(../assets/img/home_background.png);
 }
 .footer-home-title{
@@ -467,7 +491,38 @@ font-size: 30px;
 	text-align: center;
 	line-height: 36px;
 }
+.address{
+	margin-bottom: 135px;
+}
+.btnclick{
+	width: 100%;
+	height: 100%;
+	color: #ffffff;
+    position: absolute;
+	z-index: 9;
+	font-family:'microsoft yahei';
 
+}
+.btnclick .clickImg{
+	font-size: 36px;
+	text-align: center;
+	margin-top: 120px;
+	margin-bottom: 550px;
+}
+.clickcontent p{
+	font-size: 30px;
+	font-family:'microsoft yahei';
+	text-align: center;
+	margin-bottom: 50px;
+
+}
+.clickcontent h5{
+	font-size: 14px;
+	line-height: 28px;
+	text-align: center;
+	margin-bottom: 120px;
+
+}
 </style>
 <script>
 import { swiper, swiperSlide } from "vue-awesome-swiper";
@@ -494,6 +549,14 @@ export default{
 		  newbanner2:'url(' + require('../assets/img/home_cloudshelf.png') + ')',
 		  newbanner3:'url(' + require('../assets/img/home_interactive.png') + ')',
 		  newbanner4:'url(' + require('../assets/img/home_sexperience.png') + ')',
+		  btnwordshow1:true,
+		  btnwordshow2:true,
+		  btnwordshow3:true,
+		  btnwordshow4:true,
+		  bottomBanner1:false,
+		  bottomBanner2:false,
+		  bottomBanner3:false,
+		  bottomBanner4:false,
 		  currentClick:0,
 		  widthImg:false,
 		 currentSwiperView_index:0,
@@ -591,9 +654,27 @@ export default{
 	// },
 	handlerShowImg(val){
 		if(this.currentClick!=val){
-			this.currentClick = val
+			this.currentClick = val;
+			this.bottomBanner1=true;
+			this.bottomBanner2=true;
+			this.bottomBanner3=true;
+			this.bottomBanner4=true;
+
+			this.btnwordshow1=false;
+			this.btnwordshow2=false;
+			this.btnwordshow3=false;
+			this.btnwordshow4=false;
 		}else{
 			this.currentClick = 0
+			this.bottomBanner1=false;
+			this.bottomBanner2=false;
+			this.bottomBanner3=false;
+			this.bottomBanner4=false;
+
+			this.btnwordshow1=true;
+			this.btnwordshow2=true;
+			this.btnwordshow3=true;
+			this.btnwordshow4=true;
 		}
 		console.log(this.currentClick)
 	},

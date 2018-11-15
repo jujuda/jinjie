@@ -7,7 +7,11 @@
             
 
       <div class="jion-center">
-             	 <img src="../assets/img/requer-btn.png" class="req-btn" @click="showButton1()"/>
+		  <div @click="showButton1()">
+              <img src="../assets/img/requer-btn.png" class="req-btn" v-if='isMore' /> 
+			    <img src="../assets/img/more-btn.png" class="req-btn" v-if='!isMore'/>
+		  </div>
+             	
              	<div class="recruitment-info">
              		<img src="../assets/images/join_projectmanager.png"/>
              		 <div class="recruit">
@@ -33,7 +37,10 @@
              </div>
              
               <div class="jion-center">
-             	 <img src="../assets/img/requer-btn.png" class="req-btn" @click="showButton2()"/>
+             	 <div @click="showButton2()">
+              <img src="../assets/img/requer-btn.png" class="req-btn" v-if='isMore' /> 
+			    <img src="../assets/img/more-btn.png" class="req-btn" v-if='!isMore'/>
+		  </div>
              	<div class="recruitment-info">
              		<img src="../assets/images/join_web.png"/>
              		 <div class="recruit">
@@ -59,7 +66,10 @@
              	</div>     
              </div>
                    <div class="jion-center">
-             	  <img src="../assets/img/more-btn.png" class="req-btn" @click="moreButton1()"/>
+             	  <div @click="moreButton1()">
+              <img src="../assets/img/requer-btn.png" class="req-btn" v-if='!isMore' /> 
+			    <img src="../assets/img/more-btn.png" class="req-btn" v-if='isMore'/>
+		  </div>
              	<div class="recruitment-info">
              		<img src="../assets/images/join_web.png"/>
              		 <div class="recruit">
@@ -88,7 +98,10 @@
              </div>
              
                    <div class="jion-center">
-             	  <img src="../assets/img/more-btn.png" class="req-btn" @click="moreButton2()"/>
+             	  <div @click="moreButton2()">
+              <img src="../assets/img/requer-btn.png" class="req-btn" v-if='!isMore' /> 
+			    <img src="../assets/img/more-btn.png" class="req-btn" v-if='isMore'/>
+		  </div>
              	<div class="recruitment-info">
              		<img src="../assets/images/join_web_h5.png"/>
              		 <div class="recruit">
@@ -114,7 +127,10 @@
              	</div>     
              </div>
                    <div class="jion-center">
-             	 <img src="../assets/img/more-btn.png" class="req-btn" @click="moreButton3()"/>
+             	  <div @click="moreButton3()">
+					<img src="../assets/img/requer-btn.png" class="req-btn" v-if='!isMore' /> 
+						<img src="../assets/img/more-btn.png" class="req-btn" v-if='isMore'/>
+		  </div>
              	<div class="recruitment-info">
              		<img src="../assets/images/join_web_cw.png"/>
              		 <div class="recruit">
@@ -140,7 +156,10 @@
              	</div>     
              </div>
                 <div class="jion-center">
-             	 <img src="../assets/img/more-btn.png" class="req-btn" @click="moreButton4()"/>
+             	  <div @click="moreButton4()">
+                   <img src="../assets/img/requer-btn.png" class="req-btn" v-if='!isMore' /> 
+			        <img src="../assets/img/more-btn.png" class="req-btn" v-if='isMore'/>
+		  </div>
              	<div class="recruitment-info">
              		<img src="../assets/images/join_web_bed.png"/>
              		 <div class="recruit">
@@ -166,7 +185,10 @@
              	</div>     
              </div>
                 <div class="jion-center">
-             	 <img src="../assets/img/more-btn.png" class="req-btn" @click="moreButton5()"/>
+             	   <div @click="moreButton5()">
+                      <img src="../assets/img/requer-btn.png" class="req-btn" v-if='!isMore' /> 
+			          <img src="../assets/img/more-btn.png" class="req-btn" v-if='isMore'/>
+		  </div>
              	<div class="recruitment-info">
              		<img src="../assets/images/join_nodejs.png"/>
              		 <div class="recruit">
@@ -192,7 +214,10 @@
              	</div>     
              </div>
                 <div class="jion-center">
-             	 <img src="../assets/img/more-btn.png" class="req-btn" @click="moreButton6()"/>
+             	  <div @click="moreButton6()">
+                   <img src="../assets/img/requer-btn.png" class="req-btn" v-if='!isMore' /> 
+			       <img src="../assets/img/more-btn.png" class="req-btn" v-if='isMore'/>
+		  </div>
              	<div class="recruitment-info">
              		<img src="../assets/images/join_ste.png"/>
              		 <div class="recruit">
@@ -298,32 +323,41 @@ export default{
 			morebtn4:false,
 			morebtn5:false,
 			morebtn6:false,
+			isMore:true,
 		}
 	},
 	methods:{
 		showButton1(){
 			this.showbtn1=!this.showbtn1;
+			this.isMore=!this.isMore;
 		},
 		showButton2(){
 			this.showbtn2=!this.showbtn2;
+			this.isMore=!this.isMore;
 		},
 		moreButton1(){
 			this.morebtn1=!this.morebtn1;
+			this.isMore=!this.isMore;
 		},
 		moreButton2(){
 			this.morebtn2=!this.morebtn2;
+			this.isMore=!this.isMore;
 		},
 		moreButton3(){
 			this.morebtn3=!this.morebtn3;
+			this.isMore=!this.isMore;
 		},
 		moreButton4(){
 			this.morebtn4=!this.morebtn4;
+			this.isMore=!this.isMore;
 		},
 		moreButton5(){
 			this.morebtn5=!this.morebtn5;
+			this.isMore=!this.isMore;
 		},
 		moreButton6(){
 			this.morebtn6=!this.morebtn6;
+			this.isMore=!this.isMore;
 		},
 	}
 }

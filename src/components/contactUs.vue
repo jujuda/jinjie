@@ -92,6 +92,10 @@ h3{
 	color: #333333;
 	font-family: 'MicrosoftYaHei-Bold';
 }
+.content-center{
+	width: 100%;
+	overflow: hidden;
+}
 .content-center h4{
 	font-size: 36px;
 	line-height: 72px;
@@ -123,9 +127,10 @@ h3{
 .customer-info{
 	position: absolute;
 	z-index: 99;
-	width: 1920px;
+	width: 100%;
 	height: 600px;
 	background: #F2F9FF;
+	overflow: hidden;
 }
 .reg-customer-info{
 	width: 1200px;

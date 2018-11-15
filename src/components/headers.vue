@@ -98,7 +98,6 @@ a{
 	width: 30px; 
 	height: 25px;
 	position: relative;
-	margin-top: 47px; 
 	transition: 1s all ease-in
 }
 #navbtn-img{

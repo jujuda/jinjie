@@ -149,8 +149,8 @@ h3{
 	font-family: "microsoft yahei";
 }
 .inter-cont p{
-	position: absolute;
-	right:39%;
+	margin: 0 auto;
+	text-align: center;
 	top: 200px;
 	width: 400px;
 	height: 2px;
