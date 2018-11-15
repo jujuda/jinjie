@@ -20,13 +20,13 @@
 				    	
 				        <div class="swiper-slide">
 							<img src="../assets/img/homebanner1.png"/>
-							<span class="animate1 animated zoomInDown slower">我懂你的了不起</span><h5 class="h51 swiper-h5 animated bounceInUp slower">跟自己作对，才能把难题作对</h5><p class="swiper-p"></p><h3 class="swiper-h3"></h3></div>
+							<span class="animate animated zoomInDown slower">我懂你的了不起</span><h5 class="h5 swiper-h5 animated bounceInUp slower">跟自己作对，才能把难题作对</h5><p class="swiper-p animated bounceInUp"></p><h3 class="swiper-h3 animated bounceInUp"></h3></div>
 				        <div class="swiper-slide">
 							<img src="../assets/img/homebanner2.png"/>
-							<span class=" animate2 animated zoomInDown slower">电商互动营销</span><h5 class=" h52 swiper-h5 animated bounceInUp slower">跟自己作对，才能把难题作对</h5><p class="swiper-p"></p><h3 class="swiper-h3"></h3></div>
+							<span class=" animate animated zoomInDown slower">电商互动营销</span><h5 class=" h5 swiper-h5 animated bounceInUp slower">跟自己作对，才能把难题作对</h5><p class="swiper-p animated bounceInUp"></p><h3 class="swiper-h3 animated bounceInUp"></h3></div>
 				        <div class="swiper-slide">
 							<img src="../assets/img/homebanner3.png"/>
-							<span class=" animate3 animated zoomInDown slower">新零售智慧门店</span><h5 class="h53 swiper-h5 animated bounceInUp slower">跟自己作对，才能把难题作对</h5><p class="swiper-p"></p><h3 class="swiper-h3"></h3></div>
+							<span class=" animate animated zoomInDown slower">新零售智慧门店</span><h5 class="h5 swiper-h5 animated bounceInUp slower">跟自己作对，才能把难题作对</h5><p class="swiper-p animated bounceInUp" animated bounceInUp></p><h3 class="swiper-h3 animated bounceInUp"></h3></div>
 				        	
 				        
 				    </div>				   
@@ -50,10 +50,9 @@
   		<div class="company-introduction" :class="view1_show==1?' animated bounceInUp delay-1s ' : ''">
   			安徽进阶信息技术有限公司成立于2018年。是一家专注于利用云计算、移动计算、互联网、大数据、人工智能等高新技术以及增强实现、虚拟实现等可视化技术为企业提供创新互动服务的高科技公司。目前公司主要有三大核心业务领域电商互动解决方案、新零售解决方案、软件技术服务。
   		</div>
-		  <router-link to='/aboutUs'>
 		  
-                     <input type="button" name="more-btn" id="more-btn" value="MORE" :class="view1_show==1?' animated zoomInUp delay-1s ' : ''"/>
-		  </router-link>
+                     <input type="button" name="more-btn" id="more-btn" value="MORE" :class="view1_show==1?' animated zoomInUp delay-1s ' : ''"  @click="linkto"/>
+		
   
   	</div>
   </div>
@@ -74,11 +73,10 @@
      
       <div class="retailers-center">
            <img src="../assets/img/home_dot.png" class="img-round"  :class=" view2_show==2?' animated fadeIn delay-1s' : ''"/>
-  	      <img src="../assets/img/home_auxiliaryline.png" class="img-line" :class=" view2_show==2?' animated zoomIn delay-1s' : ''"/>
+  	      <img src="../assets/img/home_auxiliaryline.png" class="img-line" :class=" view2_show==2?' animated fadeIn delay-1s' : ''"/>
            <img src="../assets/img/home_dot.png" class="img-round2" :class="view2_show==2?' animated fadeIn delay-1s' : ''"/>
   	      <img src="../assets/img/home_auxiliaryline_left.png" class="img-line2" :class="view2_show==2?' animated fadeIn delay-1s' : ''"/>
           <img src="../assets/img/home_dot.png" class="img-round4" :class="view2_show==2?' animated fadeIn delay-1s' : ''"/>
-  	     <img src="../assets/img/home_auxiliaryline.png" class="img-line4" :class="view2_show==2?' animated zoomIn delay-1s' : ''"/>
 		 <img src="../assets/img/home_dot.png" class="img-round5" :class="view2_show==2?' animated fadeIn delay-1s' : ''"/>
 		  <img src="../assets/img/home_auxiliaryline.png" class="img-line5" :class=" view2_show==2?' animated fadeIn delay-1s' : ''"/>
       </div>
@@ -184,7 +182,7 @@ ul{
 
 .swiper-container{
 	width: 1920px;
-	height: 950px;
+	height: 938px;
 }
 .bannerimg .swiper-slide {
   width: 100%;
@@ -195,16 +193,30 @@ ul{
   width: 100%;
   height: 100%;
 }
-.h51{
+.h5{
     animation-duration:3s;animation-iteration-count:Infinite;animation-delay: 1s;
 }
-.h52{
+/* .h52{
     animation-duration:3s;animation-iteration-count:Infinite;animation-delay: 3s;
 }
 .h53{
 	animation-duration:4s;animation-iteration-count:Infinite;animation-delay: 5s;
+} */
+.swiper-p {
+	animation-duration:3s;animation-iteration-count:Infinite;animation-delay: 1s;
 }
-
+.swiper-h3{
+	animation-duration:3s;animation-iteration-count:Infinite;animation-delay: 1s;
+}
+.animate{
+	animation-duration:3s; animation-iteration-count:Infinite;animation-delay: 1s;
+}
+/* .animate2{
+	animation-duration:3s;animation-iteration-count:Infinite;animation-delay: 3s;
+}
+.animate3{
+	animation-duration:4s;animation-iteration-count:Infinite;animation-delay: 5s;
+} */
 .swiper-wrapper .swiper-slide span{
 	display: inline-block;
 	font-size: 30px;
@@ -213,15 +225,6 @@ ul{
 	/* z-index: 1; */
 	top: 51%;
 	left: 20%;
-}
-.animate1{
-	animation-duration:3s; animation-iteration-count:Infinite;animation-delay: 1s;
-}
-.animate2{
-	animation-duration:3s;animation-iteration-count:Infinite;animation-delay: 3s;
-}
-.animate3{
-	animation-duration:4s;animation-iteration-count:Infinite;animation-delay: 5s;
 }
 .swiper-wrapper .swiper-slide .swiper-h5{
 	position: absolute;
@@ -291,32 +294,34 @@ ul{
 
 
 .about-as{
-	position: relative;
+	display: flex;
+	width: 100%;
+	overflow: hidden;
+	
+}
+.about-left-img{
+	flex: 1;
+}
+.about-left-img img{
+	width: 100%;
+	height: 100%;
 }
 .about-right{
-	width:960px;
-	height: 940px;
-	overflow: hidden;
-	position: absolute;
-	right: 0;
-	top: 0;
+	flex: 1;
 }
 .about-right h3{
-	position: absolute;
-	right: 418px;
-	top: 240px;
 	text-align: center;
 	font-size: 36px;
 	color: #333333;
 	margin-bottom: 10px;
+	margin-top: 240px;
 }
 .about-right .about-p{
-	position: absolute;
-	right: 410px;
-	top: 295px;
+	margin: 0 auto;
+   text-align: center;
 	width: 160px;
 	height: 2px;
-
+margin-bottom: 60px;
 	 background: linear-gradient(to right, white,black,black,black,black,white);
 }
 .company-introduction{
@@ -326,19 +331,17 @@ ul{
 	line-height: 28px;
 	font-family:"microsoft yahei";
 	color: #999999;
-	position: absolute;
-	right:300px;
-	top: 324px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 30px;
 	
 }
 #more-btn{
-    position: absolute;
-	z-index:999;
-	right:45%;
-	top:58%;
 	width: 60px;
 	height: 24px;
 	border: none;
+	text-align: center;
+	margin-left: 45%;
 	background: orange;
 	border-radius: 12px;
 	color: #FFFFFF;
@@ -403,11 +406,7 @@ ul{
 	top: 575px;
 	left: 65px;	
 }
-.img-line4{
-	position: absolute;
-	top: 135px;
-	left: 90px;
-}
+
 .img-round5{
 	position: absolute;
 	top: 810px;
@@ -610,7 +609,10 @@ export default{
                 }else {
                     clearTimeout(c);
                 }
-            }
+            },
+			linkto(){
+				this.$router.push('/aboutUs')
+			}
 
 },
 computed: {  

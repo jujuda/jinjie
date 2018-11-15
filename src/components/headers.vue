@@ -4,17 +4,18 @@
 				<div class="logo" >
 					<img src="../assets/img/home_logo.png"/>
 				</div>
-				<div class="head-right" id="head-right">
-					<div class="right-navlist-button">
+				<div class="right-navlist-button">
 						<div  class="menu" @click="isShow()" >
 							<img src="../assets/img/home_icon_unselected.png" alt="" v-if="isimg" class="animated rotateIn">
 							<img src="../assets/img/home_icon_selected.png" alt="" v-if='!isimg' class="animated rotateIn">
 						<span></span>
 					</div>
 					</div>
+				<div class="head-right" id="head-right" v-show="toShow">
 					
 					
-					<ul class="right-navlist" id="show-navlist" v-show="toShow">
+					
+					<ul class="right-navlist" id="show-navlist" >
 						<router-link tag="li" to='/home'><a href="#" class="showmenu" >首页</a></router-link>
 							
 						<router-link tag="li" to='/aboutUs'><a href="#">关于进阶</a></router-link>
@@ -52,14 +53,12 @@ ul{
 a{
 	text-decoration: none;
 }
-
  .bounceIn{
       animation: .8s bounceIn ease
     }
     .bounceOut{
       animation: .8s bounceOut ease-in-out
     }
-
     @keyframes bounceIn{
       0%{height:0 ;}
       100%{height:130px;}
@@ -87,7 +86,6 @@ a{
 	position: fixed;
 	right: 0;
 	top:0;
-
 }
 .right-navlist-button{
 	position: absolute;
@@ -99,17 +97,15 @@ a{
 .menu { 
 	width: 30px; 
 	height: 25px;
-	position: relative; 
+	position: relative;
+	margin-top: 47px; 
 	transition: 1s all ease-in
 }
-
-
 #navbtn-img{
 	position: absolute;
 	z-index: 9999;
 	position: fixed;
 }
-
 .right-navlist{
 	width: 600px;
 	height: 1080px;
@@ -125,7 +121,6 @@ a{
 	text-align: center;
 	line-height: 100px;
 }
-
 .right-navlist >li:nth-child(1){
 	margin-top: 180px;
 }
@@ -170,5 +165,4 @@ export default{
 		
 	}
 }
-
 </script>

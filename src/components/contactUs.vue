@@ -100,6 +100,7 @@ h3{
 	text-align: center;
 	margin-top: 80px;
 	margin-bottom: 120px;
+	letter-spacing: 3px;
 }
 .our-information{
 	display: flex;
