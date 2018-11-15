@@ -66,30 +66,30 @@
   	<div class="retailers-left">
   		<h3 class="retailers-left-title" :class=" view2_show==2?' animated bounceInDown delay-2s': ''">电商互动营销</h3>
   		<p class="retailers-left-content " :class=" view2_show==2?' animated bounceInDown delay-2s' : ''">进阶通过生动有趣的感官互动来实现与消费者的沟通，从而达到消费者对品牌或者商品的深度了解，提升品牌与消费者之间的粘性。</p>
-  	   <img src="../assets/img/home_dot.png" class="img-round"  :class=" view2_show==2?' animated fadeIn delay-1s' : ''"/>
-  	   <img src="../assets/img/home_auxiliaryline.png" class="img-line" :class=" view2_show==2?' animated fadeIn delay-1s' : ''"/>
+  	  	<h3 class="retailers-left-title" :class="view2_show==2?' animated zoomInDown delay-2s' : ''">软件服务</h3>
+  		<p class="retailers-left-content" :class="view2_show==2?' animated zoomInDown delay-2s' : ''">以云计算、物联网、大数据以及人工智能等技术为主，具备自主知识产权，拥有较高的技术水平和能力，主要为电商行业及国家电网提供技术服务与支持工作。</p>
+        
   	</div>
-  	<div class="retailers-left">
+    
+     
+      <div class="retailers-center">
+           <img src="../assets/img/home_dot.png" class="img-round"  :class=" view2_show==2?' animated fadeIn delay-1s' : ''"/>
+  	      <img src="../assets/img/home_auxiliaryline.png" class="img-line" :class=" view2_show==2?' animated zoomIn delay-1s' : ''"/>
+           <img src="../assets/img/home_dot.png" class="img-round2" :class="view2_show==2?' animated fadeIn delay-1s' : ''"/>
+  	      <img src="../assets/img/home_auxiliaryline_left.png" class="img-line2" :class="view2_show==2?' animated fadeIn delay-1s' : ''"/>
+          <img src="../assets/img/home_dot.png" class="img-round4" :class="view2_show==2?' animated fadeIn delay-1s' : ''"/>
+  	     <img src="../assets/img/home_auxiliaryline.png" class="img-line4" :class="view2_show==2?' animated zoomIn delay-1s' : ''"/>
+		 <img src="../assets/img/home_dot.png" class="img-round5" :class="view2_show==2?' animated fadeIn delay-1s' : ''"/>
+		  <img src="../assets/img/home_auxiliaryline.png" class="img-line5" :class=" view2_show==2?' animated fadeIn delay-1s' : ''"/>
+      </div>
+
+
+  	 <div class="retailers-right">
   		<h3 class="retailers-left-title " :class="view2_show==2?' animated bounceInDown delay-2s' : ''">新零售解决方案</h3>
   		<p class="retailers-left-content" :class="view2_show==2?' animated bounceInDown delay-2s' : ''">整合线上线下数据，为线下零售店铺提供智能化的解决方案，优化线下零售用户体验，为线下零售提供更丰富更有价值的数据支持</p>
-        <img src="../assets/img/home_dot.png" class="img-round2" :class="view2_show==2?' animated fadeIn delay-1s' : ''"/>
-  	   <img src="../assets/img/home_auxiliaryline_left.png" class="img-line2" :class="view2_show==2?' animated fadeIn delay-1s' : ''"/>
-  	</div>
-  	<div class="retailers-left">
-  		<h3 class="retailers-left-title" :class="view2_show==2?' animated zoomInDown delay-2s' : ''">软件服务</h3>
-  		<p class="retailers-left-content" :class="view2_show==2?' animated zoomInDown delay-2s' : ''">以云计算、物联网、大数据以及人工智能等技术为主，具备自主知识产权，拥有较高的技术水平和能力，主要为电商行业及国家电网提供技术服务与支持工作。</p>
-  	   <img src="../assets/img/home_dot.png" class="img-round3" :class="view2_show==2?' animated fadeIn delay-1s' : ''"/>
-  	   <img src="../assets/img/home_auxiliaryline.png" class="img-line3" :class="view2_show==2?' animated fadeIn delay-1s' : ''"/>
-		 <img src="../assets/img/home_dot.png" class="img-round5" :class="view2_show==2?' animated fadeIn delay-1s' : ''"/>
-  	</div>
-  	<div class="retailers-left">
-  		<h3 class="retailers-left-title" :class="view2_show==2?' animated zoomInDown delay-2s' : ''">客服托管</h3>
+      <h3 class="retailers-left-title" :class="view2_show==2?' animated zoomInDown delay-2s' : ''">客服托管</h3>
   		<p class="retailers-left-content" :class="view2_show==2?' animated zoomInDown delay-2s' : ''">专业的客服团队，快速响应，优质的服务能力，完善的绩效考核，有效提升店铺客服转化的同时为电商企业节省管理成本和财务成本。</p>
-  	<img src="../assets/img/home_dot.png" class="img-round4" :class="view2_show==2?' animated fadeIn delay-1s' : ''"/>
-  	   <img src="../assets/img/home_auxiliaryline.png" class="img-line4" :class="view2_show==2?' animated zoomIn delay-1s' : ''"/>
-		 <img src="../assets/img/home_dot.png" class="img-round4" :class="view2_show==2?' animated fadeIn delay-1s' : ''"/>
   	</div>
-  	
   </div>
 </div>
   </swiper-slide>
@@ -345,71 +345,81 @@ ul{
 	cursor: pointer;	
 }
 .online-retailers{
-	position: relative;
-	box-sizing: border-box;
-	z-index: 99;
-	background-color: #FFFFFF;
-	overflow: hidden;
-	font-family: "microsoft yahei";
-}
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    justify-content:center;
 
+}
 .retailers-left-title{
-	font-size: 24px;
-	color: #333333;
-	padding: 50px 0 30px 540px;
+    width: 350px;
+    text-align: center;
+    font-size: 24px;
+    color: #333333;
+    font-family: 'MicrosoftYaHei-Bold';
+    margin-bottom: 30px;
+	margin-top: 50px;
 }
 .retailers-left-content{
-	width: 330px;
-	height: 78px;
-	color: #999999;
-	line-height: 28px;
-	font-size: 14px;
-	padding: 0 0 200px 418px;
+    width: 350px;
+    font-size: 14px;
+    line-height: 28px;
+    color:#999999 ;
+    font-family: 'MicrosoftYaHei';
 }
-.retailers-left:nth-child(2){
-	position: absolute;
-	top: 286px;
-	right: 430px;
+.retailers-left .retailers-left-content:nth-child(2){
+    margin-bottom: 330px;
 }
-.retailers-left:nth-child(4){
-	position: absolute;
-	top: 740px;
-	right: 430px;
+.retailers-left{
+	flex: 1;
+}
+
+.retailers-center{
+	position: relative;
+	flex: 1;
 }
 .img-round{
 	position: absolute;
-	left: 870px;
-	top: 140px;
+	top: 105px;
+	left: 65px;
 }
 .img-line{
 	position: absolute;
-	left: 900px;
-	top: 170px;
+	top: 135px;
+	left: 90px;
 }
 .img-round2{
 	position: absolute;
-	left: 335px;
-	top: 100px;
+	top: 340px;
+	right: 60px;
 }
 .img-line2{
 	position: absolute;
-	left: 220px;
-	top: 140px;
+	top: 370px;
+	left: 98px;
 }
-.img-round3{
-	position: absolute;
-	left: 870px;
-	top: 635px;
+.img-round4{
+    position: absolute;
+	top: 575px;
+	left: 65px;	
 }
-.img-line3{
+.img-line4{
 	position: absolute;
-	left: 890px;
-	top: 670px;
+	top: 135px;
+	left: 90px;
 }
 .img-round5{
 	position: absolute;
-	left: 1010px;
-	top: 880px;
+	top: 810px;
+	right: 60px;
+}
+.img-line5{
+	position: absolute;
+	top: 605px;
+	left: 90px;
+}
+.retailers-right .retailers-left-title{
+	margin-top: 285px;
 }
 
 .newbanner {width: 100%;
