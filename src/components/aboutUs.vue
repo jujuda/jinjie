@@ -82,6 +82,7 @@
    /* flex: 1; */
    padding-left: 100px;
    padding-top: 80px;
+   padding-bottom: 80px;
 }
 h3{
 	font-size: 36px;
@@ -96,12 +97,11 @@ h3{
 }
 .interactive-content{
 	width: 390px;
-	font-size: 18px;
-	line-height: 36px;
+	font-size: 14px;
+	line-height: 28px;
 	text-align: left;
 	color: #999999;
 	
-	text-align: center;
 	margin-top: 78px;
 	padding-bottom: 153px;
 	font-family: "microsoft yahei";
@@ -119,8 +119,7 @@ h3{
 	 background: linear-gradient(to right, white,black,black,black,black,white);
 }
  .banner-center{
- 	width: 1920px;
- 	height: 600px;
+ 	width: 100%;
  	margin-bottom: 80px;
  	background: url(../assets/images/about_relaxe_backeground.png) no-repeat center;
  }
@@ -136,7 +135,8 @@ h3{
   	display: block;
   	color: #FFFFFF;
   	width: 695px;
-  	margin-left: 30%;
+  	margin: 0 auto;
+	padding-bottom: 210px;
   	text-align: center;
   }
   .core-areas h3{
@@ -145,9 +145,11 @@ h3{
   }
   .core-areas p{
   	width: 240px;
-  	margin-bottom: 40px;
+  	
 	height: 2px;
-	margin-left:  44%;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 40px;
 	 background: linear-gradient(to right, white,black,black,black,black,white);
   }
   .core-areas span{

@@ -9,7 +9,7 @@
 <style scoped>
 .contact-us{
 	position: relative;
-	width: 1920px;
+	width: 100%;
 	height: 360px;
 	color: #B3B3B3;
 	font-family: "microsoft yahei";

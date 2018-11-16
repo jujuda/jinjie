@@ -90,7 +90,7 @@ a{
 .right-navlist-button{
 	position: absolute;
 	right: 70px;
-	top: 45px;
+	top: 35px;
 	position: fixed;
 	z-index: 9999;
 }
@@ -128,7 +128,8 @@ a{
 }
 .right-navlist-child{
     height: 130px;
-	font-size: 12px;
+	font-size: 14px;
+	line-height: 28px;
 	text-align: center;
 	color: #B3B3B3;
 	font-family:"microsoft yahei";
