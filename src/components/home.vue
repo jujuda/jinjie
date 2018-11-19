@@ -95,9 +95,10 @@
   <swiper-slide class="swiper-slide" >
 	   <div class="page clearfix">
 	   	<div class="fl" @click="handlerShowImg(1)" :style="{width:currentClick==1?'100%':currentClick==0?'25%':'0'}">
+			 
 	   		<div class="des" v-show="btnwordshow1"><h4>智能数据大屏</h4></div>
 			   <div class="btnclick" v-show="bottomBanner1">
-				   <h4 class="clickImg">关于新零售我们有话说</h4>
+				   <h4 class="clickImg">关于新零售,我们有话说</h4>
 				   <div class="clickcontent">
                         <p class="animated bounceInDown ">智能数据大屏</p>
 						<h5 class="animated bounceInUp">整合线上线下数据，为线下零售店铺提供智能化的解决方案，优化线下零售用户体验</h5>
@@ -109,7 +110,7 @@
 	   		<div class="des" v-show="btnwordshow2"><h4>云货架</h4></div>
 
             <div class="btnclick" v-show="bottomBanner2">
-				   <h4 class="clickImg">关于新零售我们有话说</h4>
+				   <h4 class="clickImg">关于新零售,我们有话说</h4>
 				   <div class="clickcontent">
                         <p class="animated bounceInDown ">智能数据大屏</p>
 						<h5 class="animated bounceInUp" >整合线上线下数据，为线下零售店铺提供智能化的解决方案，优化线下零售用户体验</h5>
@@ -121,7 +122,7 @@
 	   	<div class="fl" @click="handlerShowImg(3)" :style="{width:currentClick==3?'100%':currentClick==0?'25%':'0'}">
 	   		<div class="des" v-show="btnwordshow3"><h4>互动智慧大屏</h4></div>
 			   <div class="btnclick" v-show="bottomBanner3">
-				   <h4 class="clickImg">关于新零售我们有话说</h4>
+				   <h4 class="clickImg">关于新零售,我们有话说</h4>
 				   <div class="clickcontent">
                         <p class="animated bounceInDown ">智能数据大屏</p>
 						<h5 class="animated bounceInUp">整合线上线下数据，为线下零售店铺提供智能化的解决方案，优化线下零售用户体验</h5>
@@ -134,7 +135,7 @@
 	   		<div class="des" v-show="btnwordshow4"><h4>体验智慧大师</h4></div>
 
 			   <div class="btnclick" v-show="bottomBanner4">
-				   <h4 class="clickImg">关于新零售我们有话说</h4>
+				   <h4 class="clickImg">关于新零售,我们有话说</h4>
 				   <div class="clickcontent">
                         <p class="animated bounceInDown ">智能数据大屏</p>
 						<h5 class="animated bounceInUp">整合线上线下数据，为线下零售店铺提供智能化的解决方案，优化线下零售用户体验</h5>
@@ -210,6 +211,7 @@ ul{
 }
 .swiper-container{
 	width: 100%;
+
 }
 .bannerimg .swiper-slide {
   width: 100%;
@@ -217,16 +219,12 @@ ul{
 }
 .bannerimg .swiper-slide img {
   width: 100%;
+ overflow: hidden;
 }
 .h5{
     animation-duration:6s;animation-iteration-count:Infinite;animation-delay: 1s;
 }
-/* .h52{
-    animation-duration:3s;animation-iteration-count:Infinite;animation-delay: 3s;
-}
-.h53{
-	animation-duration:4s;animation-iteration-count:Infinite;animation-delay: 5s;
-} */
+
 .swiper-p {
 	animation-duration:6s;animation-iteration-count:Infinite;animation-delay: 1s;
 }
@@ -236,12 +234,7 @@ ul{
 .animate{
 	animation-duration:6s; animation-iteration-count:Infinite;animation-delay: 1s;
 }
-/* .animate2{
-	animation-duration:3s;animation-iteration-count:Infinite;animation-delay: 3s;
-}
-.animate3{
-	animation-duration:4s;animation-iteration-count:Infinite;animation-delay: 5s;
-} */
+
 .swiper-wrapper .swiper-slide span{
 	display: inline-block;
 	font-size: 30px;
@@ -282,7 +275,7 @@ ul{
 	width: 40px;
 	height: 22px;
 	position: absolute;
-	bottom: 60px;
+	bottom: 180px;
 	left: 50%;
 	z-index: 9999;
 	-webkit-transform:translate3d(0,0,0);
@@ -508,7 +501,7 @@ font-size: 30px;
 	font-size: 36px;
 	text-align: center;
 	margin-top: 120px;
-	margin-bottom: 550px;
+	margin-bottom: 32%;
 }
 .clickcontent p{
 	font-size: 30px;
@@ -585,6 +578,8 @@ export default{
 			self.currentSwiperView_index=swiper.activeIndex;//获取当前view索引
 			 console.log(self.currentSwiperView_index)
 			 //动画在当前页面只执行一次
+
+			 
 				setTimeout(()=>{
 				switch (swiper.activeIndex) {
 							case 0:
@@ -653,6 +648,9 @@ export default{
                  
 	// 		   }
 	// },
+	 GotoSwiperPage(index){
+      this.$refs.mySwiper.swiper.slideTo(index, 1000, false)
+    },
 	handlerShowImg(val){
 		if(this.currentClick!=val){
 			this.currentClick = val;

@@ -76,15 +76,7 @@ h3{
 	position: relative;
 	z-index: 988;
 }
-.center-case-img .img-show:nth-child(){
-	margin-right: 0;
-}
-.center-case-img .img-show:nth-child(){
-	margin-right: 0;
-}
-.center-case-img .img-show:nth-child(){
-	margin-right: 0;
-}
+
 .img-show h3{
 	position: absolute;
 	width: 465px;

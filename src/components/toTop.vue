@@ -1,6 +1,6 @@
 <template>
     <div class="toTop">
-        <div class="scroll" :class="{show:isActive}">
+        <div class="scroll" v-show="backTop">
             <div id="toTop" @click="toTop(step)"><img src="../assets/img/home_back.png" alt=""></div>
            <!-- <div id="toTop" @click="toBottom(step)"><img src="../assets/img/home_back.png" alt=""></div> -->
         </div>
@@ -12,46 +12,40 @@
             step:{   //此数据是控制动画快慢的
                 type:Number,
                 default:750 
-            }
+            },
+          backTop:{
+              type:Boolean,
+              default: false
+          }
         },
         data(){
             return {
                 isActive:false,
             }
         },
-        methods:{
-            toTop(i){
-                //参数i表示间隔的幅度大小，以此来控制速度
-                document.documentElement.scrollTop-=i;
-                if (document.documentElement.scrollTop>0) {
-                    var c=setTimeout(()=>this.toTop(i),16);
-                }else {
-                    clearTimeout(c);
-                }
-            },
-            //  toBottom(i){
-            //     var clientHeight=document.documentElement.clientHeight||document.body.clientHeight;
-            //     var scrollHeight=document.documentElement.scrollHeight;
-            //     var height=scrollHeight-clientHeight-750+'px'; //超出窗口上界的值就是底部的scrolTop的值
-            //     document.documentElement.scrollTop+=i;
-            //     if (document.documentElement.scrollTop<height) {
-            //         var c=setTimeout(()=>this.toBottom(i),16);
-            //     }else {
-            //         clearTimeout(c);
-            //     }
-            // }
-          
+      mounted(){
+
+      },
+      methods:{
+        toTop(i){
+          if(this.$route.path=='/home'){
+            this.$parent.parentsFu({backTop:true})
+            return;
+          }
+          //参数i表示间隔的幅度大小，以此来控制速度
+          document.documentElement.scrollTop-=i;
+          if (document.documentElement.scrollTop>0) {
+            var c=setTimeout(()=>this.toTop(i),16);
+          }else {
+            clearTimeout(c);
+          }
         },
-        created(){
-            var vm=this;
-            window.onscroll=function(){
-                if (document.documentElement.scrollTop>200) {
-                    vm.isActive=true;
-                }else {
-                    vm.isActive=false;
-                }
-            }
-        }
+      },
+      watch:{
+          'backTop':function (val) {
+            console.log(val)
+          }
+      }
     }
 </script>
 <style scoped>
@@ -62,11 +56,8 @@
            right: 73px;
 	       bottom: 160px;
             cursor: pointer;
-            display: none;
 			z-index: 9999;
         }
-       
-        .show{
-            display: block;
-        }
+
+
 </style>
