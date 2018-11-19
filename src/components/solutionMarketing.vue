@@ -15,49 +15,44 @@
 				</div>
 				<div class="inter-cont">
 					<h3>互动营销玩起来</h3>
-				    <p style="width: 280px;right: 42.5%;"></p>	
+				    <p style="width: 280px"></p>	
 				   
 				</div>
 				</div>
-				<div class="scene-marketing">
-					<div class="bg-images"></div>
-					<div class="scene-content">
-						<h3>场景营销</h3>
-					<p>  利用真实场景让用户有代入感以及购物的真实感受刺激用户对商品选择的兴趣和消费</p>
-					<img src="../assets/images/interactivemarketing_changjing.png"/>
-					<div class="img-icon">
-						<img src="../assets/img/solutionicon3.png" class="img-icon-left"/>
-						<img src="../assets/img/solutionicon4.png" class="img-icon-right"/>
-					</div>
+
+               <div class="scene-marketing imgs-backgrund">
+					<div class="flexview">
+						<div class="ivewright">
+	                     <h3>场景营销</h3>
+					<p> 利用真实场景让用户有代入感<br/>以及购物的真实感受刺激用户<br/>对商品选择的兴趣和消费</p>
+						</div>	
+					<img src="../assets/images/interactivemarketing_changjing.png"/>					
 					</div>
 					<div class="intelligent">
 						<img src="../assets/images/interactivemarketing_tuijian.png"/>
-							<h3>智能推荐</h3>
-					<p>通过用户的购物记录快速推荐相关产品帮助用户选择合适自己的产品增强用户的体验感</p>
-					
-				
+						<div class="intelligent-c">
+	                        <h3>智能推荐</h3>	
+				        	<p>通过用户的购物记录快速推荐<br/>相关产品帮助用户选择合适自己<br/>的产品增强用户的体验感</p>
+						</div>	
 					</div>
 				</div>
-			
-			<div class="scene-marketing">
-					<div class="bg-images"></div>
-					<div class="scene-content">
-						<h3>HTML5</h3>
+               <div class="scene-marketing imgs-backgrund">
+					<div class="flexview">
+						<div class="ivewright">
+	                     <h3>HTML5</h3>
 					<p> 让店铺的个性张扬活力四射<br>外观上更有吸引力</p>
-					<img src="../assets/images/interactivemarketing_html5.png"/>
-					<div class="img-icon">
-						<img src="../assets/img/solutionicon3.png" class="img-icon-left"/>
-						<img src="../assets/img/solutionicon4.png" class="img-icon-right"/>
-					</div>
+						</div>	
+					<img src="../assets/images/interactivemarketing_html5.png"/>					
 					</div>
 					<div class="intelligent">
-						<img src="../assets/images/interactivemarketing_ar.png" style="top:460px"/>
-							<h3 style="right:520px">A R </h3>
-					<p>利用3D视觉技术更加直观<br>更加真实的表现商品</p>
-					
-				
+						<img src="../assets/images/interactivemarketing_ar.png"/>
+						<div class="intelligent-c">
+	                        <h3>A R</h3>	
+				        	<p>利用3D视觉技术更加直观<br>更加真实的表现商品</p>
+						</div>	
 					</div>
 				</div>
+
 			<div class="footer-content">
 				<h3>进阶为伙伴提供互动营销服务</h3>
 				<div class="footer-img">
@@ -75,17 +70,15 @@
 .solution-content{
 	width: 100%;
 	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
 }
 .solution-banner{
 	width: 1920px;
-	height: 750px;
+	margin: 0 auto;
 }
 .interactive{
-
-	background-color: #F2F9FF;
-}
-.inter-cont{
-		position: relative;
+		background: url(../assets/img/solutionbg2.png) no-repeat center
 }
 h3{
 	font-size: 36px;
@@ -96,7 +89,7 @@ h3{
 	box-sizing: border-box;
 	
 	text-align: center;
-	padding-top: 120px;
+	padding-top: 90px;
 	padding-bottom: 40px;
 }
 .interactive-content{
@@ -105,7 +98,7 @@ h3{
 	line-height: 28px;
 	text-align: center;
 	color: #999999;
-	margin-left: 25%;
+    margin: 0 auto;
 	margin-top: 58px;
 	padding-bottom: 153px;
 	font-family: "microsoft yahei";
@@ -121,84 +114,75 @@ h3{
 	background-color: #FFFFFF;
 }
 
-.scene-marketing{
-	position: relative;
-	margin-bottom: 100px;
-	height: 1350px;
+.flexview{
+	display: flex;
+	justify-content: center;
+	margin-top: 90px;
+}
+.flexview h3{
+		width: 330px;
+	text-align: right;
+	font-size: 36px;
+	color: #333333;
+	font-family: 'MicrosoftYaHei-Bold';
+}
+.flexview p{
+     font-size: 14px;
+	line-height: 28px;
+	color: #666666;
+    height: 47px;  
+    text-align: right;
+	margin-top: 40px;
+}
+.ivewright{
+	margin-top: 120px;
+}
+.flexview img{
+	margin-left: 120px;
+}
+.imgs-backgrund{
+	width: 100%;
+	background: url(../assets/img/solutionmk3.png) no-repeat center;
+	background-position-y: 72%;
 	
 }
-.bg-images{
-width: 1920px;
-height: 700px;
-position: absolute;
-z-index: -1;
-top:41%;
-background-color: #F2F9FF;
+.scene-content{
+
+padding-top: 100px;
+}
+.scene-content p{
+	width: 316px;
+	font-size: 14px;
+	line-height: 28px;
+	color: #666666;
+	margin-top: 40px;
+	font-family: "microsoft yahei";
 	
 }
 
-.scene-content h3{
-	margin-left: 420px;
-	padding-top: 215px;
-	margin-bottom: 40px;
-}
-.scene-content p{
-	width: 210px;
-	text-align: right;
-	font-size: 14px;
-	line-height: 28px;
-	color: #666666;
-	margin-left: 19%;
-	font-family: "microsoft yahei";
-	
-}
-.img-icon .img-icon-left{
-	width: 94px;
-	height: 132px;
-	position: absolute;
-	top: 49%;
-	left: 34.5%;
-}
-.img-icon .img-icon-right{
-	width: 94px;
-	height: 132px;
-	position: absolute;
-	top: 52%;
-	left: 62.5%;
-}
-.scene-content img{
-	width: 800px;
-	height: 600px;
-	position: absolute;
-	left: 760px;
-	top: 90px;
-	
-}
 .intelligent{
-	position: relative;
+	display: flex;
+	justify-content: center;
+	margin-top: 120px;
+}
+.intelligent-c{
+    margin-top: 100px;
 }
 .intelligent img{
-	position: absolute;
-	left: 375px;
-	top: 430px;
+  margin-right: 120px;
 }
 .intelligent h3{
-	position: absolute;
-	right: 490px;
-	top: 550px;
+	 margin-bottom: 40px;
+	line-height: 48px;
+	text-align: left;
+	width: 245px;
 }
 .intelligent p{
-	width: 255px;
-	position: absolute;
-	right: 385px;
-	top: 620px;
+	text-align: left;
 	font-size: 14px;
 	line-height: 28px;
 	color: #666666;
 	font-family: "microsoft yahei";
-}
-.footer-content{
-	widows: 920px;
 }
 .footer-content h3{
 	text-align: center;

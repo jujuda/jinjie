@@ -219,7 +219,7 @@ ul{
   width: 100%;
 }
 .h5{
-    animation-duration:3s;animation-iteration-count:Infinite;animation-delay: 1s;
+    animation-duration:6s;animation-iteration-count:Infinite;animation-delay: 1s;
 }
 /* .h52{
     animation-duration:3s;animation-iteration-count:Infinite;animation-delay: 3s;
@@ -228,13 +228,13 @@ ul{
 	animation-duration:4s;animation-iteration-count:Infinite;animation-delay: 5s;
 } */
 .swiper-p {
-	animation-duration:3s;animation-iteration-count:Infinite;animation-delay: 1s;
+	animation-duration:6s;animation-iteration-count:Infinite;animation-delay: 1s;
 }
 .swiper-h3{
-	animation-duration:3s;animation-iteration-count:Infinite;animation-delay: 1s;
+	animation-duration:6s;animation-iteration-count:Infinite;animation-delay: 1s;
 }
 .animate{
-	animation-duration:3s; animation-iteration-count:Infinite;animation-delay: 1s;
+	animation-duration:6s; animation-iteration-count:Infinite;animation-delay: 1s;
 }
 /* .animate2{
 	animation-duration:3s;animation-iteration-count:Infinite;animation-delay: 3s;
@@ -479,7 +479,7 @@ font-size: 30px;
 .partner-foot-img{
 	display: flex;
 	justify-content: center;
-	margin-bottom: 230px;
+	margin-bottom: 130px;
 }
 .partner-foot-img img{
 	margin-right: 20px;
@@ -490,6 +490,7 @@ font-size: 30px;
 	font-size: 16px;
 	text-align: center;
 	line-height: 36px;
+	padding-bottom: 100px;
 }
 .address{
 	margin-bottom: 135px;

@@ -25,14 +25,14 @@
 
 <style scoped>
 .case-content{
-	width: 100%;
+	 width: 100%;
 	height: 100%;
-	overflow: hidden;
+	margin: 0 auto;
+	overflow: hidden; 
 }
 .case-banner{
-	width: 100%;
-	height: 750px;
-	overflow: hidden;
+	width: 1920px;
+	margin: 0 auto;
 }
 
 
@@ -60,18 +60,30 @@ h3{
 }
 .center-case-img{
 	overflow: hidden;
-	width: 100%;
+	margin: 0 auto;
+	width: 1920px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
 	margin-bottom: 120px;
 }
+
 .img-show{
 	width: 465px;
 	height: 465px;
 	margin-bottom: 20px;
+	margin-right: 15px;
 	position: relative;
 	z-index: 988;
+}
+.center-case-img .img-show:nth-child(){
+	margin-right: 0;
+}
+.center-case-img .img-show:nth-child(){
+	margin-right: 0;
+}
+.center-case-img .img-show:nth-child(){
+	margin-right: 0;
 }
 .img-show h3{
 	position: absolute;

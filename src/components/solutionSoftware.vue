@@ -12,67 +12,72 @@
 					基于 DevOps理念，帮助企业消除开发与运维的信息鸿沟，加速IT精益运营，以云计算、物联网、大数据以及人工智能技术等核心技术，采用微服务架构技术，领域驱动设计方法，为企业提供究云IT信息化服务，共赢数字经济时代。
 				</div>
 				</div>
-				<div class="inter-cont">
+				<div class="inter-cont" style="background:none">
 					<h3>进阶软件服务领域</h3>
-				    <p style="width: 315px;right: 41.5%;"></p>	
+				    <p style="width: 315px"></p>	
 				   <div class="six-icont">
 				   	  <img src="../assets/img/icon4.png"/>
 				   	  <img src="../assets/img/icon1.png"/>
 				   	  <img src="../assets/img/icon3.png"/>
-				   	  <img src="../assets/img/icon2.png"/>
+				   </div>
+				   <div class="six-icont2">
+					   <img src="../assets/img/icon2.png"/>
 				   	  <img src="../assets/img/icon7.png"/>
-				   	      
-				   </div>				 
+					   </div>				 
 				</div>
-				<div class="inter-cont" style="background-color:#F2F9FF;">
-					<h3 style="padding-top: 80px;">进阶软件所提供服务</h3>
-				    <p style="width: 320px;right: 41.5%; top:170px ;"></p>	
+             <div class="inter-cont" style="padding-top:120px">
+					<h3>进阶软件所提供服务</h3>
+				    <p style="width:320px"></p>	
 				  <div class="h3-content">
-				  	   <h4>咨询服务</h4>
-						<span> 持续以深厚的行业积累和丰富的技术经验，为企业的数字化、信息化提供解决方案和咨询服务，帮助企业的数字化转型。</span>	
-						  <img src="../assets/images/software_advisory.png"/>
-				  </div> 				 
+					  <div class="flex-left">
+                       <h4>咨询服务</h4>
+						<span>持续以深厚的行业积累和丰富的<br>技术经验，为企业的数字化、<br>信息化提供解决方案和咨询服务，<br>帮助企业的数字化转型。</span>	
+					  </div>
+				  	  
+						 <img src="../assets/images/software_advisory.png"/>
+						
+				  </div> 
+				 
 				</div>
-			</div>
-				<div class="scene-marketing">
-					<div class="bg-images"></div>
-					<div class="scene-content">
-						<h3>数字营销</h3>
-
-					<p> 基于内容管理、客户管理，整合线上资源，基于良好用户体验以及创意设计，为客户提供线上线下的数字化营销，触达全域，推动销售增长。</p>
-					<img src="../assets/images/software_marketing.png"/>
-					<div class="img-icon">
-						<img src="../assets/img/squareicon.png" class="img-icon-left"/>
-						<img src="../assets/img/squareicon2.png" class="img-icon-right"/>
-					</div>
-					</div>
-					<div class="intelligent">
-						<img src="../assets/images/software_devops.png"/>
-							<h3>DevOps</h3>
-							
-					<p>传递DevOps理念，基于开源框架，从组织，技术，流程三个维度帮助客户加速IT精益运营，并提供自动化集成、自动化部署流水线有助于开发、测试、运维友好协作，形成DevOps演进闭环，有效的支撑业务创新,从而提高效率和产品质量。</p>
-					
-				
-					</div>
-				</div>
+	          </div>
 			
-			<div class="scene-marketing">
-					<div class="bg-images"></div>
-					<div class="scene-content">
-						<h3>微服务</h3>
-					<p> 基于微服务架构为用户提供分布式、弹性扩展的技术架构设计，提升企业信息化、互联网平台信息化服务的市场响应速度。</p>
-					<img src="../assets/images/software_microservice.png"/>
-					<div class="img-icon">
-						<img src="../assets/img/squareicon.png" class="img-icon-left" />
-						<img src="../assets/img/squareicon2.png" class="img-icon-right"/>
-					</div>
-					</div>
+                <div class="scene-marketing imgs-backgrund">
+					<div class="flexview">
+						<img  src="../assets/images/software_marketing.png"/>
+						<div class="ivewright">
+	                     <h3>数字营销</h3>
+					<p>基于内容管理、客户管理，<br/>整合线上资源，基于良好用<br/>户体验以及创意设计，为客<br/>户提供线上线下的数字化营<br/>销，触达全域，推动销售增长。</p>
+						</div>					
+					</div>			
 					<div class="intelligent">
-						<img src="../assets/images/software_custommade.png"/>
-							<h3 style="width: 265px;">软件定制</h3>							
-					<p>针对行业客户需求，为特定客户提供应用软件开发、系统维护、系统功能优化等应用开发与管理服务。公司的应用开发及管理服务旨在帮助客户实现对IT外包开支的科学管理，使得客户更加专注于其核心竞争力的建设。</p>				
+						<div class="intelligent-c">
+	                        <h3>DevOps</h3>	
+				        	<p>传递DevOps理念，基于开源框架，<br/>从组织，技术，流程三个维度帮助<br/>客户加速IT精益运营，并提供自动化<br/>集成、自动化部署流水线有助于<br/>开发、测试、运维友好协作，形成<br/>DevOps演进闭环，有效的支撑<br/>业务创新,从而提高效率和产品质量。</p>
+						</div>	
+				        <img src="../assets/images/software_devops.png"/>
 					</div>
 				</div>
+
+               <div class="scene-marketing imgs-backgrund">
+					<div class="flexview">
+						<img  src="../assets/images/software_microservice.png"/>
+						<div class="ivewright">
+	                     <h3>微服务</h3>
+					<p> 基于微服务架构为用户提供分布式、<br/>弹性扩展的技术架构设计，<br/>提升企业信息化、互联网平台<br/>信息化服务的市场响应速度。</p>
+						</div>					
+					</div>
+				
+					<div class="intelligent">
+						<div class="intelligent-c">
+	                        <h3>软件定制</h3>	
+				        	<p>针对行业客户需求，为特定客户<br/>提供应用软件开发、系统维护、系统<br/>功能优化等应用开发与管理服务。<br/>公司的应用开发及管理服务旨<br/>在帮助客户实现对IT外包开支的<br/>科学管理，使得客户更加专注于<br/>其核心竞争力的建设。</p>
+						</div>	
+				        <img src="../assets/images/software_custommade.png"/>
+					</div>
+				</div>
+
+			
+		
 			<div class="footer-content">
 				<h3>进阶为伙伴提供互动营销服务</h3>
 				<div class="footer-img">
@@ -91,45 +96,45 @@
 .solution-content{
 	width: 100%;
 	height: 100%;
+	margin: 0 auto;
 	overflow: hidden;
 }
 .solution-banner{
 	width: 1920px;
-	height: 750px;
+	margin: 0 auto;
 }
 
 .inter-cont{
-		position: relative;
+		background: url(../assets/img/solutionbg2.png) no-repeat center
 }
 .h3-content{
-	margin-top: 195px;
-	margin-bottom: 400px;
+	display: flex;
+	justify-content: center;
+	margin-top: 90px;
+	margin-bottom: 100px;
+}
+.flex-left{
+	margin-top: 100px;
 }
 .h3-content h4{
-	text-align: right;
 	width: 330px;
-	margin-left: 300px;
+
+	text-align: right;
 	font-size: 36px;
 	color: #333333;
-	margin-bottom: 40px;
 	font-family: 'MicrosoftYaHei-Bold';
 }
 .h3-content span{
 	display: block;
 	font-size: 14px;
-	height: 138px;
 	line-height: 28px;
 	color: #666666;
-    width: 216px;
-    margin-left: 420px;
-    padding-bottom: 60px;
+    height: 47px;  
     text-align: right;
+	margin-top: 40px;
 }
 .h3-content img{
-	position: absolute;
-	left: 760px;
-	top: 300px;
-
+    margin-left: 120px;
 }
 h3{
 	font-size: 36px;
@@ -140,37 +145,111 @@ h3{
 	box-sizing: border-box;
 	
 	text-align: center;
-	padding-top: 120px;
+	padding-top: 100px;
 	padding-bottom: 40px;
 }
 .interactive-content{
 	width: 990px;
 	font-size: 14px;
-	line-height: 36px;
+	line-height: 28px;
 	text-align: center;
+	margin: 0 auto;
 	color: #999999;
-	margin-left: 25%;
 	margin-top: 58px;
-	padding-bottom: 153px;
+	padding-bottom: 150px;
 	font-family: "microsoft yahei";
-}
-.inter-cont{
-	background-color: #F2F9FF;
 }
 .inter-cont p{
 	margin: 0 auto;
 	text-align: center;
 	top: 200px;
-	width: 235px;
+	width: 400px;
 	height: 2px;
 	 background: linear-gradient(to right, white,black,black,black,black,white);
 }
+
+.scene-marketing{
+	margin-bottom: 100px;
+	overflow: hidden;
+	position: relative;
+	
+}
+.flexview{
+	display: flex;
+	justify-content: center;
+}
+.flexview h3{
+		width: 330px;
+	text-align: left;
+	font-size: 36px;
+	color: #333333;
+	font-family: 'MicrosoftYaHei-Bold';
+}
+.flexview p{
+     font-size: 14px;
+	line-height: 28px;
+	color: #666666;
+	width: 230px;
+    height: 47px;  
+    text-align: left;
+	margin-top: 40px;
+}
+.ivewright{
+	margin-top: 120px;
+}
+.flexview img{
+	margin-right: 120px;
+}
+.imgs-backgrund{
+	width: 100%;
+	background: url(../assets/img/solutionbg7.png) no-repeat center;
+	background-position-y: 57%;
+	
+}
+.scene-content{
+
+padding-top: 100px;
+}
+.scene-content p{
+	width: 316px;
+	font-size: 14px;
+	line-height: 28px;
+	color: #666666;
+	margin-top: 40px;
+	font-family: "microsoft yahei";
+	
+}
+
+.intelligent{
+	display: flex;
+	justify-content: center;
+	margin-top: 120px;
+}
+.intelligent-c{
+    margin-top: 100px;
+}
+.intelligent img{
+  margin-left: 120px;
+}
+.intelligent h3{
+	 
+	line-height: 48px;
+	text-align: right;
+	width: 245px;
+}
+.intelligent p{
+	text-align: right;
+	font-size: 14px;
+	line-height: 28px;
+	color: #666666;
+	font-family: "microsoft yahei";
+}
 .six-icont{
-	width: 1200px;
+
 	flex-wrap: wrap;
 	display: flex;
-	justify-content: flex-start;
-	margin-left: 460px;
+	justify-content: center;
+	margin: 0 auto;
 }
 .six-icont img{
 	width: 200px;
@@ -178,104 +257,23 @@ h3{
 	margin-top: 80px;
 	margin-right: 200px;
 }
-.six-icont img:nth-child(4){
-	margin-left: 200px;
-	margin-top: 0;
-
+.six-icont img:nth-child(3){
+	margin-right:0;
 }
-.six-icont img:nth-child(5){
-	margin-left: 600px;
-	margin-top: -200px;
-	margin-bottom: 120px;
-
+.six-icont2{
+		display: flex;
+	    justify-content: center;
+     	margin: 0 auto;
 }
-.interactive .inter-cont:nth-child(2){
-	background-color: #FFFFFF;
+.six-icont2 img{
+		margin-right: 100px;
+		margin-left: 100px;
 }
-
-.scene-marketing{
-	position: relative;
-	margin-bottom: 100px;
-	height: 1350px;
-	
-}
-.bg-images{
-width: 1920px;
-height: 700px;
-position: absolute;
-z-index: -1;
-top:36%;
-background-color: #F2F9FF;
-	
+.six-icont2 img:nth-child(1){
+	margin-right: 100px
 }
 
 
-.scene-content p{
-	width: 316px;
-	font-size: 14px;
-	line-height: 28px;
-	color: #666666;
-	margin-left: 1280px;
-	margin-top: 40px;
-	font-family: "microsoft yahei";
-	
-}
-.img-icon .img-icon-left{
-	width: 94px;
-	height: 132px;
-	position: absolute;
-	top: 45.5%;
-	left: 34%;
-}
-.img-icon .img-icon-right{
-	width: 94px;
-	height: 132px;
-	position: absolute;
-	top: 42%;
-	left: 62%;
-}
-.scene-content img{
-	width: 800px;
-	height: 600px;
-	position: absolute;
-	left: 360px;
-	top: 0;
-	
-}
-.scene-content h3{
-	margin-left: 1280px;
-	padding-top: 100px;
-
-}
-.intelligent{
-	position: relative;
-}
-.intelligent img{
-	position: absolute;
-	left: 760px;
-	top: 450px;
-}
-.intelligent h3{
-	text-align: right;
-	width: 245px;
-	position: absolute;
-	left: 23%;
-	top: 550px;
-}
-.intelligent p{
-	width: 285px;
-	position: absolute;
-	left: 22%;
-	top: 630px;
-	/*padding-bottom: 40px;*/
-	font-size: 14px;
-	line-height: 28px;
-	color: #666666;
-	font-family: "microsoft yahei";
-}
-.footer-content{
-	widows: 920px;
-}
 .footer-content h3{
 	text-align: center;
 }

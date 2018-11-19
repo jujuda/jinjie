@@ -12,11 +12,11 @@
                		<span>0551-65260260</span>
                	</div>
                	  	<div class="info-us">
-               		<h3>电子邮箱</h3>
+               		<h3 style="	text-align: center">电子邮箱</h3>
                		<span>service@ahjinjie.cn</span>
                	</div>  
                		<div class="info-us">
-               		<h3>联系地址</h3>
+               		<h3 style="	text-align: center">联系地址</h3>
                		<span>安徽省合肥市经开区中环城A座1623室</span>
                	</div>
                </div>
@@ -60,12 +60,12 @@
              	
             
             </div>
+    		
              <!--地图-->
-              <div class="info-map">
-              	
-              </div>
+             
 			<footers></footers>
 		</div>
+		
 </template>
 <style scoped>
 textarea{
@@ -76,14 +76,16 @@ textarea{
 	border: none;
 }
 .contact-content{
-	width: 100%;
+    width: 100%;
 	height: 100%;
-	overflow: hidden;
+	margin: 0 auto;
+	overflow: hidden; 
+
 	
 }
 .contact-banner{
 	width: 1920px;
-	height: 750px;
+	margin: 0 auto;
 }
 
 
@@ -108,8 +110,13 @@ h3{
 }
 .our-information{
 	display: flex;
-	justify-content: space-around;
-	margin: 0 482px;
+	justify-content: center;
+}
+.info-us{
+	margin-right: 245px;
+}
+.our-information .info-us:nth-child(3){
+	margin-right:0;
 }
 .our-information span{
 	display: block;
@@ -125,12 +132,10 @@ h3{
 	margin-bottom: 80px;
 }
 .customer-info{
-	position: absolute;
-	z-index: 99;
 	width: 100%;
-	height: 600px;
 	background: #F2F9FF;
 	overflow: hidden;
+	padding-bottom: 120px;
 }
 .reg-customer-info{
 	width: 1200px;
@@ -139,6 +144,7 @@ h3{
 	justify-content: space-between;
 	margin: 0 auto;
 	padding-top: 120px;
+	overflow: hidden;
 }
 .customer-info-ipt{
 	margin-right: 50px;
@@ -156,8 +162,9 @@ h3{
     background: #FF9626;
     border-radius: 50%;
 	display: inline-block;
-	margin-right: 10px;
-	margin-left: 5px;
+	margin-right: 8px;
+	margin-left: 10px;
+	/* margin-top: -2px; */
 
 }
 .customer-info-ipt span{
@@ -195,10 +202,12 @@ h3{
 }
 </style>
 <script>
-import footers from './footers';
+
 import headers from './headers';
+import footers from './footers';
 // import VeeValidate, {Validayor} from 'vee-validate';
 import {isChn,isPoneAvailable,isEmail,isneed} from '@/assets/js/jschn';
+
 
 export default{
 	name:'contactUs',

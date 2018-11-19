@@ -59,7 +59,7 @@
             position: fixed;
 			width: 40px;
 			height: 40px;
-           right: 70px;
+           right: 73px;
 	       bottom: 160px;
             cursor: pointer;
             display: none;

@@ -8,8 +8,8 @@
 
       <div class="jion-center">
 		  <div @click="showButton1()">
-              <img src="../assets/img/requer-btn.png" class="req-btn" v-if='isMore' /> 
-			    <img src="../assets/img/more-btn.png" class="req-btn" v-if='!isMore'/>
+              <img src="../assets/img/requer-btn.png" class="req-btn" v-if='!isMore' /> 
+			    <img src="../assets/img/more-btn.png" class="req-btn" v-if='isMore'/>
 		  </div>
              	
              	<div class="recruitment-info">
@@ -38,8 +38,8 @@
              
               <div class="jion-center">
              	 <div @click="showButton2()">
-              <img src="../assets/img/requer-btn.png" class="req-btn" v-if='isMore' /> 
-			    <img src="../assets/img/more-btn.png" class="req-btn" v-if='!isMore'/>
+              <img src="../assets/img/requer-btn.png" class="req-btn" v-if='!isMore' /> 
+			    <img src="../assets/img/more-btn.png" class="req-btn" v-if='isMore'/>
 		  </div>
              	<div class="recruitment-info">
              		<img src="../assets/images/join_web.png"/>
@@ -250,10 +250,11 @@
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+	margin: 0 auto;
 }
 .jion-banner{
 	width: 1920px;
-	height: 750px;
+	margin: 0 auto;
 }
 .jion-center{
 	position: relative;
@@ -315,8 +316,8 @@ export default{
 	},
 	data(){
 		return{
-			showbtn1:true,
-			showbtn2:true,
+			showbtn1:false,
+			showbtn2:false,
 			morebtn1:false,
 			morebtn2:false,
 			morebtn3:false,

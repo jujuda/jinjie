@@ -163,6 +163,7 @@ h3{
 	  width: 100%;
   	display: flex;
   	overflow: hidden;
+	  justify-content: center;
 
   }
   .foot-banner-bg{
@@ -216,7 +217,8 @@ h3{
 }
   .foot-banner-img p{
    	overflow: hidden;
-   	font-size: 18px;
+   	font-size: 14px;
+	line-height: 28px;
    	position: relative;
    	bottom: 50px;
    	color:#FFFFFF;
