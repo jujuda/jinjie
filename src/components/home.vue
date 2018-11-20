@@ -323,24 +323,28 @@ ul{
 .about-right{
 	flex: 1;
 }
+.about-left-img img{
+	width:29.1rem ;
+	height:28.49rem ;
+}
 .about-right h3{
 	text-align: center;
 	font-size: 36px;
 	color: #333333;
 	margin-bottom: 10px;
-	margin-top: 240px;
+	margin-top: 7.27rem;
 }
 .about-right .about-p{
 	margin: 0 auto;
    text-align: center;
-	width: 160px;
+	width: 4.85rem;
 	height: 2px;
-margin-bottom: 60px;
+margin-bottom: 1.82rem;
 	 background: linear-gradient(to right, white,black,black,black,black,white);
 }
 .company-introduction{
-	width:356px;
-	height: 200px;
+	width:10.79rem;
+	height: 6.06rem;
 	font-size: 14px;
 	line-height: 28px;
 	font-family:"microsoft yahei";
@@ -351,8 +355,8 @@ margin-bottom: 60px;
 	
 }
 #more-btn{
-	width: 60px;
-	height: 24px;
+	width: 1.82rem;
+	height: 0.73rem;
 	border: none;
 	text-align: center;
 	margin-left: 45%;
@@ -363,29 +367,29 @@ margin-bottom: 60px;
 }
 .online-retailers{
     margin: 0 auto;
-    width: 1000px;
+    width: 30.3rem;
     display: flex;
     justify-content:center;
 
 }
 .retailers-left-title{
-    width: 350px;
+    width: 10.61rem;
     text-align: center;
     font-size: 24px;
     color: #333333;
     font-family: 'MicrosoftYaHei-Bold';
-    margin-bottom: 30px;
-	margin-top: 50px;
+    margin-bottom: 0.91rem;
+	margin-top:1.52rem;
 }
 .retailers-left-content{
-    width: 350px;
+    width: 10.61rem;
     font-size: 14px;
     line-height: 28px;
     color:#999999 ;
     font-family: 'MicrosoftYaHei';
 }
 .retailers-left .retailers-left-content:nth-child(2){
-    margin-bottom: 330px;
+    margin-bottom: 8.79rem;
 }
 .retailers-left{
 	flex: 1;
@@ -397,49 +401,51 @@ margin-bottom: 60px;
 }
 .img-round{
 	position: absolute;
-	top: 105px;
-	left: 65px;
+	top: 3.18rem;
+	left: 1.97rem;
 }
 .img-line{
 	position: absolute;
-	top: 135px;
-	left: 90px;
+	top: 3.94rem;
+	left: 2.73rem;
+	height: 5.91rem;
 }
 .img-round2{
 	position: absolute;
-	top: 340px;
-	right: 60px;
+	top: 9.7rem;
+	right: 2.12rem;
 }
 .img-line2{
 	position: absolute;
-	top: 370px;
-	left: 98px;
+	top: 10.45rem;
+	left: 2.73rem;
+	height: 5.91rem;
 }
 .img-round4{
     position: absolute;
-	top: 575px;
-	left: 65px;	
+	top: 16.36rem;
+	left: 1.97rem;	
 }
 
 .img-round5{
 	position: absolute;
-	top: 810px;
-	right: 60px;
+	top: 22.88rem;
+	right: 2.12rem;
 }
 .img-line5{
 	position: absolute;
-	top: 605px;
-	left: 90px;
+	top: 17.12rem;
+	left: 2.73rem;
+	height: 5.91rem;
 }
 .retailers-right .retailers-left-title{
-	margin-top: 285px;
+	margin-top: 7.73rem;
 }
 
 .newbanner {
 	width: 100%;
-height: 940px;
-transition:all 1s;
- background: no-repeat center;
+    height: 28.48rem;
+     background: no-repeat center;
  }
 
 
@@ -448,7 +454,7 @@ transition:all 1s;
 font-size: 30px;
  text-align: center;
  position: absolute;
- bottom: 120px;
+ bottom: 3.64rem;
  margin-left: 8%;
  z-index: 999;
  }
@@ -465,14 +471,14 @@ font-size: 30px;
 	font-size: 36px;
 	font-family: "microsoft yahei";
 	text-align: center;
-	padding-top: 170px;
-	padding-bottom: 120px;
+	padding-top: 5.15rem;
+	padding-bottom: 3.64rem;
 	}
 
 .partner-foot-img{
 	display: flex;
 	justify-content: center;
-	margin-bottom: 130px;
+	margin-bottom: 3.94rem;
 }
 .partner-foot-img img{
 	margin-right: 20px;
@@ -483,10 +489,10 @@ font-size: 30px;
 	font-size: 16px;
 	text-align: center;
 	line-height: 36px;
-	padding-bottom: 100px;
+	padding-bottom: 3.03rem;
 }
 .address{
-	margin-bottom: 135px;
+	margin-bottom: 4.09rem;
 }
 .btnclick{
 	width: 100%;
@@ -500,21 +506,21 @@ font-size: 30px;
 .btnclick .clickImg{
 	font-size: 36px;
 	text-align: center;
-	margin-top: 120px;
+	margin-top: 3.64rem;
 	margin-bottom: 32%;
 }
 .clickcontent p{
 	font-size: 30px;
 	font-family:'microsoft yahei';
 	text-align: center;
-	margin-bottom: 50px;
+	margin-bottom: 1.52rem;
 
 }
 .clickcontent h5{
 	font-size: 14px;
 	line-height: 28px;
 	text-align: center;
-	margin-bottom: 120px;
+	margin-bottom: 3.64rem;
 
 }
 </style>
