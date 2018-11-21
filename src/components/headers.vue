@@ -47,6 +47,7 @@
 </template>
 
 <style scoped>
+
 ul{
 	list-style: none;
 }
@@ -68,18 +69,23 @@ a{
       100%{height:0px}
     }
 .logo {
-	width: 239px;
-	height: 65px;
+	width: 7.27rem;
+	height: 1.97rem;
 	position: absolute;
-	top: 20px;
-	left: 70px;
+	top: 0.61rem;
+	left: 2.12rem;
 	z-index: 999;
 	position: fixed;
 	
 }
+.logo img{
+	width: 7.27rem;
+	height: 1.97rem;
+	
+}
 .head-right{
-	width: 600px;
-	height: 1080px;
+	width: 18.18rem;
+	height: 32.73rem;
 	
 	position: absolute;
 	z-index: 2;
@@ -89,16 +95,20 @@ a{
 }
 .right-navlist-button{
 	position: absolute;
-	right: 70px;
-	top: 35px;
+	right: 2.12rem;
+	top: 1.06rem;
 	position: fixed;
 	z-index: 9999;
 }
 .menu { 
-	width: 30px; 
-	height: 25px;
+	width: 0.9rem; 
+	height: 0.76rem;
 	position: relative;
 	transition: 1s all ease-in
+}
+.menu img{
+    width: 0.9rem; 
+	height: 0.76rem;	
 }
 #navbtn-img{
 	position: absolute;
@@ -106,8 +116,8 @@ a{
 	position: fixed;
 }
 .right-navlist{
-	width: 600px;
-	height: 1080px;
+	width: 18.18rem;
+	height: 32.73rem;
 	position: absolute;
 	
 	position: fixed;
@@ -118,10 +128,10 @@ a{
 }
 .right-navlist li{
 	text-align: center;
-	line-height: 100px;
+	line-height: 3.03rem;
 }
 .right-navlist >li:nth-child(1){
-	margin-top: 180px;
+	margin-top: 5.45rem;
 }
 .right-navlist li a{
 	color: #FFFFFF;

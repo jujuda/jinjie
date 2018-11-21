@@ -106,7 +106,7 @@
 			<div class="newbanner" :style="{background:newbanner1}"></div>	
 	   	</div>
 	   	<div class="fl"  @click="handlerShowImg(2)" :style="{width:currentClick==2?'100%':currentClick==0?'25%':'0'}">
-	   		<div class="des" v-show="btnwordshow2"><h4>云货架</h4></div>
+	   		<div class="des" v-show="btnwordshow2"><h4 style="margin-left:9%">云货架</h4></div>
 
             <div class="btnclick" v-show="bottomBanner2">
 				   <h4 class="clickImg">关于新零售我们有话说</h4>
@@ -115,7 +115,6 @@
 						<h5 class="animated bounceInUp" >整合线上线下数据，为线下零售店铺提供智能化的解决方案，优化线下零售用户体验</h5>
 				   </div>
 			   </div>
-
 			<div class="newbanner" :style="{background:newbanner2}"></div>	
 	   	</div>
 	   	<div class="fl" @click="handlerShowImg(3)" :style="{width:currentClick==3?'100%':currentClick==0?'25%':'0'}">
@@ -283,7 +282,7 @@ ul{
 	height: 22px;
 	position: absolute;
 	bottom: 18%;
-	left: 50%;
+	left: 48%;
 	z-index: 9999;
 	-webkit-transform:translate3d(0,0,0);
     -moz-transform:translate3d(0,0,0);
@@ -352,7 +351,7 @@ margin-bottom: 60px;
 	line-height: 28px;
 	font-family:"microsoft yahei";
 	color: #999999;
-	text-align: center;
+	text-align: left;
 	margin: 0 auto;
 	margin-bottom: 30px;
 	
@@ -459,7 +458,7 @@ margin-bottom: 60px;
      text-align: center;
      position: absolute;
      bottom: 120px;
-     margin-left: 8%;
+     margin-left: 6%;
      z-index: 999;
  }
 .newbanner:hover{ transform: scale(1.1);}
@@ -512,12 +511,13 @@ margin-bottom: 60px;
 	text-align: center;
 	margin-top: 120px;
 	margin-bottom: 32%;
+	letter-spacing: 4px;
 }
 .clickcontent p{
 	font-size: 30px;
 	font-family:'microsoft yahei';
 	text-align: center;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 
 }
 
@@ -529,12 +529,15 @@ margin-bottom: 60px;
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px){
 	.about-as .about-left-img img {
-		width: 560px;
-		height: 700px;
+		width: 580px;
+		height: 768px;
 	}
 	.banner-midea img{
 		width: 100%;
-		height: 740px;
+		height: 768px;
+	}
+	.company-introduction{
+		width: 300px;
 	}
 	.online-retailers{
     width: 880px;
@@ -548,44 +551,44 @@ margin-bottom: 60px;
 	left: 0px;
 }
 	.img-line{
-		height: 145px;
+		height: 155px;
 		left: 18px;
-		top: 120px;
+		top: 125px;
 	}
 	.img-round2{
-		top: 265px;
+		top: 285px;
 		right: 55px;
 	    width: 20px;
     	height: 20px;
 	}
 	.img-line2{
-		 top: 285px;
-		 left: 20px;
-		 height: 150px;
+		 top: 300px;
+		 left: 15px;
+		 height: 155px;
 	}
 	.img-round4{
-		top: 435px;
+		top: 460px;
 		left: 0;
 		width: 20px;
 	    height: 20px;
 	}
 	.img-line5{
-		height: 140px;
-		top: 455px;
-		left: 20px;
+		height: 155px;
+		top: 485px;
+		left: 18px;
 	}
 	.img-round5{
-		top: 590px;
+		top: 640px;
 		right: 55px;
 		width: 20px;
 	    height: 20px;
 	}
 	.retailers-right .retailers-left-title{
-		margin-top: 180px;
+		margin-top: 210px;
 	}
 	
 	.retailers-left .retailers-left-content:nth-child(2){
-		margin-bottom: 170px;
+		margin-bottom: 190px;
 	}
 	
 .fl .des h4{
@@ -600,85 +603,25 @@ margin-bottom: 60px;
 	margin-right: 10px;
 }
  .swiper-wrapper .below-icon{
-	 bottom: 13%;
+	 bottom: 8%;
  }
+  	.btnclick .clickImg{
+	margin-bottom: 42%;
+}
 }
 @media screen and (min-width: 1280px) and (max-width: 1365px){
     .about-as .about-left-img img {
 		width: 720px;
-		height: 700px;
+		height: 940px;
 	}
+	.bannerimg .swiper-slide img {
+  height: 800px;
+}
 		.online-retailers{
     width: 900px;
 }
-.img-round{
-	width: 20px;
-	height: 20px;
-	left: 15px;
-}
-	.img-line{
-		height: 150px;
-		left: 30px;
-		top: 125px;
-	}
-	.img-round2{
-		top: 265px;
-		right: 65px;
-	    width: 20px;
-    	height: 20px;
-	}
-	.img-line2{
-		 top: 285px;
-		 left: 30px;
-		 height: 150px;
-	}
-	.img-round4{
-		top: 435px;
-		left: 15px;
-		width: 20px;
-	    height: 20px;
-	}
-	.img-line5{
-		height: 145px;
-		top: 455px;
-		left: 30px;
-	}
-	.img-round5{
-		top: 595px;
-		right: 65px;
-		width: 20px;
-	    height: 20px;
-	}
-	.retailers-right .retailers-left-title{
-		margin-top: 185px;
-	}
-		.retailers-left .retailers-left-content:nth-child(2){
-		margin-bottom: 170px;
-	}
-	.partner-foot-img{
-	 margin-bottom: 80px;
- }
- .swiper-wrapper .below-icon{
-	 bottom: 10%;
- }
-}
-
-@media screen and (min-width: 1366px) and (max-width: 1439px){
-    .about-as .about-left-img img {
-		width:800px;
-		height: 780px;
-	}
-	.img-round4{
-		top: 520px
-	}
-	.img-line5{
-		top: 545px
-	}
-	.img-round5{
-		top: 730px
-	}
-		.online-retailers{
-    width: 900px;
+.retailers-left-content{
+    width: 300px;
 }
 .img-round{
 	width: 20px;
@@ -686,43 +629,115 @@ margin-bottom: 60px;
 	left: 0px;
 }
 	.img-line{
-		height: 145px;
-		left: 18px;
-		top: 120px;
+		height: 170px;
+		left: 25px;
+		top: 125px;
 	}
 	.img-round2{
-		top: 265px;
-		right: 75px;
+		top: 295px;
+		right: 55px;
 	    width: 20px;
     	height: 20px;
 	}
 	.img-line2{
-		 top: 285px;
+		 top: 310px;
 		 left: 20px;
-		 height: 150px;
+		 height: 170px;
 	}
 	.img-round4{
-		top: 435px;
+		top: 480px;
 		left: 0;
 		width: 20px;
 	    height: 20px;
 	}
 	.img-line5{
-		height: 150px;
-		top: 455px;
-		left: 20px;
+		height: 175px;
+		top: 500px;
+		left: 18px;
 	}
 	.img-round5{
-		top: 595px;
-		right: 75px;
+		top: 670px;
+		right: 55px;
 		width: 20px;
 	    height: 20px;
 	}
 	.retailers-right .retailers-left-title{
-		margin-top: 180px;
+		margin-top: 225px;
 	}
-		.retailers-left .retailers-left-content:nth-child(2){
-		margin-bottom: 170px;
+	
+	.retailers-left .retailers-left-content:nth-child(2){
+		margin-bottom: 200px;
+	}
+	
+	.partner-foot-img{
+	 margin-bottom: 80px;
+ }
+ .swiper-wrapper .below-icon{
+	 bottom: 8%;
+ }
+  	.btnclick .clickImg{
+	margin-bottom: 38%;
+}
+.newbanner{
+	height: 800px;
+}
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1439px){
+    .about-as .about-left-img img {
+		width:800px;
+		height: 780px;
+	}
+		.online-retailers{
+    width: 900px;
+}
+.retailers-left-content{
+    width: 300px;
+}
+.img-round{
+	width: 20px;
+	height: 20px;
+	left: 0px;
+}
+	.img-line{
+		height: 170px;
+		left: 25px;
+		top: 125px;
+	}
+	.img-round2{
+		top: 295px;
+		right: 55px;
+	    width: 20px;
+    	height: 20px;
+	}
+	.img-line2{
+		 top: 310px;
+		 left: 20px;
+		 height: 170px;
+	}
+	.img-round4{
+		top: 480px;
+		left: 0;
+		width: 20px;
+	    height: 20px;
+	}
+	.img-line5{
+		height: 175px;
+		top: 500px;
+		left: 18px;
+	}
+	.img-round5{
+		top: 670px;
+		right: 55px;
+		width: 20px;
+	    height: 20px;
+	}
+	.retailers-right .retailers-left-title{
+		margin-top: 225px;
+	}
+	
+	.retailers-left .retailers-left-content:nth-child(2){
+		margin-bottom: 200px;
 	}
 		.partner-foot-img{
 	 margin-bottom: 80px;
@@ -731,58 +746,146 @@ margin-bottom: 60px;
 	 padding-top: 100px;
 	 padding-bottom: 80px;
  }
+  .swiper-wrapper .below-icon{
+	 bottom: 8%;
+ }
 }
 @media screen and (min-width: 1440px) and (max-width: 1599px){
     .about-as .about-left-img img {
-		width:820px;
-		height: 780px;
+		width:860px;
+		height: 900px;
 	}
+		.bannerimg .swiper-slide img {
+           height: 900px;
+       }
 	.swiper-wrapper .below-icon{
-	 bottom: 10%;
+	 bottom: 6%;
  }
+		.online-retailers{
+    width: 950px;
+}
+.retailers-left-content{
+    width: 320px;
+}
+.img-round{
+
+	left: 25px;
+	
+}
 	.img-line{
-		height: 175px;
+		height: 195px;
+		left: 50px;
+		top: 130px;
 	}
 	.img-round2{
-		top: 305px;
-		right: 80px;
+		top: 325px;
+		right: 60px;
+
 	}
 	.img-line2{
-		height: 170px;
-		top:325px ;
+		 top: 345px;
+		 left: 48px;
+		 height: 195px;
 	}
 	.img-round4{
-		top: 495px;
+		top: 535px;
+		left: 25px;
+
 	}
 	.img-line5{
-		top:515px ;
-       height: 170px;
+		height: 195px;
+		top: 550px;
+		left: 55px;
 	}
 	.img-round5{
-		top: 680px;
-		right: 80px;
+		top: 745px;
+		right: 60px;
+
 	}
-		.retailers-right .retailers-left-title{
-		margin-top: 215px;
-	}
-		.retailers-right .retailers-left-title:nth-child(1){
-		margin-top: 240px;
+	.retailers-right .retailers-left-title{
+		margin-top: 260px;
 	}
 	
 	.retailers-left .retailers-left-content:nth-child(2){
-		margin-bottom: 240px;
+		margin-bottom: 255px;
 	}
+	  	.btnclick .clickImg{
+	margin-bottom: 40%;
 }
-@media screen and (max-width: 1600px) and (max-width: 1700px){
+}
+@media screen and (min-width: 1600px) and (max-width: 1679px){
     .about-as .about-left-img img {
 		width:900px;
 		height: 890px;
 	}
-	.btnclick .clickImg{
-	margin-bottom: 28%;
+	.swiper-wrapper .below-icon{
+	 bottom: 6%;
+ }
+ 	  	.btnclick .clickImg{
+	margin-bottom: 35%;
 }
 }
-@media screen and (max-width: 1920px){
+@media screen and (min-width: 1680px) and (max-width: 1919px){
+           .about-as .about-left-img img {
+		width:980px;
+		height:1050px;
+	} 
+	.bannerimg .swiper-slide img {
+          height: 1050px;
+}
+	.swiper-wrapper .below-icon{
+	 bottom: 6%;
+ }
+ 		.online-retailers{
+    width: 1000px;
+}
+.retailers-left-content{
+    width: 330px;
+}
+.img-round{
+
+	left: 45px;
+	
+}
+	.img-line{
+		height: 205px;
+		left: 70px;
+		top: 130px;
+	}
+	.img-round2{
+		top: 335px;
+		right: 85px;
+
+	}
+	.img-line2{
+		 top: 360px;
+		 left: 65px;
+		 height: 205px;
+	}
+	.img-round4{
+		top: 565px;
+		left: 45px;
+
+	}
+	.img-line5{
+		height: 200px;
+		top: 585px;
+		left: 70px;
+	}
+	.img-round5{
+		top: 790px;
+		right: 85px;
+
+	}
+	.retailers-right .retailers-left-title{
+		margin-top: 280px;
+	}
+	
+	.retailers-left .retailers-left-content:nth-child(2){
+		margin-bottom: 275px;
+	}
+}
+@media screen and (min-width: 1920px){
 	    .about-as .about-left-img img {
 		width:960px;
 		height: 940px;
