@@ -18,13 +18,13 @@
         </div>
     </div>
 				    	
-				        <div class="swiper-slide">
+				        <div class="swiper-slide banner-midea">
 							<img src="../assets/img/homebanner1.png"/>
 							<span class="animate animated zoomInDown slower">我懂你的了不起</span><h5 class="h5 swiper-h5 animated bounceInUp slower">跟自己作对，才能把难题作对</h5><p class="swiper-p animated bounceInUp"></p><h3 class="swiper-h3 animated bounceInUp"></h3></div>
-				        <div class="swiper-slide">
+				        <div class="swiper-slide banner-midea">
 							<img src="../assets/img/homebanner2.png"/>
 							<span class=" animate animated zoomInDown slower">电商互动营销</span><h5 class=" h5 swiper-h5 animated bounceInUp slower">跟自己作对，才能把难题作对</h5><p class="swiper-p animated bounceInUp"></p><h3 class="swiper-h3 animated bounceInUp"></h3></div>
-				        <div class="swiper-slide">
+				        <div class="swiper-slide banner-midea">
 							<img src="../assets/img/homebanner3.png"/>
 							<span class=" animate animated zoomInDown slower">新零售智慧门店</span><h5 class="h5 swiper-h5 animated bounceInUp slower">跟自己作对，才能把难题作对</h5><p class="swiper-p animated bounceInUp" animated bounceInUp></p><h3 class="swiper-h3 animated bounceInUp"></h3></div>
 				        	
@@ -65,8 +65,8 @@
   	<div class="retailers-left">
   		<h3 class="retailers-left-title" :class=" view2_show==2?' animated bounceInDown delay-2s': ''">电商互动营销</h3>
   		<p class="retailers-left-content " :class=" view2_show==2?' animated bounceInDown delay-2s' : ''">进阶通过生动有趣的感官互动来实现与消费者的沟通，从而达到消费者对品牌或者商品的深度了解，提升品牌与消费者之间的粘性。</p>
-  	  	<h3 class="retailers-left-title" :class="view2_show==2?' animated zoomInDown delay-2s' : ''">软件服务</h3>
-  		<p class="retailers-left-content" :class="view2_show==2?' animated zoomInDown delay-2s' : ''">以云计算、物联网、大数据以及人工智能等技术为主，具备自主知识产权，拥有较高的技术水平和能力，主要为电商行业及国家电网提供技术服务与支持工作。</p>
+  	  	<h3 class="retailers-left-title " :class="view2_show==2?' animated zoomInDown delay-2s' : ''">软件服务</h3>
+  		<p class="retailers-left-content " :class="view2_show==2?' animated zoomInDown delay-2s' : ''">以云计算、物联网、大数据以及人工智能等技术为主，具备自主知识产权，拥有较高的技术水平和能力，主要为电商行业及国家电网提供技术服务与支持工作。</p>
         
   	</div>
     
@@ -85,7 +85,7 @@
   	 <div class="retailers-right">
   		<h3 class="retailers-left-title " :class="view2_show==2?' animated bounceInDown delay-2s' : ''">新零售解决方案</h3>
   		<p class="retailers-left-content" :class="view2_show==2?' animated bounceInDown delay-2s' : ''">整合线上线下数据，为线下零售店铺提供智能化的解决方案，优化线下零售用户体验，为线下零售提供更丰富更有价值的数据支持</p>
-      <h3 class="retailers-left-title" :class="view2_show==2?' animated zoomInDown delay-2s' : ''">客服托管</h3>
+      <h3 class="retailers-left-title " :class="view2_show==2?' animated zoomInDown delay-2s' : ''">客服托管</h3>
   		<p class="retailers-left-content" :class="view2_show==2?' animated zoomInDown delay-2s' : ''">专业的客服团队，快速响应，优质的服务能力，完善的绩效考核，有效提升店铺客服转化的同时为电商企业节省管理成本和财务成本。</p>
   	</div>
   </div>
@@ -95,10 +95,9 @@
   <swiper-slide class="swiper-slide" >
 	   <div class="page clearfix">
 	   	<div class="fl" @click="handlerShowImg(1)" :style="{width:currentClick==1?'100%':currentClick==0?'25%':'0'}">
-			 
 	   		<div class="des" v-show="btnwordshow1"><h4>智能数据大屏</h4></div>
 			   <div class="btnclick" v-show="bottomBanner1">
-				   <h4 class="clickImg">关于新零售,我们有话说</h4>
+				   <h4 class="clickImg">关于新零售我们有话说</h4>
 				   <div class="clickcontent">
                         <p class="animated bounceInDown ">智能数据大屏</p>
 						<h5 class="animated bounceInUp">整合线上线下数据，为线下零售店铺提供智能化的解决方案，优化线下零售用户体验</h5>
@@ -110,7 +109,7 @@
 	   		<div class="des" v-show="btnwordshow2"><h4>云货架</h4></div>
 
             <div class="btnclick" v-show="bottomBanner2">
-				   <h4 class="clickImg">关于新零售,我们有话说</h4>
+				   <h4 class="clickImg">关于新零售我们有话说</h4>
 				   <div class="clickcontent">
                         <p class="animated bounceInDown ">智能数据大屏</p>
 						<h5 class="animated bounceInUp" >整合线上线下数据，为线下零售店铺提供智能化的解决方案，优化线下零售用户体验</h5>
@@ -122,7 +121,7 @@
 	   	<div class="fl" @click="handlerShowImg(3)" :style="{width:currentClick==3?'100%':currentClick==0?'25%':'0'}">
 	   		<div class="des" v-show="btnwordshow3"><h4>互动智慧大屏</h4></div>
 			   <div class="btnclick" v-show="bottomBanner3">
-				   <h4 class="clickImg">关于新零售,我们有话说</h4>
+				   <h4 class="clickImg">关于新零售我们有话说</h4>
 				   <div class="clickcontent">
                         <p class="animated bounceInDown ">智能数据大屏</p>
 						<h5 class="animated bounceInUp">整合线上线下数据，为线下零售店铺提供智能化的解决方案，优化线下零售用户体验</h5>
@@ -135,7 +134,7 @@
 	   		<div class="des" v-show="btnwordshow4"><h4>体验智慧大师</h4></div>
 
 			   <div class="btnclick" v-show="bottomBanner4">
-				   <h4 class="clickImg">关于新零售,我们有话说</h4>
+				   <h4 class="clickImg">关于新零售我们有话说</h4>
 				   <div class="clickcontent">
                         <p class="animated bounceInDown ">智能数据大屏</p>
 						<h5 class="animated bounceInUp">整合线上线下数据，为线下零售店铺提供智能化的解决方案，优化线下零售用户体验</h5>
@@ -211,7 +210,6 @@ ul{
 }
 .swiper-container{
 	width: 100%;
-
 }
 .bannerimg .swiper-slide {
   width: 100%;
@@ -219,12 +217,16 @@ ul{
 }
 .bannerimg .swiper-slide img {
   width: 100%;
- overflow: hidden;
 }
 .h5{
     animation-duration:6s;animation-iteration-count:Infinite;animation-delay: 1s;
 }
-
+/* .h52{
+    animation-duration:3s;animation-iteration-count:Infinite;animation-delay: 3s;
+}
+.h53{
+	animation-duration:4s;animation-iteration-count:Infinite;animation-delay: 5s;
+} */
 .swiper-p {
 	animation-duration:6s;animation-iteration-count:Infinite;animation-delay: 1s;
 }
@@ -234,7 +236,12 @@ ul{
 .animate{
 	animation-duration:6s; animation-iteration-count:Infinite;animation-delay: 1s;
 }
-
+/* .animate2{
+	animation-duration:3s;animation-iteration-count:Infinite;animation-delay: 3s;
+}
+.animate3{
+	animation-duration:4s;animation-iteration-count:Infinite;animation-delay: 5s;
+} */
 .swiper-wrapper .swiper-slide span{
 	display: inline-block;
 	font-size: 30px;
@@ -275,7 +282,7 @@ ul{
 	width: 40px;
 	height: 22px;
 	position: absolute;
-	bottom: 180px;
+	bottom: 18%;
 	left: 50%;
 	z-index: 9999;
 	-webkit-transform:translate3d(0,0,0);
@@ -323,28 +330,24 @@ ul{
 .about-right{
 	flex: 1;
 }
-.about-left-img img{
-	width:29.1rem ;
-	height:28.49rem ;
-}
 .about-right h3{
 	text-align: center;
 	font-size: 36px;
 	color: #333333;
 	margin-bottom: 10px;
-	margin-top: 7.27rem;
+	margin-top: 240px;
 }
 .about-right .about-p{
 	margin: 0 auto;
    text-align: center;
-	width: 4.85rem;
+	width: 160px;
 	height: 2px;
-margin-bottom: 1.82rem;
+margin-bottom: 60px;
 	 background: linear-gradient(to right, white,black,black,black,black,white);
 }
 .company-introduction{
-	width:10.79rem;
-	height: 6.06rem;
+	width:356px;
+	height: 200px;
 	font-size: 14px;
 	line-height: 28px;
 	font-family:"microsoft yahei";
@@ -355,8 +358,8 @@ margin-bottom: 1.82rem;
 	
 }
 #more-btn{
-	width: 1.82rem;
-	height: 0.73rem;
+	width: 60px;
+	height: 24px;
 	border: none;
 	text-align: center;
 	margin-left: 45%;
@@ -367,29 +370,29 @@ margin-bottom: 1.82rem;
 }
 .online-retailers{
     margin: 0 auto;
-    width: 30.3rem;
+    width: 1000px;
     display: flex;
     justify-content:center;
 
 }
 .retailers-left-title{
-    width: 10.61rem;
+    width: 350px;
     text-align: center;
     font-size: 24px;
     color: #333333;
     font-family: 'MicrosoftYaHei-Bold';
-    margin-bottom: 0.91rem;
-	margin-top:1.52rem;
+    margin-bottom: 30px;
+	margin-top: 50px;
 }
 .retailers-left-content{
-    width: 10.61rem;
+    width: 330px;
     font-size: 14px;
     line-height: 28px;
     color:#999999 ;
     font-family: 'MicrosoftYaHei';
 }
 .retailers-left .retailers-left-content:nth-child(2){
-    margin-bottom: 8.79rem;
+    margin-bottom: 280px;
 }
 .retailers-left{
 	flex: 1;
@@ -401,62 +404,63 @@ margin-bottom: 1.82rem;
 }
 .img-round{
 	position: absolute;
-	top: 3.18rem;
-	left: 1.97rem;
+	top: 105px;
+	left: 65px;
 }
 .img-line{
 	position: absolute;
-	top: 3.94rem;
-	left: 2.73rem;
-	height: 5.91rem;
+	top: 130px;
+	left: 90px;
+	height: 195px;
 }
 .img-round2{
 	position: absolute;
-	top: 9.7rem;
-	right: 2.12rem;
+	top: 325px;
+	right: 70px;
 }
 .img-line2{
 	position: absolute;
-	top: 10.45rem;
-	left: 2.73rem;
-	height: 5.91rem;
+	top: 350px;
+	left: 90px;
+	height: 195px;
 }
 .img-round4{
     position: absolute;
-	top: 16.36rem;
-	left: 1.97rem;	
+	top: 540px;
+	left: 65px;	
 }
 
 .img-round5{
 	position: absolute;
-	top: 22.88rem;
-	right: 2.12rem;
+	top: 755px;
+	right: 70px;
 }
 .img-line5{
 	position: absolute;
-	top: 17.12rem;
-	left: 2.73rem;
-	height: 5.91rem;
+	top: 560px;
+	left: 90px;
+	height: 195px;
 }
 .retailers-right .retailers-left-title{
-	margin-top: 7.73rem;
+	margin-top: 260px;
 }
 
 .newbanner {
 	width: 100%;
-    height: 28.48rem;
-     background: no-repeat center;
+    height: 940px;
+    transition:all 1s;
+    background: no-repeat center;
  }
 
 
 
 .fl .des h4{color: #fff;
-font-size: 30px;
- text-align: center;
- position: absolute;
- bottom: 3.64rem;
- margin-left: 8%;
- z-index: 999;
+    font-size: 30px;
+     text-align: center;
+     position: absolute;
+     bottom: 120px;
+     margin-left: 8%;
+     z-index: 999;
  }
 .newbanner:hover{ transform: scale(1.1);}
 .footer-home{
@@ -471,14 +475,14 @@ font-size: 30px;
 	font-size: 36px;
 	font-family: "microsoft yahei";
 	text-align: center;
-	padding-top: 5.15rem;
-	padding-bottom: 3.64rem;
+	padding-top: 170px;
+	padding-bottom: 120px;
 	}
 
 .partner-foot-img{
 	display: flex;
 	justify-content: center;
-	margin-bottom: 3.94rem;
+	margin-bottom: 130px;
 }
 .partner-foot-img img{
 	margin-right: 20px;
@@ -489,10 +493,10 @@ font-size: 30px;
 	font-size: 16px;
 	text-align: center;
 	line-height: 36px;
-	padding-bottom: 3.03rem;
+	padding-bottom: 100px;
 }
 .address{
-	margin-bottom: 4.09rem;
+	margin-bottom: 135px;
 }
 .btnclick{
 	width: 100%;
@@ -506,22 +510,283 @@ font-size: 30px;
 .btnclick .clickImg{
 	font-size: 36px;
 	text-align: center;
-	margin-top: 3.64rem;
+	margin-top: 120px;
 	margin-bottom: 32%;
 }
 .clickcontent p{
 	font-size: 30px;
 	font-family:'microsoft yahei';
 	text-align: center;
-	margin-bottom: 1.52rem;
+	margin-bottom: 50px;
 
 }
+
 .clickcontent h5{
 	font-size: 14px;
 	line-height: 28px;
 	text-align: center;
-	margin-bottom: 3.64rem;
+	margin-bottom: 120px;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px){
+	.about-as .about-left-img img {
+		width: 560px;
+		height: 700px;
+	}
+	.banner-midea img{
+		width: 100%;
+		height: 740px;
+	}
+	.online-retailers{
+    width: 880px;
+}
+.retailers-left-content{
+    width: 300px;
+}
+.img-round{
+	width: 20px;
+	height: 20px;
+	left: 0px;
+}
+	.img-line{
+		height: 145px;
+		left: 18px;
+		top: 120px;
+	}
+	.img-round2{
+		top: 265px;
+		right: 55px;
+	    width: 20px;
+    	height: 20px;
+	}
+	.img-line2{
+		 top: 285px;
+		 left: 20px;
+		 height: 150px;
+	}
+	.img-round4{
+		top: 435px;
+		left: 0;
+		width: 20px;
+	    height: 20px;
+	}
+	.img-line5{
+		height: 140px;
+		top: 455px;
+		left: 20px;
+	}
+	.img-round5{
+		top: 590px;
+		right: 55px;
+		width: 20px;
+	    height: 20px;
+	}
+	.retailers-right .retailers-left-title{
+		margin-top: 180px;
+	}
+	
+	.retailers-left .retailers-left-content:nth-child(2){
+		margin-bottom: 170px;
+	}
+	
+.fl .des h4{
+    font-size: 24px; 
+ }
+ .partner-foot-img{
+	 margin-bottom: 80px;
+ }
+ .partner-foot-img img{
+	width: 180px;
+	height: 120px;
+	margin-right: 10px;
+}
+ .swiper-wrapper .below-icon{
+	 bottom: 13%;
+ }
+}
+@media screen and (min-width: 1280px) and (max-width: 1365px){
+    .about-as .about-left-img img {
+		width: 720px;
+		height: 700px;
+	}
+		.online-retailers{
+    width: 900px;
+}
+.img-round{
+	width: 20px;
+	height: 20px;
+	left: 15px;
+}
+	.img-line{
+		height: 150px;
+		left: 30px;
+		top: 125px;
+	}
+	.img-round2{
+		top: 265px;
+		right: 65px;
+	    width: 20px;
+    	height: 20px;
+	}
+	.img-line2{
+		 top: 285px;
+		 left: 30px;
+		 height: 150px;
+	}
+	.img-round4{
+		top: 435px;
+		left: 15px;
+		width: 20px;
+	    height: 20px;
+	}
+	.img-line5{
+		height: 145px;
+		top: 455px;
+		left: 30px;
+	}
+	.img-round5{
+		top: 595px;
+		right: 65px;
+		width: 20px;
+	    height: 20px;
+	}
+	.retailers-right .retailers-left-title{
+		margin-top: 185px;
+	}
+		.retailers-left .retailers-left-content:nth-child(2){
+		margin-bottom: 170px;
+	}
+	.partner-foot-img{
+	 margin-bottom: 80px;
+ }
+ .swiper-wrapper .below-icon{
+	 bottom: 10%;
+ }
+}
 
+@media screen and (min-width: 1366px) and (max-width: 1439px){
+    .about-as .about-left-img img {
+		width:800px;
+		height: 780px;
+	}
+	.img-round4{
+		top: 520px
+	}
+	.img-line5{
+		top: 545px
+	}
+	.img-round5{
+		top: 730px
+	}
+		.online-retailers{
+    width: 900px;
+}
+.img-round{
+	width: 20px;
+	height: 20px;
+	left: 0px;
+}
+	.img-line{
+		height: 145px;
+		left: 18px;
+		top: 120px;
+	}
+	.img-round2{
+		top: 265px;
+		right: 75px;
+	    width: 20px;
+    	height: 20px;
+	}
+	.img-line2{
+		 top: 285px;
+		 left: 20px;
+		 height: 150px;
+	}
+	.img-round4{
+		top: 435px;
+		left: 0;
+		width: 20px;
+	    height: 20px;
+	}
+	.img-line5{
+		height: 150px;
+		top: 455px;
+		left: 20px;
+	}
+	.img-round5{
+		top: 595px;
+		right: 75px;
+		width: 20px;
+	    height: 20px;
+	}
+	.retailers-right .retailers-left-title{
+		margin-top: 180px;
+	}
+		.retailers-left .retailers-left-content:nth-child(2){
+		margin-bottom: 170px;
+	}
+		.partner-foot-img{
+	 margin-bottom: 80px;
+ }
+ .footer-home-title{
+	 padding-top: 100px;
+	 padding-bottom: 80px;
+ }
+}
+@media screen and (min-width: 1440px) and (max-width: 1599px){
+    .about-as .about-left-img img {
+		width:820px;
+		height: 780px;
+	}
+	.swiper-wrapper .below-icon{
+	 bottom: 10%;
+ }
+	.img-line{
+		height: 175px;
+	}
+	.img-round2{
+		top: 305px;
+		right: 80px;
+	}
+	.img-line2{
+		height: 170px;
+		top:325px ;
+	}
+	.img-round4{
+		top: 495px;
+	}
+	.img-line5{
+		top:515px ;
+       height: 170px;
+	}
+	.img-round5{
+		top: 680px;
+		right: 80px;
+	}
+		.retailers-right .retailers-left-title{
+		margin-top: 215px;
+	}
+		.retailers-right .retailers-left-title:nth-child(1){
+		margin-top: 240px;
+	}
+	
+	.retailers-left .retailers-left-content:nth-child(2){
+		margin-bottom: 240px;
+	}
+}
+@media screen and (max-width: 1600px) and (max-width: 1700px){
+    .about-as .about-left-img img {
+		width:900px;
+		height: 890px;
+	}
+	.btnclick .clickImg{
+	margin-bottom: 28%;
+}
+}
+@media screen and (max-width: 1920px){
+	    .about-as .about-left-img img {
+		width:960px;
+		height: 940px;
+	}
 }
 </style>
 <script>
@@ -584,8 +849,6 @@ export default{
 			self.currentSwiperView_index=swiper.activeIndex;//获取当前view索引
 			 console.log(self.currentSwiperView_index)
 			 //动画在当前页面只执行一次
-
-			 
 				setTimeout(()=>{
 				switch (swiper.activeIndex) {
 							case 0:
@@ -654,9 +917,6 @@ export default{
                  
 	// 		   }
 	// },
-	 GotoSwiperPage(index){
-      this.$refs.mySwiper.swiper.slideTo(index, 1000, false)
-    },
 	handlerShowImg(val){
 		if(this.currentClick!=val){
 			this.currentClick = val;
