@@ -598,7 +598,7 @@ margin-bottom: 60px;
 	 margin-bottom: 80px;
  }
  .partner-foot-img img{
-	width: 180px;
+	width: 160px;
 	height: 120px;
 	margin-right: 10px;
 }
@@ -681,11 +681,16 @@ margin-bottom: 60px;
 .newbanner{
 	height: 800px;
 }
+ .partner-foot-img img{
+	width: 190px;
+	height: 140px;
+	margin-right: 20px;
+}
 }
 
 @media screen and (min-width: 1366px) and (max-width: 1439px){
     .about-as .about-left-img img {
-		width:800px;
+		width:760px;
 		height: 780px;
 	}
 		.online-retailers{
@@ -740,10 +745,10 @@ margin-bottom: 60px;
 		margin-bottom: 200px;
 	}
 		.partner-foot-img{
-	 margin-bottom: 80px;
+	 margin-bottom: 120px;
  }
  .footer-home-title{
-	 padding-top: 100px;
+	 padding-top: 120px;
 	 padding-bottom: 80px;
  }
   .swiper-wrapper .below-icon{

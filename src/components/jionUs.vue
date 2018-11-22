@@ -8,8 +8,8 @@
 
       <div class="jion-center">
 		  <div @click="showButton1()">
-              <img src="../assets/img/requer-btn.png" class="req-btn" v-if='!isMore' /> 
-			    <img src="../assets/img/more-btn.png" class="req-btn" v-if='isMore'/>
+              <img src="../assets/img/requer-btn.png" class="req-btn" v-if='!isMore1'  style="width:0.89rem ;height: 0.23rem;"/> 
+			    <img src="../assets/img/more-btn.png" class="req-btn" v-if='isMore1' style="width:0.67rem ;height: 0.23rem;"/>
 		  </div>
              	
              	<div class="recruitment-info">
@@ -38,8 +38,8 @@
              
               <div class="jion-center">
              	 <div @click="showButton2()">
-              <img src="../assets/img/requer-btn.png" class="req-btn" v-if='!isMore' /> 
-			    <img src="../assets/img/more-btn.png" class="req-btn" v-if='isMore'/>
+              <img src="../assets/img/requer-btn.png" class="req-btn" v-if='!isMore2'  style="width:0.89rem ;height: 0.23rem;"/> 
+			    <img src="../assets/img/more-btn.png" class="req-btn" v-if='isMore2' style="width:0.67rem ;height: 0.23rem;"/>
 		  </div>
              	<div class="recruitment-info">
              		<img src="../assets/images/join_web.png"/>
@@ -67,8 +67,8 @@
              </div>
                    <div class="jion-center">
              	  <div @click="moreButton1()">
-              <img src="../assets/img/requer-btn.png" class="req-btn" v-if='!isMore' /> 
-			    <img src="../assets/img/more-btn.png" class="req-btn" v-if='isMore'/>
+              <img src="../assets/img/requer-btn.png" class="req-btn" v-if='!isMore3' style="width:0.89rem ;height: 0.23rem;" /> 
+			    <img src="../assets/img/more-btn.png" class="req-btn" v-if='isMore3' style="width:0.67rem ;height: 0.23rem;"/>
 		  </div>
              	<div class="recruitment-info">
              		<img src="../assets/images/join_web.png"/>
@@ -99,8 +99,8 @@
              
                    <div class="jion-center">
              	  <div @click="moreButton2()">
-              <img src="../assets/img/requer-btn.png" class="req-btn" v-if='!isMore' /> 
-			    <img src="../assets/img/more-btn.png" class="req-btn" v-if='isMore'/>
+              <img src="../assets/img/requer-btn.png" class="req-btn" v-if='!isMore4'  style="width:0.89rem ;height: 0.23rem;"/> 
+			    <img src="../assets/img/more-btn.png" class="req-btn" v-if='isMore4' style="width:0.67rem ;height: 0.23rem;"/>
 		  </div>
              	<div class="recruitment-info">
              		<img src="../assets/images/join_web_h5.png"/>
@@ -128,8 +128,8 @@
              </div>
                    <div class="jion-center">
              	  <div @click="moreButton3()">
-					<img src="../assets/img/requer-btn.png" class="req-btn" v-if='!isMore' /> 
-						<img src="../assets/img/more-btn.png" class="req-btn" v-if='isMore'/>
+					<img src="../assets/img/requer-btn.png" class="req-btn" v-if='!isMore5'  style="width:0.89rem ;height: 0.23rem;"/> 
+						<img src="../assets/img/more-btn.png" class="req-btn" v-if='isMore5' style="width:0.67rem ;height: 0.23rem;"/>
 		  </div>
              	<div class="recruitment-info">
              		<img src="../assets/images/join_web_cw.png"/>
@@ -157,8 +157,8 @@
              </div>
                 <div class="jion-center">
              	  <div @click="moreButton4()">
-                   <img src="../assets/img/requer-btn.png" class="req-btn" v-if='!isMore' /> 
-			        <img src="../assets/img/more-btn.png" class="req-btn" v-if='isMore'/>
+                   <img src="../assets/img/requer-btn.png" class="req-btn" v-if='!isMore6'  style="width:0.89rem ;height: 0.23rem;"/> 
+			        <img src="../assets/img/more-btn.png" class="req-btn" v-if='isMore6' style="width:0.67rem ;height: 0.23rem;"/>
 		  </div>
              	<div class="recruitment-info">
              		<img src="../assets/images/join_web_bed.png"/>
@@ -186,8 +186,8 @@
              </div>
                 <div class="jion-center">
              	   <div @click="moreButton5()">
-                      <img src="../assets/img/requer-btn.png" class="req-btn" v-if='!isMore' /> 
-			          <img src="../assets/img/more-btn.png" class="req-btn" v-if='isMore'/>
+                      <img src="../assets/img/requer-btn.png" class="req-btn" v-if='!isMore7'  style="width:0.89rem ;height: 0.23rem;"/> 
+			          <img src="../assets/img/more-btn.png" class="req-btn" v-if='isMore7' style="width:0.67rem ;height: 0.23rem;"/>
 		  </div>
              	<div class="recruitment-info">
              		<img src="../assets/images/join_nodejs.png"/>
@@ -215,8 +215,8 @@
              </div>
                 <div class="jion-center">
              	  <div @click="moreButton6()">
-                   <img src="../assets/img/requer-btn.png" class="req-btn" v-if='!isMore' /> 
-			       <img src="../assets/img/more-btn.png" class="req-btn" v-if='isMore'/>
+                   <img src="../assets/img/requer-btn.png" class="req-btn" v-if='!isMore8' style="width:0.89rem ;height: 0.23rem;"/> 
+			       <img src="../assets/img/more-btn.png" class="req-btn" v-if='isMore8' style="width:0.67rem ;height: 0.23rem;"/>
 		  </div>
              	<div class="recruitment-info">
              		<img src="../assets/images/join_ste.png"/>
@@ -275,14 +275,7 @@
 	left:28%;
 	cursor: pointer;
 }
-.jion-center .req-btn:nth-child(1){
-	width:0.89rem ;
-	height: 0.23rem;
-}
-.jion-center .req-btn:nth-child(2){
-	width:0.67rem ;
-	height: 0.23rem;
-}
+
 .recruitment-info{
 	width: 12rem;
 	display: flex;
@@ -336,41 +329,48 @@ export default{
 			morebtn4:false,
 			morebtn5:false,
 			morebtn6:false,
-			isMore:true,
+			isMore1:true,
+			isMore2:true,
+			isMore3:true,
+			isMore4:true,
+			isMore5:true,
+			isMore6:true,
+			isMore7:true,
+			isMore8:true,
 		}
 	},
 	methods:{
 		showButton1(){
 			this.showbtn1=!this.showbtn1;
-			this.isMore=!this.isMore;
+			this.isMore1=!this.isMore1;
 		},
 		showButton2(){
 			this.showbtn2=!this.showbtn2;
-			this.isMore=!this.isMore;
+			this.isMore2=!this.isMore2;
 		},
 		moreButton1(){
 			this.morebtn1=!this.morebtn1;
-			this.isMore=!this.isMore;
+			this.isMore3=!this.isMore3;
 		},
 		moreButton2(){
 			this.morebtn2=!this.morebtn2;
-			this.isMore=!this.isMore;
+			this.isMore4=!this.isMore4;
 		},
 		moreButton3(){
 			this.morebtn3=!this.morebtn3;
-			this.isMore=!this.isMore;
+			this.isMore5=!this.isMore5;
 		},
 		moreButton4(){
 			this.morebtn4=!this.morebtn4;
-			this.isMore=!this.isMore;
+			this.isMore6=!this.isMore6;
 		},
 		moreButton5(){
 			this.morebtn5=!this.morebtn5;
-			this.isMore=!this.isMore;
+			this.isMore7=!this.isMore7;
 		},
 		moreButton6(){
 			this.morebtn6=!this.morebtn6;
-			this.isMore=!this.isMore;
+			this.isMore8=!this.isMore8;
 		},
 	}
 }

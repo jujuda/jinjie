@@ -29,19 +29,19 @@
              		<i></i>
              		<span>您的姓名</span>
              	<input type="text"  v-model="fromdata.name" @blur='nameBlurReg'/>			 
-                  <p v-show="showNameErr" class="nextspring"> 用户名不能为空</p>	
+                  <span v-show="showNameErr" class="nextspring"> 用户名不能为空</span>	
              	</div>
              		<div class="customer-info-ipt">
              		<i></i>
              		<span>您的电话</span>
              	<input type="text" name='phone' v-model="fromdata.phone" @blur='phoneBlurReg'/>
-				 <p v-show="showPhoneErr" class="nextspring"> 手机号不能为空 </p>		
+				 <span v-show="showPhoneErr" class="nextspring"> 手机号不能为空 </span>		
              	</div>
              		<div class="customer-info-ipt">
              		<i></i>
              		<span>您的邮件</span>
              	<input type="text" v-model="fromdata.email" @blur='emailBlurReg'/>	
-				 <p v-show="showEmailErr" class="nextspring" > 邮箱不能为空 </p>	
+				 <span v-show="showEmailErr" class="nextspring" > 邮箱不能为空 </span>	
              	</div>
 				  </div>
              		<div class="customer-info-ipt">
@@ -49,7 +49,7 @@
              		<span>您的需求/描述</span>
              
 				 <textarea row="5" cols="5" v-model="fromdata.need" @blur='needBlurReg'></textarea>
-				 <p v-show="showNeedErr" class="nextspring" >需求不能为空</p>	
+				 <span v-show="showNeedErr" class="nextspring" >需求不能为空</span>	
              	</div>
              	 
              	<input type="button" id="btn-submit" value="提交" @click='submitbtn()'/>
@@ -70,7 +70,7 @@ textarea{
 	width: 4.96rem;
 	height: 2.10rem;
 	background: #D9EDFF;
-	border-radius: 8px;
+	border-radius: 0.08rem;
 	border: none;
 }
 .contact-content{
@@ -87,6 +87,7 @@ textarea{
 }
 .contact-banner img{
 	width: 19.2rem;
+	height: 7.5rem;
 
 }
 
@@ -148,6 +149,7 @@ h3{
 	overflow: hidden;
 }
 .customer-info-ipt{
+	font-size: 0;
 	margin-right: 0.5rem;
 	margin-bottom: 0.4rem;
 	width: 5rem;
@@ -165,10 +167,11 @@ h3{
 	display: inline-block;
 	margin-right: 0.08rem;
 	margin-left: 0.1rem;
-	margin-top: -2px;
+	margin-top: 0.3rem;
 
 }
 .customer-info-ipt span{
+	margin-top: 0.2rem;
 	font-size: 0.18rem;
 	color: #333333;
 }
@@ -185,9 +188,10 @@ h3{
 }
 
 .customer-info-ipt .nextspring{
+	display: block;
 	font-size: 0.18rem;
 	color: pink;
-	margin-top:-0.3rem;
+	margin-top:-0.05rem;
 	
 }
 #btn-submit{
