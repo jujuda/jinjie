@@ -74,14 +74,19 @@
 	overflow: hidden;
 }
 .solution-banner{
-	width: 1920px;
+	width: 19.2rem;
+	height: 7.5rem;
 	margin: 0 auto;
 }
+.solution-banner img{
+	width: 19.2rem;
+	height: 7.5rem;
+}
 .interactive{
-		background: url(../assets/img/solutionbg2.png) no-repeat center
+		background: url(../assets/img/solutionbg2.png) no-repeat center top;
 }
 h3{
-	font-size: 36px;
+	font-size: 0.36rem;
 	color: #333333;
 	font-family: 'MicrosoftYaHei-Bold';
 }
@@ -89,25 +94,25 @@ h3{
 	box-sizing: border-box;
 	
 	text-align: center;
-	padding-top: 90px;
-	padding-bottom: 40px;
+	padding-top: 0.9rem;
+	padding-bottom: 0.4rem;
 }
 .interactive-content{
-	width: 990px;
-	font-size: 14px;
-	line-height: 28px;
+	width: 9.9rem;
+	font-size: 0.14rem;
+	line-height: 0.28rem;
 	text-align: center;
 	color: #999999;
     margin: 0 auto;
-	margin-top: 58px;
-	padding-bottom: 153px;
+	margin-top: 0.58rem;
+	padding-bottom: 1.53rem;
 	font-family: "microsoft yahei";
 }
 .inter-cont p{
 	margin: 0 auto;
 	text-align: center;
-	width: 343px;
-	height: 2px;
+	width: 3.43rem;
+	height: 0.02rem;
 	 background: linear-gradient(to right, white,black,black,black,black,white);
 }
 .interactive .inter-cont:nth-child(2){
@@ -117,45 +122,48 @@ h3{
 .flexview{
 	display: flex;
 	justify-content: center;
-	margin-top: 90px;
+	margin-top: 0.9rem;
 }
 .flexview h3{
-		width: 330px;
+		width: 3.3rem;
 	text-align: right;
-	font-size: 36px;
+	font-size: 0.36rem;
 	color: #333333;
 	font-family: 'MicrosoftYaHei-Bold';
 }
 .flexview p{
-     font-size: 14px;
-	line-height: 28px;
+     font-size: 0.14rem;
+	line-height: 0.28rem;
 	color: #666666;
-    height: 47px;  
+    height: 0.47rem;  
     text-align: right;
-	margin-top: 40px;
+	margin-top: 0.4rem;
 }
 .ivewright{
-	margin-top: 120px;
+	margin-top: 1.2rem;
 }
 .flexview img{
-	margin-left: 120px;
+	width: 8rem;
+	height: 6rem;
+	margin-left: 1.2rem;
 }
 .imgs-backgrund{
 	width: 100%;
 	background: url(../assets/img/solutionmk3.png) no-repeat center;
-	background-position-y: 72%;
+	background-size: 19.2rem 7rem;
+	background-position-y:4.4rem;
 	
 }
 .scene-content{
 
-padding-top: 100px;
+padding-top: 1rem;
 }
 .scene-content p{
-	width: 316px;
-	font-size: 14px;
-	line-height: 28px;
+	width: 3.16rem;
+	font-size: 0.14rem;
+	line-height: 0.28rem;
 	color: #666666;
-	margin-top: 40px;
+	margin-top: 0.4rem;
 	font-family: "microsoft yahei";
 	
 }
@@ -163,40 +171,44 @@ padding-top: 100px;
 .intelligent{
 	display: flex;
 	justify-content: center;
-	margin-top: 120px;
+	margin-top: 1.2rem;
 }
 .intelligent-c{
-    margin-top: 100px;
+    margin-top: 1rem;
 }
 .intelligent img{
-  margin-right: 120px;
+	width: 8rem;
+	height: 6rem;
+  margin-right: 1.2rem;
 }
 .intelligent h3{
-	 margin-bottom: 40px;
-	line-height: 48px;
+	 margin-bottom: 0.4rem;
+	line-height: 0.48rem;
 	text-align: left;
-	width: 245px;
+	width: 2.45rem;
 }
 .intelligent p{
 	text-align: left;
-	font-size: 14px;
-	line-height: 28px;
+	font-size: 0.14rem;
+	line-height: 0.28rem;
 	color: #666666;
 	font-family: "microsoft yahei";
 }
 .footer-content h3{
 	text-align: center;
-	padding-top: 100px;
+	padding-top: 1rem;
 }
 .footer-img{
 	display: flex;
 	justify-content:center;
-	margin-top: 80px;
-	margin-bottom: 150px;
+	margin-top: 0.8rem;
+	margin-bottom: 1.5rem;
 	
 }
 .footer-img img{
-	margin-right: 20px;
+	width: 2.2rem;
+	height:1.6rem ;
+	margin-right: 0.2rem;
 }
 </style>
 <script>

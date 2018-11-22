@@ -13,9 +13,9 @@
                                           目前公司主要有三大核心业务领域：<span>电商互动解决方案、新零售解决方案、软件技术服务。</span>
 				</div>
 				</div>
-				<div>
+				
 						<img src="../assets/images/about_us.png"/>
-				</div>			
+							
 				
 			</div>
 				<div class="banner-center">
@@ -49,11 +49,11 @@
 				</div>
 				<span>对待我们的伙伴，我们是真心的</span>
 				<div class="footer-img">
-					<img src="../assets/img/home_apple.png"/>
-					<img src="../assets/img/home_morefun.png"/>
-					<img src="../assets/img/home_fairwhale.png"/>
-					<img src="../assets/img/home_fotile.png"/>
-					<img src="../assets/img/home_smith.png"/>
+					<img src="../assets/images/about_apple.png"/>
+					<img src="../assets/images/about_morefun.png"/>
+					<img src="../assets/images/about_fairwhale.png"/>
+					<img src="../assets/images/about_fotile.png"/>
+					<img src="../assets/images/about_smith.png"/>
 				</div>
 				
 			</div>
@@ -80,30 +80,32 @@
 
 .interactive img{
    /* flex: 1; */
-   padding-left: 100px;
-   padding-top: 80px;
-   padding-bottom: 80px;
+   width:6rem ;
+   height:6rem ;
+   padding-left: 1rem;
+   padding-top: 0.8rem;
+   padding-bottom: 0.8rem;
 }
 h3{
-	font-size: 36px;
+	font-size: 0.36rem;
 	color: #333333;
 	font-family: 'MicrosoftYaHei-Bold';
 }
 .inter-cont h3{
-	padding-top: 200px;
+	padding-top: 2rem;
 	text-align: center;
-	padding-bottom: 40px;
+	padding-bottom: 0.4rem;
 	margin: 0 auto;
 }
 .interactive-content{
-	width: 390px;
-	font-size: 14px;
-	line-height: 28px;
+	width: 3.9rem;
+	font-size: 0.14rem;
+	line-height: 0.28rem;
 	text-align: left;
 	color: #999999;
 	
-	margin-top: 78px;
-	padding-bottom: 153px;
+	margin-top: 0.78rem;
+	padding-bottom: 1.53rem;
 	font-family: "microsoft yahei";
 }
 .interactive-content span{
@@ -112,52 +114,52 @@ h3{
 }
 
 .inter-cont p{
-	width: 158px;
-	height: 2px;
+	width: 1.58rem;
+	height: 0.02rem;
 	text-align: center;
 	margin: 0 auto;
 	 background: linear-gradient(to right, white,black,black,black,black,white);
 }
  .banner-center{
  	width: 100%;
- 	margin-bottom: 80px;
+ 	margin-bottom: 0.8rem;
  	background: url(../assets/images/about_relaxe_backeground.png) no-repeat center;
  }
  .banner-center h3{
  	text-align: center;
- 	padding-top: 217px;
- 	margin-bottom: 40px;
+ 	padding-top: 2.17rem;
+ 	margin-bottom: 0.4rem;
  	color: #FFFFFF;
  }
   .banner-center span{
-  	font-size: 18px;
-  	line-height: 36px;
+  	font-size: 0.18rem;
+  	line-height: 0.36rem;
   	display: block;
   	color: #FFFFFF;
-  	width: 695px;
+  	width: 6.95rem;
   	margin: 0 auto;
-	padding-bottom: 210px;
+	padding-bottom: 2.1rem;
   	text-align: center;
   }
   .core-areas h3{
   	text-align: center;
-  	margin-bottom: 40px;
+  	margin-bottom: 0.4rem;
   }
   .core-areas p{
-  	width: 240px;
+  	width: 2.4rem;
   	
 	height: 2px;
 	text-align: center;
 	margin: 0 auto;
-	margin-bottom: 40px;
+	margin-bottom: 0.4rem;
 	 background: linear-gradient(to right, white,black,black,black,black,white);
   }
   .core-areas span{
   	display: block;
-  	font-size: 18px;
+  	font-size: 0.18rem;
   	color: #999999;
   	text-align: center;
-  	margin-bottom: 80px;
+  	margin-bottom: 0.8rem;
   }
   .foot-banner-img{
 	  width: 100%;
@@ -171,22 +173,24 @@ h3{
   }
 
   .foot-banner-img img{ 
-   	margin-right: 1px;
-   	margin-bottom: 80px;
+	width:6.38rem ;
+	height:7.5rem ;  
+   	margin-right: 0.01rem;
+   	margin-bottom: 0.8rem;
    }
    .foot-banner-img span{
    	 display: block;
    	 margin-right: 1px;
-   	 width: 640px;
-  	 height:750px;
-  	 margin-bottom: 80px;
+   	 width: 6.4rem;
+  	 height:7.5rem;
+  	 margin-bottom: 0.8rem;
    }
   .foot-banner-img h3{
 	  position: relative;
 	  z-index: 99;
   	color:#FFFFFF;
   	text-align: center;
-	  bottom: 200px;
+	  bottom: 2rem;
 	  z-index: 99999;
   	transition: all .5s ease-in;
   }
@@ -195,6 +199,8 @@ h3{
 
 }
 .foot-banner-bg .marker{
+	width:6.38rem ;
+	height:7.5rem ;
   position: absolute;
   top:0;
   left: 0;
@@ -212,17 +218,17 @@ h3{
 }
 .foot-banner-img :hover p{
 	transition-duration: 1s;
-  transform: translateY(-350px);
-  	padding: 30px 75px 70px 70px;
+  transform: translateY(-3.5rem);
+  	padding: 0.3rem 0.75rem 0.7rem 0.7rem;
 }
   .foot-banner-img p{
    	overflow: hidden;
-   	font-size: 14px;
-	line-height: 28px;
+   	font-size: 0.14rem;
+	line-height: 0.28rem;
    	position: relative;
-   	bottom: 50px;
+   	bottom: 0.5rem;
    	color:#FFFFFF;
-   	padding: 30px 75px 70px 70px;
+   	padding: 0.3rem 0.75rem 0.7rem 0.7rem;
 
    }
 
@@ -232,18 +238,20 @@ h3{
 .footer-content span{
 	text-align: center;
 	display: block;
-  	font-size: 18px;
+  	font-size: 0.18rem;
   	color: #999999;
 }
 .footer-img{
 	display: flex;
 	justify-content:center;
-	margin-top: 80px;
-	margin-bottom: 150px;
+	margin-top: 0.8rem;
+	margin-bottom: 1.5rem;
 	
 }
 .footer-img img{
-	margin-right: 20px;
+	width: 2.2rem;
+	height: 1.6rem;
+	margin-right: 0.2rem;
 }
 </style>
 <script>

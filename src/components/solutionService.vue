@@ -14,7 +14,7 @@
 				</div>
 				<div class="inter-cont" style="background:none">
 					<h3>客服服务理念</h3>
-				    <p style="width: 238px"></p>	
+				    <p style="width: 2.38rem"></p>	
 				   <div class="four-icont">
 				   	  <img src="../assets/img/icon8.png"/>
 				   	  <img src="../assets/img/icon5.png"/>
@@ -23,9 +23,9 @@
 				   </div>				 
 				</div>
 
-             <div class="inter-cont" style="padding-top:120px">
+             <div class="inter-cont" >
 					<h3>进阶客服类型</h3>
-				    <p style="width: 238px"></p>	
+				    <p style="width: 2.38rem"></p>	
 				  <div class="h3-content">
 					  <div class="flex-left">
                        <h4>售前客服</h4>
@@ -96,44 +96,53 @@
 	overflow: hidden;
 }
 .solution-banner{
-	width: 1920px;
+	width: 19.2rem;
+	height: 7.5rem;
 	margin: 0 auto;
 }
-
+.solution-banner img{
+	width: 19.2rem;
+	height: 7.5rem;
+}
 .inter-cont{
-		background: url(../assets/img/solutionbg2.png) no-repeat center
+      
+		background: url(../assets/img/solutionbg2.png) no-repeat center;
+		  background-size: 19.2rem 7rem;
+		  	background-position-y: -0.8rem;
 }
 .h3-content{
 	display: flex;
 	justify-content: center;
-	margin-top: 90px;
-	margin-bottom: 100px;
+	margin-top: 0.9rem;
+	margin-bottom: 1rem;
 }
 .flex-left{
-	margin-top: 100px;
+	margin-top: 1rem;
 }
 .h3-content h4{
-	width: 330px;
+	width: 3.3rem;
 
 	text-align: right;
-	font-size: 36px;
+	font-size: 0.36rem;
 	color: #333333;
 	font-family: 'MicrosoftYaHei-Bold';
 }
 .h3-content span{
 	display: block;
-	font-size: 14px;
-	line-height: 28px;
+	font-size: 0.14rem;
+	line-height: 0.28rem;
 	color: #666666;
-    height: 47px;  
+    height: 0.47rem;  
     text-align: right;
-	margin-top: 40px;
+	margin-top: 0.4rem;
 }
 .h3-content img{
-    margin-left: 120px;
+	width:8rem ;
+	height: 6rem;
+    margin-left: 1.2rem;
 }
 h3{
-	font-size: 36px;
+	font-size: 0.36rem;
 	color: #333333;
 	font-family: 'MicrosoftYaHei-Bold';
 }
@@ -141,31 +150,23 @@ h3{
 	box-sizing: border-box;
 	
 	text-align: center;
-	padding-top: 100px;
-	padding-bottom: 40px;
+	padding-top: 1rem;
+	padding-bottom: 0.4rem;
 }
 .interactive-content{
-	width: 990px;
-	font-size: 14px;
-	line-height: 28px;
+	width: 9.9rem;
+	font-size: 0.14rem;
+	line-height: 0.28rem;
 	text-align: center;
 	color: #999999;
     margin: 0 auto;
-	margin-top: 58px;
-	padding-bottom: 153px;
+	margin-top: 0.58rem;
+	padding-bottom: 1.53rem;
 	font-family: "microsoft yahei";
-}
-.inter-cont p{
-	margin: 0 auto;
-	text-align: center;
-	top: 200px;
-	width: 400px;
-	height: 2px;
-	 background: linear-gradient(to right, white,black,black,black,black,white);
 }
 
 .scene-marketing{
-	margin-bottom: 100px;
+	margin-bottom: 1rem;
 	overflow: hidden;
 	position: relative;
 	
@@ -175,43 +176,44 @@ h3{
 	justify-content: center;
 }
 .flexview h3{
-		width: 330px;
+		width: 3.3rem;
 	text-align: left;
-	font-size: 36px;
+	font-size: 0.36rem;
 	color: #333333;
 	font-family: 'MicrosoftYaHei-Bold';
 }
 .flexview p{
-     font-size: 14px;
-	line-height: 28px;
+     font-size: 0.14rem;
+	line-height: 0.28rem;
 	color: #666666;
-	width: 230px;
-    height: 47px;  
+	width: 2.3rem;
+    height: 0.47rem;  
     text-align: left;
-	margin-top: 40px;
+	margin-top: 0.4rem;
 }
 .ivewright{
-	margin-top: 120px;
+	margin-top: 1.2rem;
 }
 .flexview img{
-	margin-right: 120px;
+	margin-right: 1.2rem;
 }
 .imgs-backgrund{
 	width: 100%;
 	background: url(../assets/img/solutionbg7.png) no-repeat center;
-	background-position-y: 57%;
+	background-size: 19.2rem 7rem;
+	background-position-y: 3.5rem;
 	
 }
 .scene-content{
 
-padding-top: 100px;
+padding-top: 1rem;
 }
 .scene-content p{
-	width: 316px;
-	font-size: 14px;
-	line-height: 28px;
+	width: 3.16rem;
+	font-size: 0.14rem;
+	line-height: 0.28rem;
 	color: #666666;
-	margin-top: 40px;
+	margin-top: 0.4rem;
 	font-family: "microsoft yahei";
 	
 }
@@ -219,53 +221,54 @@ padding-top: 100px;
 .intelligent{
 	display: flex;
 	justify-content: center;
-	margin-top: 120px;
+	margin-top: 1.2rem;
 }
 .intelligent-c{
-    margin-top: 100px;
+    margin-top: 1rem;
 }
 .intelligent img{
-  margin-left: 120px;
+  margin-left: 1.2rem;
 }
 .intelligent h3{
 	 
-	line-height: 48px;
+	line-height: 0.48rem;
 	text-align: right;
-	width: 245px;
+	width: 2.45rem;
 }
 .intelligent p{
 	text-align: right;
-	font-size: 14px;
-	line-height: 28px;
+	font-size: 0.14rem;
+	line-height: 0.28rem;
 	color: #666666;
 	font-family: "microsoft yahei";
 }
 .four-icont{
-	width: 605px;
+	width: 6.05rem;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	margin: 0 auto;
-	margin-top: 80px;
+	margin-top: 0.8rem;
+	margin-bottom: 1.2rem;
 	
 }
 .four-icont img{
-	width: 300px;
-	height: 300px;
-	margin-right: 1px;
-	margin-top: 1px;
+	width: 3rem;
+	height: 3rem;
+	margin-right: 0.02rem;
+	margin-top: 0.02rem;
 }
 .inter-cont p{
 	margin: 0 auto;
 	text-align: center;
-	top: 200px;
-	width: 400px;
-	height: 2px;
+	top: 2rem;
+	width: 2.5rem;
+	height: 0.02rem;
 	 background: linear-gradient(to right, white,black,black,black,black,white);
 }
 
 .scene-marketing{
-	margin-bottom: 100px;
+	margin-bottom: 1rem;
 	overflow: hidden;
 	position: relative;
 	
@@ -275,43 +278,39 @@ padding-top: 100px;
 	justify-content: center;
 }
 .flexview h3{
-		width: 330px;
+		width: 3.3rem;
 	text-align: left;
-	font-size: 36px;
+	font-size: 0.36rem;
 	color: #333333;
 	font-family: 'MicrosoftYaHei-Bold';
 }
 .flexview p{
-     font-size: 14px;
-	line-height: 28px;
+     font-size: 0.14rem;
+	line-height: 0.28rem;
 	color: #666666;
-	width: 230px;
-    height: 47px;  
+	width: 2.3rem;
+    height: 0.47rem;  
     text-align: left;
-	margin-top: 40px;
+	margin-top: 0.4rem;
 }
 .ivewright{
-	margin-top: 120px;
+	margin-top: 1.2rem;
 }
 .flexview img{
-	margin-right: 120px;
-}
-.imgs-backgrund{
-	width: 100%;
-	background: url(../assets/img/solutionbg7.png) no-repeat center;
-	background-position-y: 57%;
-	
+	width:8rem ;
+	height: 6rem;
+	margin-right: 1.2rem;
 }
 .scene-content{
 
-padding-top: 100px;
+padding-top: 1rem;
 }
 .scene-content p{
-	width: 316px;
-	font-size: 14px;
-	line-height: 28px;
+	width: 3.16rem;
+	font-size: 0.14rem;
+	line-height: 0.28rem;
 	color: #666666;
-	margin-top: 40px;
+	margin-top: 0.4rem;
 	font-family: "microsoft yahei";
 	
 }
@@ -319,24 +318,26 @@ padding-top: 100px;
 .intelligent{
 	display: flex;
 	justify-content: center;
-	margin-top: 120px;
+	margin-top: 1.2rem;
 }
 .intelligent-c{
-    margin-top: 100px;
+    margin-top: 1rem;
 }
 .intelligent img{
-  margin-left: 120px;
+	width:8rem ;
+	height: 6rem;
+  margin-left: 1.2rem;
 }
 .intelligent h3{
 	 
-	line-height: 48px;
+	line-height: 0.48rem;
 	text-align: right;
-	width: 245px;
+	width: 2.45rem;
 }
 .intelligent p{
 	text-align: right;
-	font-size: 14px;
-	line-height: 28px;
+	font-size: 0.14rem;
+	line-height: 0.28rem;
 	color: #666666;
 	font-family: "microsoft yahei";
 }
@@ -346,12 +347,14 @@ padding-top: 100px;
 .footer-img{
 	display: flex;
 	justify-content:center;
-	margin-top: 80px;
-	margin-bottom: 150px;
+	margin-top: 0.8rem;
+	margin-bottom: 1.5rem;
 	
 }
 .footer-img img{
-	margin-right: 20px;
+	width: 2.2rem;
+	height:1.6rem ;
+	margin-right: 0.2rem;
 }
 </style>
 <script>

@@ -13,9 +13,9 @@
 用人——货——场模式打造出新的突破口，用数字化的方式同步完成品牌的重塑，推广，营销。让消费者接到消息的同事能够产生双向互动，迸发进一步的行为，获取消费者的数据，进而帮助品牌更好的识别和服务消费者，在对消费者徐子的进一步洞悉之上，提高商品的生产和服务的质量。
 				</div>
 				</div>
-				<div class="inter-cont" style="padding-top:120px">
+				<div class="inter-cont" >
 					<h3>数字化门店不得不说的全景规划</h3>
-				    <p style="width: 530px"></p>	
+				    <p style="width: 5.3rem"></p>	
 				  <div class="h3-content">
 					  <div class="flex-left">
                        <h4>橱窗互动</h4>
@@ -41,7 +41,7 @@
 					<div class="intelligent">
 						<div class="intelligent-c">
 	                        <h3>壁面/柜台货架互动体验</h3>	
-				        	<p>店内商品智能化呈现节省<br/>展示空间精准推荐高效购物权益<br/>引导帮助销售转化</p>
+				        	<p>店内商品智能化呈现节省展示空间精准推荐高效购物权益引导帮助销售转化</p>
 						</div>	
 				        <img src="../assets/images/newretail_huogui.png"/>
 					</div>
@@ -52,13 +52,13 @@
 						<img src="../assets/images/newretail_zhifu.png"/>
 						<div class="ivewright">
 	                     <h3>智能、自助收银台便捷付款</h3>
-					<p> 智能化支付方式提供便捷支付体验<br/>更短的时间，更安全的方式<br/>利用3D视觉技术更加直观<br/>更加真实的表现商品</p>
+					<p> 智能化支付方式提供便捷支付体验更短的时间，更安全的方式利用3D视觉技术更加直观更加真实的表现商品</p>
 						</div>					
 					</div>
 					<div class="intelligent">
 						<div class="intelligent-c">
 	                        <h3>门店全域转化数据可视化报表</h3>	
-				        	<p>线下人货场全链路触点数据统计<br/>追溯线下触点引导全域延伸转化</p>
+				        	<p>线下人货场全链路触点数据统计追溯线下触点引导全域延伸转化</p>
 						</div>	
 				        <img src="../assets/images/newretail_baobiao.png"/>
 					</div>
@@ -90,41 +90,49 @@
 	width: 1920px;
 	margin: 0 auto;
 }
-
+.solution-banner img{
+	width: 19.2rem;
+    height: 7.5rem;
+}
 .inter-cont{
-		background: url(../assets/img/solutionbg2.png) no-repeat center
+      
+		background: url(../assets/img/solutionbg2.png) no-repeat center;
+		  background-size: 19.2rem 7rem;
+		  	background-position-y: -0.8rem;
 }
 .h3-content{
 	display: flex;
 	justify-content: center;
-	margin-top: 90px;
-	margin-bottom: 100px;
+	margin-top: 0.9rem;
+	margin-bottom: 1rem;
 }
 .flex-left{
-	margin-top: 100px;
+	margin-top: 1rem;
 }
 .h3-content h4{
-	width: 330px;
+	width: 3.3rem;
 
 	text-align: right;
-	font-size: 36px;
+	font-size: 0.36rem;
 	color: #333333;
 	font-family: 'MicrosoftYaHei-Bold';
 }
 .h3-content span{
 	display: block;
-	font-size: 14px;
-	line-height: 28px;
+	font-size: 0.14rem;
+	line-height: 0.28rem;
 	color: #666666;
-    height: 47px;  
+    height: 0.47rem;  
     text-align: right;
-	margin-top: 40px;
+	margin-top: 0.4rem;
 }
 .h3-content img{
-    margin-left: 120px;
+	width: 8rem;
+	height: 6rem;
+    margin-left: 1.2rem;
 }
 h3{
-	font-size: 36px;
+	font-size: 0.36rem;
 	color: #333333;
 	font-family: 'MicrosoftYaHei-Bold';
 }
@@ -132,30 +140,31 @@ h3{
 	box-sizing: border-box;
 	
 	text-align: center;
-	padding-top: 100px;
-	padding-bottom: 40px;
+	padding-top: 1rem;
+	padding-bottom: 0.4rem;
 }
 .interactive-content{
-	width: 990px;
-	font-size: 14px;
-	line-height: 28px;
+	width: 9.9rem;
+	font-size: 0.14rem;
+	line-height: 0.28rem;
 	text-align: center;
 	margin: 0 auto;
 	color: #999999;
-	margin-top: 58px;
+	margin-top: 0.58rem;
+	margin-bottom: 2rem;
 	font-family: "microsoft yahei";
 }
 .inter-cont p{
 	margin: 0 auto;
 	text-align: center;
-	top: 200px;
-	width: 400px;
-	height: 2px;
+	top: 2rem;
+	width: 4rem;
+	height: 0.02rem;
 	 background: linear-gradient(to right, white,black,black,black,black,white);
 }
 
 .scene-marketing{
-	margin-bottom: 100px;
+	margin-bottom: 1rem;
 	overflow: hidden;
 	position: relative;
 	
@@ -165,43 +174,46 @@ h3{
 	justify-content: center;
 }
 .flexview h3{
-		width: 330px;
+	width: 3.3rem;
 	text-align: left;
-	font-size: 36px;
+	font-size: 0.36rem;
 	color: #333333;
 	font-family: 'MicrosoftYaHei-Bold';
 }
 .flexview p{
-     font-size: 14px;
-	line-height: 28px;
+     font-size: 0.14rem;
+	line-height: 0.28rem;
 	color: #666666;
-	width: 230px;
-    height: 47px;  
+    height: 0.47rem;  
     text-align: left;
-	margin-top: 40px;
+	margin-top: 0.4rem;
 }
 .ivewright{
-	margin-top: 120px;
+	width: 3.3rem;
+	margin-top: 1.2rem;
 }
 .flexview img{
-	margin-right: 120px;
+	width: 8rem;
+	height: 6rem;
+	margin-right: 1.2rem;
 }
 .imgs-backgrund{
 	width: 100%;
 	background: url(../assets/img/solutionbg7.png) no-repeat center;
-	background-position-y: 57%;
+	background-size: 19.2rem 7rem;
+	background-position-y: 3.5rem;
 	
 }
 .scene-content{
 
-padding-top: 100px;
+padding-top: 1rem;
 }
 .scene-content p{
-	width: 316px;
-	font-size: 14px;
-	line-height: 28px;
+	width: 3.16rem;
+	font-size: 0.14rem;
+	line-height: 0.28rem;
 	color: #666666;
-	margin-top: 40px;
+	margin-top: 0.4rem;
 	font-family: "microsoft yahei";
 	
 }
@@ -209,24 +221,27 @@ padding-top: 100px;
 .intelligent{
 	display: flex;
 	justify-content: center;
-	margin-top: 120px;
+	margin-top: 1.2rem;
 }
 .intelligent-c{
-    margin-top: 100px;
+    margin-top: 1rem;
 }
 .intelligent img{
-  margin-left: 120px;
+	width: 8rem;
+	height: 6rem;
+  margin-left: 1.2rem;
 }
 .intelligent h3{
 	 
-	line-height: 48px;
+	line-height: 0.48rem;
 	text-align: right;
-	width: 245px;
+	width: 2.55rem;
 }
 .intelligent p{
+	width: 2.45rem;
 	text-align: right;
-	font-size: 14px;
-	line-height: 28px;
+	font-size: 0.14rem;
+	line-height: 0.28rem;
 	color: #666666;
 	font-family: "microsoft yahei";
 }
@@ -237,12 +252,14 @@ padding-top: 100px;
 .footer-img{
 	display: flex;
 	justify-content:center;
-	margin-top: 80px;
-	margin-bottom: 150px;
+	margin-top: 0.8rem;
+	margin-bottom: 1.5rem;
 	
 }
 .footer-img img{
-	margin-right: 20px;
+	width: 2.2rem;
+	height:1.6rem ;
+	margin-right: 0.2rem;
 }
 </style>
 <script>

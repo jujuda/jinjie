@@ -47,7 +47,6 @@
 </template>
 
 <style scoped>
-
 ul{
 	list-style: none;
 }
@@ -69,23 +68,22 @@ a{
       100%{height:0px}
     }
 .logo {
-	width: 7.27rem;
-	height: 1.97rem;
+	width:2.39rem;
+	height: 0.65rem;
 	position: absolute;
-	top: 0.61rem;
-	left: 2.12rem;
+	top: 0.2rem;
+	left: 0.7rem;
 	z-index: 999;
 	position: fixed;
 	
 }
 .logo img{
-	width: 7.27rem;
-	height: 1.97rem;
-	
+	width:2.39rem;
+	height: 0.65rem;	
 }
 .head-right{
-	width: 18.18rem;
-	height: 32.73rem;
+	width: 6rem;
+	height: 10.8rem;
 	
 	position: absolute;
 	z-index: 2;
@@ -95,20 +93,19 @@ a{
 }
 .right-navlist-button{
 	position: absolute;
-	right: 2.12rem;
-	top: 1.06rem;
+	right: 0.7rem;
 	position: fixed;
 	z-index: 9999;
 }
 .menu { 
-	width: 0.9rem; 
-	height: 0.76rem;
+	width: 0.3rem; 
+	height: 0.25rem;
 	position: relative;
 	transition: 1s all ease-in
 }
 .menu img{
-    width: 0.9rem; 
-	height: 0.76rem;	
+	width:0.3rem ;
+	height: 0.25rem;
 }
 #navbtn-img{
 	position: absolute;
@@ -116,8 +113,8 @@ a{
 	position: fixed;
 }
 .right-navlist{
-	width: 18.18rem;
-	height: 32.73rem;
+	width: 6rem;
+	height: 10.8rem;
 	position: absolute;
 	
 	position: fixed;
@@ -128,10 +125,10 @@ a{
 }
 .right-navlist li{
 	text-align: center;
-	line-height: 3.03rem;
+	line-height: 1rem;
 }
 .right-navlist >li:nth-child(1){
-	margin-top: 5.45rem;
+	margin-top: 1.8rem;
 }
 .right-navlist li a{
 	color: #FFFFFF;

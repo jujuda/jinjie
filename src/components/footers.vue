@@ -10,16 +10,17 @@
 .contact-us{
 	position: relative;
 	width: 100%;
-	height: 360px;
+	height:3.6rem;
 	color: #B3B3B3;
 	font-family: "microsoft yahei";
-	font-size: 16px;
+	font-size: 0.16rem;
 	text-align: center;
-	line-height: 36px;
+	margin: 0 auto;
+	line-height: 0.36rem;
 	background: url(../assets/images/jion_bg.png) no-repeat center;
 }
 
 .tel-us{
-	padding-top: 135px;
+	padding-top: 1.35rem;
 }
 </style>

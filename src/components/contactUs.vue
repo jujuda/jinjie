@@ -25,25 +25,23 @@
             <div class="customer-info">
              <div class="reg-customer-info">
 				 <div>
-
-				
              	<div class="customer-info-ipt">
              		<i></i>
              		<span>您的姓名</span>
              	<input type="text"  v-model="fromdata.name" @blur='nameBlurReg'/>			 
-                  <span v-show="showNameErr" class="nextspring"> 用户名不能为空</span>	
+                  <p v-show="showNameErr" class="nextspring"> 用户名不能为空</p>	
              	</div>
              		<div class="customer-info-ipt">
              		<i></i>
              		<span>您的电话</span>
              	<input type="text" name='phone' v-model="fromdata.phone" @blur='phoneBlurReg'/>
-				 <span v-show="showPhoneErr" class="nextspring"> 手机号不能为空 </span>		
+				 <p v-show="showPhoneErr" class="nextspring"> 手机号不能为空 </p>		
              	</div>
              		<div class="customer-info-ipt">
              		<i></i>
              		<span>您的邮件</span>
              	<input type="text" v-model="fromdata.email" @blur='emailBlurReg'/>	
-				 <span v-show="showEmailErr" class="nextspring" > 邮箱不能为空 </span>	
+				 <p v-show="showEmailErr" class="nextspring" > 邮箱不能为空 </p>	
              	</div>
 				  </div>
              		<div class="customer-info-ipt">
@@ -51,7 +49,7 @@
              		<span>您的需求/描述</span>
              
 				 <textarea row="5" cols="5" v-model="fromdata.need" @blur='needBlurReg'></textarea>
-				 <span v-show="showNeedErr" class="nextspring" >需求不能为空</span>	
+				 <p v-show="showNeedErr" class="nextspring" >需求不能为空</p>	
              	</div>
              	 
              	<input type="button" id="btn-submit" value="提交" @click='submitbtn()'/>
@@ -69,8 +67,8 @@
 </template>
 <style scoped>
 textarea{
-	width: 496px;
-	height: 210px;
+	width: 4.96rem;
+	height: 2.10rem;
 	background: #D9EDFF;
 	border-radius: 8px;
 	border: none;
@@ -84,13 +82,16 @@ textarea{
 	
 }
 .contact-banner{
-	width: 1920px;
+	width: 19.2rem;
 	margin: 0 auto;
 }
+.contact-banner img{
+	width: 19.2rem;
 
+}
 
 h3{
-	font-size: 36px;
+	font-size: 0.36rem;
 	color: #333333;
 	font-family: 'MicrosoftYaHei-Bold';
 }
@@ -99,13 +100,13 @@ h3{
 	overflow: hidden;
 }
 .content-center h4{
-	font-size: 36px;
-	line-height: 72px;
+	font-size: 0.36rem;
+	line-height: 0.72rem;
 	color: #666666;
 	font-family: "microsoft yahei";
 	text-align: center;
-	margin-top: 80px;
-	margin-bottom: 120px;
+	margin-top: 0.8rem;
+	margin-bottom: 1.2rem;
 	letter-spacing: 3px;
 }
 .our-information{
@@ -113,7 +114,7 @@ h3{
 	justify-content: center;
 }
 .info-us{
-	margin-right: 245px;
+	margin-right: 2.45rem;
 }
 .our-information .info-us:nth-child(3){
 	margin-right:0;
@@ -121,56 +122,54 @@ h3{
 .our-information span{
 	display: block;
 	color: #666666;
-	margin-top: 42px;
-	margin-bottom: 120px;
-	font-size: 18px;
+	margin-top: 0.42rem;
+	margin-bottom: 1.2rem;
+	font-size: 0.18rem;
 }
  .content-center h6{
 	text-align: center;
 	color: #999999;
-	font-size: 18px;
-	margin-bottom: 80px;
+	font-size: 0.18rem;
+	margin-bottom: 0.8rem;
 }
 .customer-info{
 	width: 100%;
 	background: #F2F9FF;
 	overflow: hidden;
-	padding-bottom: 120px;
+	padding-bottom: 1.2rem;
 }
 .reg-customer-info{
-	width: 1200px;
+	width: 12rem;
 	flex-wrap: wrap;
 	display: flex;
 	justify-content: space-between;
 	margin: 0 auto;
-	padding-top: 120px;
+	padding-top: 1.2rem;
 	overflow: hidden;
 }
 .customer-info-ipt{
-	margin-right: 50px;
-	margin-bottom: 40px;
-	width: 500px;
-	height: 60px;
+	margin-right: 0.5rem;
+	margin-bottom: 0.4rem;
+	width: 5rem;
+	height: 0.6rem;
 	background: #D9EDFF;
-	border-radius: 10px;
+	border-radius: 0.1rem;
 	
 }
 .customer-info-ipt i{
-    width: 4px;
-    height: 4px;
-    border: 2px solid #FF9626; 
+    width: 0.04rem;
+    height: 0.04rem;
+    border: 0.02rem solid #FF9626; 
     background: #FF9626;
     border-radius: 50%;
 	display: inline-block;
-	margin-right: 8px;
-	margin-left: 10px;
-	/* margin-top: -2px; */
+	margin-right: 0.08rem;
+	margin-left: 0.1rem;
+	margin-top: -2px;
 
 }
 .customer-info-ipt span{
-	display: inline-block;
-	margin-top: 20px;
-	font-size: 18px;
+	font-size: 0.18rem;
 	color: #333333;
 }
 
@@ -178,27 +177,28 @@ h3{
 	border: none;
 	display: inline-block;
      background: none;
-	width: 300px;
-	height: 30px;
-	margin-bottom: 25px;
-	font-size: 18px;
+	width: 3rem;
+	height: 0.3rem;
+	margin-bottom: 0.25rem;
+	font-size: 0.18rem;
 	color: #333333;
 }
 
 .customer-info-ipt .nextspring{
+	font-size: 0.18rem;
 	color: pink;
-	margin-top:-30px;
+	margin-top:-0.3rem;
 	
 }
 #btn-submit{
 	margin: 0 auto;
-	width: 200px;
-	height: 50px;
+	width: 2rem;
+	height: 0.5rem;
 	border: none;
 	background: #FF9626;
-	border-radius: 10px;
+	border-radius: 0.1rem;
 	color: #FFFFFF;
-	font-size: 24px;
+	font-size: 0.24rem;
 }
 </style>
 <script>

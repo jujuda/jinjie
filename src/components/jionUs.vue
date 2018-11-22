@@ -253,56 +253,68 @@
 	margin: 0 auto;
 }
 .jion-banner{
-	width: 1920px;
+	width:19.2rem;
 	margin: 0 auto;
+}
+.jion-banner img {
+	width: 19.2rem;
+	height:7.5rem ;
 }
 .jion-center{
 	position: relative;
-	width: 1200px;
+	width: 12rem;
 	margin: 0 auto;
-	margin-top: 120px;
+	margin-top: 1.2rem;
 	background:rgba(255,255,255,1);
-	margin-bottom: 80px;
+	margin-bottom: 0.8rem;
 	box-shadow:0px 5px 15px 0px rgba(153,153,153,0.4);
 }
 .jion-center .req-btn{
 	position: absolute;
-	bottom: 85px;
+	bottom: 0.85rem;
 	left:28%;
 	cursor: pointer;
 }
+.jion-center .req-btn:nth-child(1){
+	width:0.89rem ;
+	height: 0.23rem;
+}
+.jion-center .req-btn:nth-child(2){
+	width:0.67rem ;
+	height: 0.23rem;
+}
 .recruitment-info{
-	width: 1200px;
+	width: 12rem;
 	display: flex;
 	justify-content: space-around;
 	
 }
 .recruitment-info img{
-	width: 114px;
-	height: 148px;
-	padding: 80px 100px 0 80px;
+	width: 1.14rem;
+	height: 1.48rem;
+	padding: 0.8rem 1rem 0 0.8rem;
 
 }
 .recruit{
-	padding:80px 30px 130px 0;
+	padding:0.8rem 0.3rem 1.3rem 0;
 }
 .recruit h4,h6,h5{
 	font-weight: normal;
 	font-family: "microsoft yahei";
 	color: #999999;
-	font-size: 18px;
-	margin-bottom: 20px;
+	font-size: 0.18rem;
+	margin-bottom: 0.2rem;
 }
 .recruit h5{
 	color: #333333;
-	margin-top: 10px;
+	margin-top: 0.1rem;
 }
 .recruit p{
-	width: 830px;
+	width: 8.3rem;
 	font-family: "microsoft yahei";
-	font-size: 14px;
+	font-size: 0.14rem;
 	color: #333333;
-	line-height: 28px;
+	line-height: 0.28rem;
 }
 </style>
 <script>

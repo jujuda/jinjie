@@ -7,14 +7,14 @@
 			<div class="interactive">	
 				<div class="inter-cont">
 					<h3>进阶软件服务</h3>
-				<p></p>			
+				<p style="font-weight:100"></p>			
 				<div class="interactive-content">
 					基于 DevOps理念，帮助企业消除开发与运维的信息鸿沟，加速IT精益运营，以云计算、物联网、大数据以及人工智能技术等核心技术，采用微服务架构技术，领域驱动设计方法，为企业提供究云IT信息化服务，共赢数字经济时代。
 				</div>
 				</div>
 				<div class="inter-cont" style="background:none">
 					<h3>进阶软件服务领域</h3>
-				    <p style="width: 315px"></p>	
+				    <p style="width: 3.15rem"></p>	
 				   <div class="six-icont">
 				   	  <img src="../assets/img/icon4.png"/>
 				   	  <img src="../assets/img/icon1.png"/>
@@ -25,9 +25,9 @@
 				   	  <img src="../assets/img/icon7.png"/>
 					   </div>				 
 				</div>
-             <div class="inter-cont" style="padding-top:120px">
+             <div class="inter-cont">
 					<h3>进阶软件所提供服务</h3>
-				    <p style="width:320px"></p>	
+				    <p style="width:3.2rem;"></p>	
 				  <div class="h3-content">
 					  <div class="flex-left">
                        <h4>咨询服务</h4>
@@ -46,13 +46,13 @@
 						<img  src="../assets/images/software_marketing.png"/>
 						<div class="ivewright">
 	                     <h3>数字营销</h3>
-					<p>基于内容管理、客户管理，<br/>整合线上资源，基于良好用<br/>户体验以及创意设计，为客<br/>户提供线上线下的数字化营<br/>销，触达全域，推动销售增长。</p>
+					<p>基于内容管理、客户管理，整合线上资源，基于良好用户体验以及创意设计，为客户提供线上线下的数字化营销，触达全域，推动销售增长。</p>
 						</div>					
 					</div>			
 					<div class="intelligent">
 						<div class="intelligent-c">
 	                        <h3>DevOps</h3>	
-				        	<p>传递DevOps理念，基于开源框架，<br/>从组织，技术，流程三个维度帮助<br/>客户加速IT精益运营，并提供自动化<br/>集成、自动化部署流水线有助于<br/>开发、测试、运维友好协作，形成<br/>DevOps演进闭环，有效的支撑<br/>业务创新,从而提高效率和产品质量。</p>
+				        	<p>传递DevOps理念，基于开源框架，从组织，技术，流程三个维度帮助客户加速IT精益运营，并提供自动化集成、自动化部署流水线有助于开发、测试、运维友好协作，形成DevOps演进闭环，有效的支撑业务创新,从而提高效率和产品质量。</p>
 						</div>	
 				        <img src="../assets/images/software_devops.png"/>
 					</div>
@@ -63,14 +63,14 @@
 						<img  src="../assets/images/software_microservice.png"/>
 						<div class="ivewright">
 	                     <h3>微服务</h3>
-					<p> 基于微服务架构为用户提供分布式、<br/>弹性扩展的技术架构设计，<br/>提升企业信息化、互联网平台<br/>信息化服务的市场响应速度。</p>
+					<p> 基于微服务架构为用户提供分布式、弹性扩展的技术架构设计，提升企业信息化、互联网平台信息化服务的市场响应速度。</p>
 						</div>					
 					</div>
 				
 					<div class="intelligent">
 						<div class="intelligent-c">
 	                        <h3>软件定制</h3>	
-				        	<p>针对行业客户需求，为特定客户<br/>提供应用软件开发、系统维护、系统<br/>功能优化等应用开发与管理服务。<br/>公司的应用开发及管理服务旨<br/>在帮助客户实现对IT外包开支的<br/>科学管理，使得客户更加专注于<br/>其核心竞争力的建设。</p>
+				        	<p>针对行业客户需求，为特定客户提供应用软件开发、系统维护、系统功能优化等应用开发与管理服务。公司的应用开发及管理服务旨在帮助客户实现对IT外包开支的科学管理，使得客户更加专注于其核心竞争力的建设。</p>
 						</div>	
 				        <img src="../assets/images/software_custommade.png"/>
 					</div>
@@ -98,46 +98,56 @@
 	height: 100%;
 	margin: 0 auto;
 	overflow: hidden;
+
 }
 .solution-banner{
-	width: 1920px;
+	width: 19.2rem;
+	height: 7.5rem;
 	margin: 0 auto;
 }
-
+.solution-banner img{
+	width: 19.2rem;
+	height: 7.5rem;
+}
 .inter-cont{
-		background: url(../assets/img/solutionbg2.png) no-repeat center
+      
+		background: url(../assets/img/solutionbg2.png) no-repeat center;
+		  background-size: 19.2rem 7rem;
+		  	background-position-y: -0.8rem;
 }
 .h3-content{
 	display: flex;
 	justify-content: center;
-	margin-top: 90px;
-	margin-bottom: 100px;
+	margin-top: 0.9rem;
+	margin-bottom: 1rem;
 }
 .flex-left{
-	margin-top: 100px;
+	margin-top: 1rem;
 }
 .h3-content h4{
-	width: 330px;
+	width: 3.3rem;
 
 	text-align: right;
-	font-size: 36px;
+	font-size: 0.36rem;
 	color: #333333;
 	font-family: 'MicrosoftYaHei-Bold';
 }
 .h3-content span{
 	display: block;
-	font-size: 14px;
-	line-height: 28px;
+	font-size: 0.14rem;
+	line-height: 0.28rem;
 	color: #666666;
-    height: 47px;  
+    height: 0.47rem;  
     text-align: right;
-	margin-top: 40px;
+	margin-top: 0.4rem;
 }
 .h3-content img{
-    margin-left: 120px;
+	width: 8rem;
+	height: 6rem;
+    margin-left: 1.2rem;
 }
 h3{
-	font-size: 36px;
+	font-size: 0.36rem;
 	color: #333333;
 	font-family: 'MicrosoftYaHei-Bold';
 }
@@ -145,31 +155,31 @@ h3{
 	box-sizing: border-box;
 	
 	text-align: center;
-	padding-top: 100px;
-	padding-bottom: 40px;
+	padding-top: 1rem;
+	padding-bottom: 0.4rem;
 }
 .interactive-content{
-	width: 990px;
-	font-size: 14px;
-	line-height: 28px;
+	width: 9.9rem;
+	font-size: 0.14rem;
+	line-height: 0.28rem;
 	text-align: center;
 	margin: 0 auto;
 	color: #999999;
-	margin-top: 58px;
-	padding-bottom: 150px;
+	margin-top: 0.58rem;
+	padding-bottom: 1.5rem;
 	font-family: "microsoft yahei";
 }
 .inter-cont p{
 	margin: 0 auto;
 	text-align: center;
-	top: 200px;
-	width: 400px;
-	height: 2px;
+	top: 2rem;
+	width: 2.5rem;
+	height: 0.02rem;
 	 background: linear-gradient(to right, white,black,black,black,black,white);
 }
 
 .scene-marketing{
-	margin-bottom: 100px;
+	margin-bottom: 1rem;
 	overflow: hidden;
 	position: relative;
 	
@@ -179,43 +189,46 @@ h3{
 	justify-content: center;
 }
 .flexview h3{
-		width: 330px;
+		width: 3.3rem;
 	text-align: left;
-	font-size: 36px;
+	font-size: 0.36rem;
 	color: #333333;
 	font-family: 'MicrosoftYaHei-Bold';
 }
 .flexview p{
-     font-size: 14px;
-	line-height: 28px;
+     font-size: 0.14rem;
+	line-height: 0.28rem;
 	color: #666666;
-	width: 230px;
-    height: 47px;  
+	width: 2.3rem;
+    height: 0.47rem;  
     text-align: left;
-	margin-top: 40px;
+	margin-top: 0.4rem;
 }
 .ivewright{
-	margin-top: 120px;
+	margin-top: 1.2rem;
 }
 .flexview img{
-	margin-right: 120px;
+	width: 8rem;
+	height: 6rem;
+	margin-right: 1.2rem;
 }
 .imgs-backgrund{
 	width: 100%;
 	background: url(../assets/img/solutionbg7.png) no-repeat center;
-	background-position-y: 57%;
+	background-size: 19.2rem 7rem;
+	background-position-y: 3.5rem;
 	
 }
 .scene-content{
 
-padding-top: 100px;
+padding-top: 1rem;
 }
 .scene-content p{
-	width: 316px;
-	font-size: 14px;
-	line-height: 28px;
+	width: 3.16rem;
+	font-size: 0.14rem;
+	line-height: 0.28rem;
 	color: #666666;
-	margin-top: 40px;
+	margin-top: 0.4rem;
 	font-family: "microsoft yahei";
 	
 }
@@ -223,24 +236,27 @@ padding-top: 100px;
 .intelligent{
 	display: flex;
 	justify-content: center;
-	margin-top: 120px;
+	margin-top: 1.2rem;
 }
 .intelligent-c{
-    margin-top: 100px;
+    margin-top: 1rem;
 }
 .intelligent img{
-  margin-left: 120px;
+	width: 8rem;
+	height: 6rem;
+  margin-left: 1.2rem;
 }
 .intelligent h3{
 	 
-	line-height: 48px;
+	line-height: 0.48rem;
 	text-align: right;
-	width: 245px;
+	width: 2.55rem;
 }
 .intelligent p{
+	width: 2.55rem;
 	text-align: right;
-	font-size: 14px;
-	line-height: 28px;
+	font-size: 0.14rem;
+	line-height: 0.28rem;
 	color: #666666;
 	font-family: "microsoft yahei";
 }
@@ -252,10 +268,10 @@ padding-top: 100px;
 	margin: 0 auto;
 }
 .six-icont img{
-	width: 200px;
-	height: 200px;
-	margin-top: 80px;
-	margin-right: 200px;
+	width: 2rem;
+	height: 2rem;
+	margin-top: 0.8rem;
+	margin-right: 2rem;
 }
 .six-icont img:nth-child(3){
 	margin-right:0;
@@ -264,13 +280,16 @@ padding-top: 100px;
 		display: flex;
 	    justify-content: center;
      	margin: 0 auto;
+		 margin-bottom: 1.2rem;
 }
 .six-icont2 img{
-		margin-right: 100px;
-		margin-left: 100px;
+	width: 2rem;
+	height: 2rem;
+		margin-right: 1rem;
+		margin-left: 1rem;
 }
 .six-icont2 img:nth-child(1){
-	margin-right: 100px
+	margin-right: 1rem;
 }
 
 
@@ -280,12 +299,14 @@ padding-top: 100px;
 .footer-img{
 	display: flex;
 	justify-content:center;
-	margin-top: 80px;
-	margin-bottom: 150px;
+	margin-top: 0.8rem;
+	margin-bottom: 1.5rem;
 	
 }
 .footer-img img{
-	margin-right: 20px;
+	width: 2.2rem;
+	height:1.6rem ;
+	margin-right: 0.2rem;
 }
 </style>
 <script>

@@ -51,13 +51,16 @@
 <style scoped>
     .scroll{
             position: fixed;
-			width: 40px;
-			height: 40px;
-           right: 73px;
-	       bottom: 160px;
+			width: 0.4rem;
+			height: 0.4rem;
+           right: 0.73rem;
+	       bottom: 1.6rem;
             cursor: pointer;
 			z-index: 9999;
         }
-
+.scroll img{
+    width: 0.4rem;
+	height: 0.4rem;
+}
 
 </style>
