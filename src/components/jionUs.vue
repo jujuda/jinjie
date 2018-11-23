@@ -2,7 +2,7 @@
     	<div class="jion-content">
 			<headers></headers>
 			<div class="jion-banner">
-				<img src="../assets/img/joinbanner.png"/>
+				<img src="../assets/images/join_banner.png"/>
 			</div>
             
 

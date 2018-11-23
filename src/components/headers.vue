@@ -29,10 +29,10 @@
 							
 						
 							<ul class="right-navlist-child" v-if="btShow" >
-								<li>电商互动营销</li>
-								<li>新零售解决方案</li>
-								<li>软件服务</li>
-								<li>客服托管</li>
+								<li @click="linktoMarketing">电商互动营销</li>
+								<li @click="linktoNewretail">新零售解决方案</li>
+								<li @click="linktoSoftware">软件服务</li>
+								<li @click="linktoService">客服托管</li>
 							</ul>
 								</transition>
 						</li>
@@ -129,6 +129,7 @@ a{
 .right-navlist li{
 	text-align: center;
 	line-height: 1rem;
+	cursor: pointer;
 }
 .right-navlist >li:nth-child(1){
 	margin-top: 1.8rem;
@@ -169,7 +170,20 @@ export default{
 		},
 		btnShow(){
               this.btShow=!this.btShow
-		}
+		},
+		linktoMarketing(){
+				this.$router.push('/solutionMarketing')
+			},
+			linktoNewretail(){
+				this.$router.push('/solutionNewretail')
+			},
+			linktoService(){
+				this.$router.push('/solutionService')
+			},
+			linktoSoftware(){
+				this.$router.push('/solutionSoftware')
+			}
+
 		
 	
 		
