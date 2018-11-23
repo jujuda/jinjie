@@ -84,7 +84,7 @@
 
   	 <div class="retailers-right">
   		<h3 class="retailers-left-title " :class="view2_show==2?' animated bounceInDown delay-2s' : ''">新零售解决方案</h3>
-  		<p class="retailers-left-content" :class="view2_show==2?' animated bounceInDown delay-2s' : ''">整合线上线下数据，为线下零售店铺提供智能化的解决方案，优化线下零售用户体验，为线下零售提供更丰富更有价值的数据支持</p>
+  		<p class="retailers-left-content" :class="view2_show==2?' animated bounceInDown delay-2s' : ''">整合线上线下数据，为线下零售店铺提供智能化的解决方案，优化线下零售用户体验，为线下零售提供更丰富更有价值的数据支持。</p>
       <h3 class="retailers-left-title " :class="view2_show==2?' animated zoomInDown delay-2s' : ''">客服托管</h3>
   		<p class="retailers-left-content" :class="view2_show==2?' animated zoomInDown delay-2s' : ''">专业的客服团队，快速响应，优质的服务能力，完善的绩效考核，有效提升店铺客服转化的同时为电商企业节省管理成本和财务成本。</p>
   	</div>
@@ -410,28 +410,28 @@ margin-bottom: 60px;
 	position: absolute;
 	top: 130px;
 	left: 90px;
-	height: 195px;
+	height: 200px;
 }
 .img-round2{
 	position: absolute;
-	top: 325px;
+	top: 330px;
 	right: 70px;
 }
 .img-line2{
 	position: absolute;
 	top: 350px;
 	left: 90px;
-	height: 195px;
+	height: 200px;
 }
 .img-round4{
     position: absolute;
-	top: 540px;
+	top: 545px;
 	left: 65px;	
 }
 
 .img-round5{
 	position: absolute;
-	top: 755px;
+	top: 750px;
 	right: 70px;
 }
 .img-line5{
