@@ -104,6 +104,9 @@ a{
 	transition: 1s all ease-in
 }
 .menu img{
+	position: absolute;
+	right: 0;
+	top: 0.4rem;
 	width:0.3rem ;
 	height: 0.25rem;
 }

@@ -83,9 +83,9 @@
 
 
   	 <div class="retailers-right">
-  		<h3 class="retailers-left-title " :class="view2_show==2?' animated bounceInDown delay-2s' : ''">新零售解决方案</h3>
-  		<p class="retailers-left-content" :class="view2_show==2?' animated bounceInDown delay-2s' : ''">整合线上线下数据，为线下零售店铺提供智能化的解决方案，优化线下零售用户体验，为线下零售提供更丰富更有价值的数据支持。</p>
-      <h3 class="retailers-left-title " :class="view2_show==2?' animated zoomInDown delay-2s' : ''">客服托管</h3>
+  		<h3 class="retailers-left-title " :class="view2_show==2?' animated zoomInDown delay-2s' : ''">新零售解决方案</h3>
+  		<p class="retailers-left-content" :class="view2_show==2?' animated zoomInDown delay-2s' : ''">整合线上线下数据，为线下零售店铺提供智能化的解决方案，优化线下零售用户体验，为线下零售提供更丰富更有价值的数据支持。</p>
+      <h3 class="retailers-left-title totop-title" :class="view2_show==2?' animated zoomInDown delay-2s' : ''">客服托管</h3>
   		<p class="retailers-left-content" :class="view2_show==2?' animated zoomInDown delay-2s' : ''">专业的客服团队，快速响应，优质的服务能力，完善的绩效考核，有效提升店铺客服转化的同时为电商企业节省管理成本和财务成本。</p>
   	</div>
   </div>
@@ -381,17 +381,18 @@ margin-bottom: 60px;
     color: #333333;
     font-family: 'MicrosoftYaHei-Bold';
     margin-bottom: 30px;
-	margin-top: 50px;
+	margin-top: 45px;
 }
 .retailers-left-content{
     width: 330px;
+	padding-left: 20px;
     font-size: 14px;
     line-height: 28px;
     color:#999999 ;
     font-family: 'MicrosoftYaHei';
 }
 .retailers-left .retailers-left-content:nth-child(2){
-    margin-bottom: 280px;
+    margin-bottom: 290px;
 }
 .retailers-left{
 	flex: 1;
@@ -431,19 +432,21 @@ margin-bottom: 60px;
 
 .img-round5{
 	position: absolute;
-	top: 750px;
+	top: 765px;
 	right: 70px;
 }
 .img-line5{
 	position: absolute;
-	top: 560px;
+	top: 565px;
 	left: 90px;
-	height: 195px;
+	height: 200px;
 }
 .retailers-right .retailers-left-title{
-	margin-top: 260px;
+	margin-top: 255px;
 }
-
+.retailers-right .totop-title{
+	margin-top: 290px;
+}
 .newbanner {
 	width: 100%;
     height: 940px;
@@ -622,42 +625,43 @@ margin-bottom: 60px;
 }
 .retailers-left-content{
     width: 300px;
+	padding-left: 20px;
 }
 .img-round{
 	width: 20px;
 	height: 20px;
-	left: 0px;
+	left: 20px;
 }
 	.img-line{
 		height: 170px;
-		left: 25px;
+		left: 40px;
 		top: 125px;
 	}
 	.img-round2{
 		top: 295px;
-		right: 55px;
+		right: 40px;
 	    width: 20px;
     	height: 20px;
 	}
 	.img-line2{
-		 top: 310px;
-		 left: 20px;
+		 top: 315px;
+		 left: 40px;
 		 height: 170px;
 	}
 	.img-round4{
 		top: 480px;
-		left: 0;
+		left: 20px;
 		width: 20px;
 	    height: 20px;
 	}
 	.img-line5{
 		height: 175px;
 		top: 500px;
-		left: 18px;
+		left: 40px;
 	}
 	.img-round5{
-		top: 670px;
-		right: 55px;
+		top: 675px;
+		right: 40px;
 		width: 20px;
 	    height: 20px;
 	}
@@ -698,42 +702,44 @@ margin-bottom: 60px;
 }
 .retailers-left-content{
     width: 300px;
+	padding-left: 30px;
 }
+
 .img-round{
 	width: 20px;
 	height: 20px;
-	left: 0px;
+	left: 30px;
 }
 	.img-line{
 		height: 170px;
-		left: 25px;
+		left: 50px;
 		top: 125px;
 	}
 	.img-round2{
 		top: 295px;
-		right: 55px;
+		right: 30px;
 	    width: 20px;
     	height: 20px;
 	}
 	.img-line2{
 		 top: 310px;
-		 left: 20px;
+		 left: 50px;
 		 height: 170px;
 	}
 	.img-round4{
 		top: 480px;
-		left: 0;
+		left: 30px;
 		width: 20px;
 	    height: 20px;
 	}
 	.img-line5{
 		height: 175px;
 		top: 500px;
-		left: 18px;
+		left: 50px;
 	}
 	.img-round5{
 		top: 670px;
-		right: 55px;
+		right: 25px;
 		width: 20px;
 	    height: 20px;
 	}
@@ -799,8 +805,8 @@ margin-bottom: 60px;
 	}
 	.img-line5{
 		height: 195px;
-		top: 550px;
-		left: 55px;
+		top: 560px;
+		left: 45px;
 	}
 	.img-round5{
 		top: 745px;
@@ -955,7 +961,12 @@ export default{
             let swiper = this.$refs.mySwiper.swiper;
 			// console.log(swiper.activeIndex); //滑动打印当前索引
 			self.currentSwiperView_index=swiper.activeIndex;//获取当前view索引
-			 console.log(self.currentSwiperView_index)
+			//  console.log(self.currentSwiperView_index)
+			 	 if(swiper.activeIndex>0){
+			   this.$emit('childFu',{backTopShow:true})
+               }else{
+                 this.$emit('childFu',{backTopShow:false})
+                 }
 			 //动画在当前页面只执行一次
 				setTimeout(()=>{
 				switch (swiper.activeIndex) {
@@ -1018,13 +1029,10 @@ export default{
 		
 	},
 	methods:{
-    //      scrollTop(){
-	//             let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
-	// 		   console.log(scrollTop)
-	// 		   if(this.scrollTop>1){
-                 
-	// 		   }
-	// },
+
+	    GotoSwiperPage(index){
+      this.$refs.mySwiper.swiper.slideTo(index, 1000, false)
+    },
 	handlerShowImg(val){
 		if(this.currentClick!=val){
 			this.currentClick = val;

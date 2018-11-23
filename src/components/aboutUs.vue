@@ -70,9 +70,13 @@
 	overflow: hidden;
 }
 .solution-banner{
-	width: 100%;
+	width: 19.2rem;
+	margin: 0 auto;
 }
-
+.solution-banner img {
+	width: 19.2rem;
+	height: 7.5rem;
+}
 .interactive{
    display: flex;
    justify-content:center;
