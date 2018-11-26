@@ -171,16 +171,19 @@ h3{
   	overflow: hidden;
 	  justify-content: center;
 
+
   }
   .foot-banner-bg{
-    position: relative;
+	position: relative;
+	 cursor: pointer;
   }
 
   .foot-banner-img img{ 
 	width:6.38rem ;
 	height:7.5rem ;  
    	margin-right: 0.01rem;
-   	margin-bottom: 0.8rem;
+	   margin-bottom: 0.8rem;
+	  
    }
    .foot-banner-img span{
    	 display: block;

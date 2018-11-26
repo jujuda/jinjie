@@ -80,6 +80,7 @@ h3{
 	z-index: 988;
 }
 .img-show img{
+	cursor: pointer;
 	width: 4.65rem;
 	height: 4.65rem;
 }

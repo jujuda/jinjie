@@ -6,12 +6,12 @@
 				</div>
 				<div class="right-navlist-button">
 						<div  class="menu" @click="isShow()" >
-							<img src="../assets/img/home_icon_unselected.png" alt="" v-if="isimg" class="animated rotateIn">
-							<img src="../assets/img/home_icon_selected.png" alt="" v-if='!isimg' class="animated rotateIn">
+							<img src="../assets/img/home_icon_unselected.png" alt="" v-show="isimg" class="animated rotateIn">
+							<img src="../assets/img/home_icon_selected.png" alt="" v-show='!isimg' class="animated rotateIn">
 						<span></span>
 					</div>
 					</div>
-				<div class="head-right" id="head-right" v-show="toShow">
+				<div class="head-right animated fadeInRight" id="head-right" v-show="toShow">
 					
 					
 					
@@ -71,7 +71,7 @@ a{
 	width:2.39rem;
 	height: 0.65rem;
 	position: absolute;
-	top: 0.2rem;
+	/* top: 0.2rem; */
 	left: 0.7rem;
 	z-index: 999;
 	position: fixed;
@@ -96,12 +96,14 @@ a{
 	right: 0.7rem;
 	position: fixed;
 	z-index: 9999;
+	cursor: pointer;
 }
 .menu { 
 	width: 0.3rem; 
 	height: 0.25rem;
 	position: relative;
-	transition: 1s all ease-in
+	transition: 1s all ease-in;
+
 }
 .menu img{
 	position: absolute;

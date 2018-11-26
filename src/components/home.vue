@@ -20,13 +20,13 @@
 				    	
 				        <div class="swiper-slide banner-midea">
 							<img src="../assets/img/homebanner1.png"/>
-							<span class="animate animated zoomInDown slower">我懂你的了不起</span><h5 class="h5 swiper-h5 animated bounceInUp slower">跟自己作对，才能把难题作对</h5><p class="swiper-p animated bounceInUp"></p><h3 class="swiper-h3 animated bounceInUp"></h3></div>
+							<span class="animate animated zoomInDown slower">我懂你的了不起</span><h5 class="h5 swiper-h5 animated bounceInUp slower">跟自己作对，才能把难题做对</h5><p class="swiper-p animated bounceInUp"></p><h3 class="swiper-h3 animated bounceInUp"></h3></div>
 				        <div class="swiper-slide banner-midea">
 							<img src="../assets/img/homebanner2.png"/>
-							<span class=" animate animated zoomInDown slower">电商互动营销</span><h5 class=" h5 swiper-h5 animated bounceInUp slower">跟自己作对，才能把难题作对</h5><p class="swiper-p animated bounceInUp"></p><h3 class="swiper-h3 animated bounceInUp"></h3></div>
+							<span class=" animate animated zoomInDown slower">电商互动营销</span><h5 class=" h5 swiper-h5 animated bounceInUp slower">跟自己作对，才能把难题做对</h5><p class="swiper-p animated bounceInUp"></p><h3 class="swiper-h3 animated bounceInUp"></h3></div>
 				        <div class="swiper-slide banner-midea">
 							<img src="../assets/img/homebanner3.png"/>
-							<span class=" animate animated zoomInDown slower">新零售智慧门店</span><h5 class="h5 swiper-h5 animated bounceInUp slower">跟自己作对，才能把难题作对</h5><p class="swiper-p animated bounceInUp" animated bounceInUp></p><h3 class="swiper-h3 animated bounceInUp"></h3></div>
+							<span class=" animate animated zoomInDown slower">新零售智慧门店</span><h5 class="h5 swiper-h5 animated bounceInUp slower">跟自己作对，才能把难题做对</h5><p class="swiper-p animated bounceInUp" animated bounceInUp></p><h3 class="swiper-h3 animated bounceInUp"></h3></div>
 				        	
 				        
 				    </div>				   
@@ -41,7 +41,7 @@
 			   <div class="page">
   <div class="about-as">
   	<div class="about-left-img">
-  		<img src="../assets/img/home_matching.png"/>
+  		<img src="../assets/img/homeaboutleft.png"/>
   	</div>
   <div class="about-right">
   		<h3 :class="view1_show==1?' animated bounceInRight ' : ''">关于我们</h3>
@@ -93,7 +93,7 @@
   </swiper-slide>
   <!--关于新零售我们有话说-->
   <swiper-slide class="swiper-slide" >
-	   <div class="page clearfix">
+	   <div class="page clearfix" style="height:10.8rem">
 	   	<div class="fl" @click="handlerShowImg(1)" :style="{width:currentClick==1?'100%':currentClick==0?'25%':'0'}">
 	   		<div class="des" v-show="btnwordshow1"><h4>智能数据大屏</h4></div>
 			   <div class="btnclick" v-show="bottomBanner1">
@@ -103,7 +103,8 @@
 						<h5 class="animated bounceInUp">整合线上线下数据，为线下零售店铺提供智能化的解决方案，优化线下零售用户体验</h5>
 				   </div>
 			   </div>
-			<div class="newbanner" :style="{background:newbanner1}"></div>	
+			<div class="newbanner" :style="{backgroundImage:newbanner1,backgroundPosition:currentClick==1?'0':'-700px'}" ></div>
+				
 	   	</div>
 	   	<div class="fl"  @click="handlerShowImg(2)" :style="{width:currentClick==2?'100%':currentClick==0?'25%':'0'}">
 	   		<div class="des" v-show="btnwordshow2"><h4 style="margin-left:9%">云货架</h4></div>
@@ -115,7 +116,7 @@
 						<h5 class="animated bounceInUp" >整合线上线下数据，为线下零售店铺提供智能化的解决方案，优化线下零售用户体验</h5>
 				   </div>
 			   </div>
-			<div class="newbanner" :style="{background:newbanner2}"></div>	
+			<div class="newbanner" :style="{backgroundImage:newbanner2,backgroundPosition:currentClick==2?'0':'-400px'}"></div>	
 	   	</div>
 	   	<div class="fl" @click="handlerShowImg(3)" :style="{width:currentClick==3?'100%':currentClick==0?'25%':'0'}">
 	   		<div class="des" v-show="btnwordshow3"><h4>互动智慧大屏</h4></div>
@@ -127,7 +128,7 @@
 						
 				   </div>
 			   </div>
-			<div class="newbanner" :style="{background:newbanner3}"></div>	
+			<div class="newbanner" :style="{backgroundImage:newbanner3,backgroundPosition:currentClick==3?'0':'-300px'}"></div>	
 	   	</div>
 	   	<div class="fl" @click="handlerShowImg(4)" :style="{width:currentClick==4?'100%':currentClick==0?'25%':'0'}">
 	   		<div class="des" v-show="btnwordshow4"><h4>体验智慧大师</h4></div>
@@ -139,7 +140,7 @@
 						<h5 class="animated bounceInUp">整合线上线下数据，为线下零售店铺提供智能化的解决方案，优化线下零售用户体验</h5>
 				   </div>
 			   </div>
-			<div class="newbanner" :style="{background:newbanner4}"></div>	
+			<div class="newbanner" :style="{backgroundImage:newbanner4,backgroundPosition:currentClick==4?'0':'-900px'}"></div>	
 	   	</div>
 			
 		</div>
@@ -183,10 +184,13 @@ a{
 }
 .fl{
 	float: left;
+	width: 19.2rem;
+	height: 10.8rem;
 }
 .fr{
 	float: right;
 }
+
 .clearfix:after{
 	content: '';
 	display: block;
@@ -209,23 +213,22 @@ ul{
 }
 .swiper-container{
 	width: 100%;
+	margin: 0 auto;
 }
 .bannerimg .swiper-slide {
-  width: 100%;
+  width: 19.2rem;
+  height: 10.8rem;
   overflow: hidden;
 }
-.bannerimg .swiper-slide img {
-  width: 100%;
-}
+
+	.banner-midea img{
+		width: 19.2rem;
+		height: 10.8rem;
+	}
 .h5{
     animation-duration:6s;animation-iteration-count:Infinite;animation-delay: 1s;
 }
-/* .h52{
-    animation-duration:3s;animation-iteration-count:Infinite;animation-delay: 3s;
-}
-.h53{
-	animation-duration:4s;animation-iteration-count:Infinite;animation-delay: 5s;
-} */
+
 .swiper-p {
 	animation-duration:6s;animation-iteration-count:Infinite;animation-delay: 1s;
 }
@@ -235,15 +238,10 @@ ul{
 .animate{
 	animation-duration:6s; animation-iteration-count:Infinite;animation-delay: 1s;
 }
-/* .animate2{
-	animation-duration:3s;animation-iteration-count:Infinite;animation-delay: 3s;
-}
-.animate3{
-	animation-duration:4s;animation-iteration-count:Infinite;animation-delay: 5s;
-} */
+
 .swiper-wrapper .swiper-slide span{
 	display: inline-block;
-	font-size: 30px;
+	font-size: 0.3rem;
 	color: #ffffff;
 	position: absolute;
 	/* z-index: 1; */
@@ -255,7 +253,7 @@ ul{
 	z-index: 9999;
 	top: 57%;
 	left: 20%;
-	font-size: 14px;
+	font-size: 0.14rem;
 	color: #FFFFFF;
 }
 .swiper-wrapper .swiper-slide .swiper-p{
@@ -263,7 +261,7 @@ ul{
 	z-index: 9999;
 	top: 60%;
 	left: 20%;
-	width:50px;
+	width:0.5rem;
 	height: 3px;
 	border-bottom: #FFFFFF solid 2px;
 }
@@ -272,16 +270,16 @@ ul{
 	z-index: 9999;
 	top: 61%;
 	left: 20%;
-	width:30px;
-	height: 3px;
+	width:0.3rem;
+	height: 0.03rem;
 	border-bottom: #FFFFFF solid 2px;
 }
 .swiper-wrapper .below-icon{
 	background: url(../assets/img/home_dropdown.png) center no-repeat; 
-	width: 40px;
-	height: 22px;
+	width: 0.55rem;
+	height: 0.3rem;
 	position: absolute;
-	bottom: 18%;
+	bottom: 1.8rem;
 	left: 48%;
 	z-index: 9999;
 	-webkit-transform:translate3d(0,0,0);
@@ -321,78 +319,84 @@ ul{
 	display: flex;
 	width: 100%;
 	overflow: hidden;
+	height: 10.8rem;
 	
 }
 .about-left-img{
 	flex: 1;
 }
+.about-as .about-left-img img {
+		width: 9.8rem;
+		height: 10.8rem;
+	}
 .about-right{
 	flex: 1;
 }
 .about-right h3{
 	text-align: center;
-	font-size: 36px;
+	font-size: 0.36rem;
 	color: #333333;
-	margin-bottom: 10px;
-	margin-top: 240px;
+	margin-bottom: 0.1rem;
+	margin-top: 2.4rem;
 }
 .about-right .about-p{
 	margin: 0 auto;
    text-align: center;
-	width: 160px;
-	height: 2px;
-margin-bottom: 60px;
+	width: 1.6rem;
+	height: 0.02rem;
+margin-bottom: 0.6rem;
 	 background: linear-gradient(to right, white,black,black,black,black,white);
 }
 .company-introduction{
-	width:356px;
-	height: 200px;
+	width:3.3rem;
+	height: 2rem;
 	font-size: 14px;
-	line-height: 28px;
+	line-height: 0.3rem;
 	font-family:"microsoft yahei";
 	color: #999999;
 	text-align: left;
 	margin: 0 auto;
-	margin-bottom: 30px;
+	margin-bottom: 0.5rem;
 	
 }
 #more-btn{
-	width: 60px;
-	height: 24px;
+	width: 0.6rem;
+	height: 0.24rem;
 	border: none;
 	text-align: center;
 	margin-left: 45%;
 	background: orange;
-	border-radius: 12px;
+	border-radius: 0.12rem;
 	color: #FFFFFF;
 	cursor: pointer;	
 }
 .online-retailers{
     margin: 0 auto;
-    width: 1000px;
+	width: 10rem;
+	height: 10.8rem;
     display: flex;
     justify-content:center;
 
 }
 .retailers-left-title{
-    width: 350px;
+    width: 3.5rem;
     text-align: center;
-    font-size: 24px;
+    font-size: 0.24rem;
     color: #333333;
     font-family: 'MicrosoftYaHei-Bold';
-    margin-bottom: 30px;
-	margin-top: 45px;
+    margin-bottom: 0.3rem;
+	margin-top: 1rem;
 }
 .retailers-left-content{
-    width: 330px;
-	padding-left: 20px;
-    font-size: 14px;
-    line-height: 28px;
+    width: 3.3rem;
+	padding-left: 0.2rem;
+    font-size: 0.14rem;
+    line-height: 0.28rem;
     color:#999999 ;
     font-family: 'MicrosoftYaHei';
 }
 .retailers-left .retailers-left-content:nth-child(2){
-    margin-bottom: 290px;
+    margin-bottom: 3rem;
 }
 .retailers-left{
 	flex: 1;
@@ -404,105 +408,117 @@ margin-bottom: 60px;
 }
 .img-round{
 	position: absolute;
-	top: 105px;
-	left: 65px;
+	top: 1.7rem;
+	left: 0.65rem;
+	width: 0.24rem;
+	height: 0.24rem;
 }
 .img-line{
 	position: absolute;
-	top: 130px;
-	left: 90px;
-	height: 200px;
+	top: 1.95rem;
+	left: 0.9rem;
+	height: 2rem;
 }
 .img-round2{
 	position: absolute;
-	top: 330px;
-	right: 70px;
+	top: 3.95rem;
+	right: 0.7rem;
+	width: 0.24rem;
+	height: 0.24rem;
 }
 .img-line2{
 	position: absolute;
-	top: 350px;
-	left: 90px;
-	height: 200px;
+	top: 4.2rem;
+	left: 0.9rem;
+	height: 2rem;
 }
 .img-round4{
     position: absolute;
-	top: 545px;
-	left: 65px;	
+	top: 6.15rem;
+	left: 0.65rem;
+	width: 0.24rem;
+	height: 0.24rem;	
 }
 
 .img-round5{
 	position: absolute;
-	top: 765px;
-	right: 70px;
+	top:8.38rem;
+	right: 0.7rem;
+	width: 0.24rem;
+	height: 0.24rem;
 }
 .img-line5{
 	position: absolute;
-	top: 565px;
-	left: 90px;
-	height: 200px;
+	top: 6.35rem;
+	left: 0.9rem;
+	height: 2rem;
 }
 .retailers-right .retailers-left-title{
-	margin-top: 255px;
+	margin-top: 3.25rem;
 }
 .retailers-right .totop-title{
-	margin-top: 290px;
+	margin-top: 2.9rem;
 }
-.newbanner {
+
+
+.fl .newbanner {
 	width: 100%;
-    height: 940px;
+    height: 10.8rem;
     transition:all 1s;
-    background: no-repeat center;
+    background-position: top center;
+	background-repeat: no-repeat;
+	cursor: pointer;
  }
 
 
 
 .fl .des h4{color: #fff;
-    font-size: 30px;
+    font-size: 0.3rem;
      text-align: center;
      position: absolute;
-     bottom: 120px;
+     bottom: 1.2rem;
      margin-left: 6%;
      z-index: 999;
  }
 .newbanner:hover{ transform: scale(1.1);}
 .footer-home{
 	width: 100%;
-	/* height: 940px; */
+	height: 10.8rem;
 	overflow: hidden;
-	background-image: url(../assets/img/home_background.png);
+	background-image: url(../assets/img/homefooter.png);
 }
 .footer-home-title{
 	box-sizing: border-box;
 	color: #FFFFFF;
-	font-size: 36px;
+	font-size: 0.36rem;
 	font-family: "microsoft yahei";
 	text-align: center;
-	padding-top: 170px;
-	padding-bottom: 120px;
+	padding-top: 1.7rem;
+	padding-bottom: 1.2rem;
 	}
 
 .partner-foot-img{
 	display: flex;
 	justify-content: center;
-	margin-bottom: 130px;
+	margin-bottom: 1.3rem;
 }
 .partner-foot-img img{
-	margin-right: 20px;
+	margin-right: 0.2rem;
 }
 .footer-phone{
 	color: #B3B3B3;
 	font-family: "microsoft yahei";
-	font-size: 16px;
+	font-size: 0.16rem;
 	text-align: center;
-	line-height: 36px;
-	padding-bottom: 100px;
+	line-height: 0.36rem;
+	padding-bottom: 1rem;
 }
 .address{
-	margin-bottom: 135px;
+	margin-bottom: 1.35rem;
 }
 .btnclick{
 	width: 100%;
-	height: 100%;
+	height: 10.8rem;
 	color: #ffffff;
     position: absolute;
 	z-index: 9;
@@ -510,398 +526,27 @@ margin-bottom: 60px;
 
 }
 .btnclick .clickImg{
-	font-size: 36px;
+	font-size: 0.36rem;
 	text-align: center;
-	margin-top: 120px;
+	margin-top: 1.2rem;
 	margin-bottom: 32%;
-	letter-spacing: 4px;
+	letter-spacing: 0.04rem;
 }
 .clickcontent p{
-	font-size: 30px;
+	font-size: 0.3rem;
 	font-family:'microsoft yahei';
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 0.2rem;
 
 }
 
 .clickcontent h5{
-	font-size: 14px;
-	line-height: 28px;
+	font-size: 0.14rem;
+	line-height: 0.28rem;
 	text-align: center;
-	margin-bottom: 120px;
-}
-@media screen and (min-width: 1024px) and (max-width: 1279px){
-	.about-as .about-left-img img {
-		width: 580px;
-		height: 768px;
-	}
-	.banner-midea img{
-		width: 100%;
-		height: 768px;
-	}
-	.company-introduction{
-		width: 300px;
-	}
-	.online-retailers{
-    width: 880px;
-}
-.retailers-left-content{
-    width: 300px;
-}
-.img-round{
-	width: 20px;
-	height: 20px;
-	left: 0px;
-}
-	.img-line{
-		height: 155px;
-		left: 18px;
-		top: 125px;
-	}
-	.img-round2{
-		top: 285px;
-		right: 55px;
-	    width: 20px;
-    	height: 20px;
-	}
-	.img-line2{
-		 top: 300px;
-		 left: 15px;
-		 height: 155px;
-	}
-	.img-round4{
-		top: 460px;
-		left: 0;
-		width: 20px;
-	    height: 20px;
-	}
-	.img-line5{
-		height: 155px;
-		top: 485px;
-		left: 18px;
-	}
-	.img-round5{
-		top: 640px;
-		right: 55px;
-		width: 20px;
-	    height: 20px;
-	}
-	.retailers-right .retailers-left-title{
-		margin-top: 210px;
-	}
-	
-	.retailers-left .retailers-left-content:nth-child(2){
-		margin-bottom: 190px;
-	}
-	
-.fl .des h4{
-    font-size: 24px; 
- }
- .partner-foot-img{
-	 margin-bottom: 80px;
- }
- .partner-foot-img img{
-	width: 160px;
-	height: 120px;
-	margin-right: 10px;
-}
- .swiper-wrapper .below-icon{
-	 bottom: 8%;
- }
-  	.btnclick .clickImg{
-	margin-bottom: 42%;
-}
-}
-@media screen and (min-width: 1280px) and (max-width: 1365px){
-    .about-as .about-left-img img {
-		width: 720px;
-		height: 940px;
-	}
-	.bannerimg .swiper-slide img {
-  height: 800px;
-}
-		.online-retailers{
-    width: 900px;
-}
-.retailers-left-content{
-    width: 300px;
-	padding-left: 20px;
-}
-.img-round{
-	width: 20px;
-	height: 20px;
-	left: 20px;
-}
-	.img-line{
-		height: 170px;
-		left: 40px;
-		top: 125px;
-	}
-	.img-round2{
-		top: 295px;
-		right: 40px;
-	    width: 20px;
-    	height: 20px;
-	}
-	.img-line2{
-		 top: 315px;
-		 left: 40px;
-		 height: 170px;
-	}
-	.img-round4{
-		top: 480px;
-		left: 20px;
-		width: 20px;
-	    height: 20px;
-	}
-	.img-line5{
-		height: 175px;
-		top: 500px;
-		left: 40px;
-	}
-	.img-round5{
-		top: 675px;
-		right: 40px;
-		width: 20px;
-	    height: 20px;
-	}
-	.retailers-right .retailers-left-title{
-		margin-top: 225px;
-	}
-	
-	.retailers-left .retailers-left-content:nth-child(2){
-		margin-bottom: 200px;
-	}
-	
-	.partner-foot-img{
-	 margin-bottom: 80px;
- }
- .swiper-wrapper .below-icon{
-	 bottom: 8%;
- }
-  	.btnclick .clickImg{
-	margin-bottom: 38%;
-}
-.newbanner{
-	height: 800px;
-}
- .partner-foot-img img{
-	width: 190px;
-	height: 140px;
-	margin-right: 20px;
-}
+	margin-bottom: 1.2rem;
 }
 
-@media screen and (min-width: 1366px) and (max-width: 1439px){
-    .about-as .about-left-img img {
-		width:760px;
-		height: 780px;
-	}
-		.online-retailers{
-    width: 900px;
-}
-.retailers-left-content{
-    width: 300px;
-	padding-left: 30px;
-}
-
-.img-round{
-	width: 20px;
-	height: 20px;
-	left: 30px;
-}
-	.img-line{
-		height: 170px;
-		left: 50px;
-		top: 125px;
-	}
-	.img-round2{
-		top: 295px;
-		right: 30px;
-	    width: 20px;
-    	height: 20px;
-	}
-	.img-line2{
-		 top: 310px;
-		 left: 50px;
-		 height: 170px;
-	}
-	.img-round4{
-		top: 480px;
-		left: 30px;
-		width: 20px;
-	    height: 20px;
-	}
-	.img-line5{
-		height: 175px;
-		top: 500px;
-		left: 50px;
-	}
-	.img-round5{
-		top: 670px;
-		right: 25px;
-		width: 20px;
-	    height: 20px;
-	}
-	.retailers-right .retailers-left-title{
-		margin-top: 225px;
-	}
-	
-	.retailers-left .retailers-left-content:nth-child(2){
-		margin-bottom: 200px;
-	}
-		.partner-foot-img{
-	 margin-bottom: 120px;
- }
- .footer-home-title{
-	 padding-top: 120px;
-	 padding-bottom: 80px;
- }
-  .swiper-wrapper .below-icon{
-	 bottom: 8%;
- }
-}
-@media screen and (min-width: 1440px) and (max-width: 1599px){
-    .about-as .about-left-img img {
-		width:860px;
-		height: 900px;
-	}
-		.bannerimg .swiper-slide img {
-           height: 900px;
-       }
-	.swiper-wrapper .below-icon{
-	 bottom: 6%;
- }
-		.online-retailers{
-    width: 950px;
-}
-.retailers-left-content{
-    width: 320px;
-}
-.img-round{
-
-	left: 25px;
-	
-}
-	.img-line{
-		height: 195px;
-		left: 50px;
-		top: 130px;
-	}
-	.img-round2{
-		top: 325px;
-		right: 60px;
-
-	}
-	.img-line2{
-		 top: 345px;
-		 left: 48px;
-		 height: 195px;
-	}
-	.img-round4{
-		top: 535px;
-		left: 25px;
-
-	}
-	.img-line5{
-		height: 195px;
-		top: 560px;
-		left: 45px;
-	}
-	.img-round5{
-		top: 745px;
-		right: 60px;
-
-	}
-	.retailers-right .retailers-left-title{
-		margin-top: 260px;
-	}
-	
-	.retailers-left .retailers-left-content:nth-child(2){
-		margin-bottom: 255px;
-	}
-	  	.btnclick .clickImg{
-	margin-bottom: 40%;
-}
-}
-@media screen and (min-width: 1600px) and (max-width: 1679px){
-    .about-as .about-left-img img {
-		width:900px;
-		height: 890px;
-	}
-	.swiper-wrapper .below-icon{
-	 bottom: 6%;
- }
- 	  	.btnclick .clickImg{
-	margin-bottom: 35%;
-}
-}
-@media screen and (min-width: 1680px) and (max-width: 1919px){
-           .about-as .about-left-img img {
-		width:980px;
-		height:1050px;
-	} 
-	.bannerimg .swiper-slide img {
-          height: 1050px;
-}
-	.swiper-wrapper .below-icon{
-	 bottom: 6%;
- }
- 		.online-retailers{
-    width: 1000px;
-}
-.retailers-left-content{
-    width: 330px;
-}
-.img-round{
-
-	left: 45px;
-	
-}
-	.img-line{
-		height: 205px;
-		left: 70px;
-		top: 130px;
-	}
-	.img-round2{
-		top: 335px;
-		right: 85px;
-
-	}
-	.img-line2{
-		 top: 360px;
-		 left: 65px;
-		 height: 205px;
-	}
-	.img-round4{
-		top: 565px;
-		left: 45px;
-
-	}
-	.img-line5{
-		height: 200px;
-		top: 585px;
-		left: 70px;
-	}
-	.img-round5{
-		top: 790px;
-		right: 85px;
-
-	}
-	.retailers-right .retailers-left-title{
-		margin-top: 280px;
-	}
-	
-	.retailers-left .retailers-left-content:nth-child(2){
-		margin-bottom: 275px;
-	}
-}
-@media screen and (min-width: 1920px){
-	    .about-as .about-left-img img {
-		width:960px;
-		height: 940px;
-	}
-}
 </style>
 <script>
 import { swiper, swiperSlide } from "vue-awesome-swiper";
@@ -924,10 +569,10 @@ export default{
 		let self=this;
 	
 		return{
-          newbanner1:'url(' + require('../assets/img/home_intelligent.png') + ')',
-		  newbanner2:'url(' + require('../assets/img/home_cloudshelf.png') + ')',
-		  newbanner3:'url(' + require('../assets/img/home_interactive.png') + ')',
-		  newbanner4:'url(' + require('../assets/img/home_sexperience.png') + ')',
+          newbanner1:'url(' + require('../assets/img/homesuju.png') + ')',
+		  newbanner2:'url(' + require('../assets/img/homeyunhuojia.png') + ')',
+		  newbanner3:'url(' + require('../assets/img/homehudong.png') + ')',
+		  newbanner4:'url(' + require('../assets/img/hometiyan.png') + ')',
 		  btnwordshow1:true,
 		  btnwordshow2:true,
 		  btnwordshow3:true,
@@ -1057,7 +702,7 @@ export default{
 			this.btnwordshow3=true;
 			this.btnwordshow4=true;
 		}
-		console.log(this.currentClick)
+		// console.log(this.currentClick)
 	},
 	    
 

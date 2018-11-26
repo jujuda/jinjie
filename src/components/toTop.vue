@@ -54,7 +54,8 @@
 			width: 0.4rem;
 			height: 0.4rem;
            right: 0.73rem;
-	       bottom: 2.1rem;
+           /* bottom: 2.1rem; */
+           bottom: 0.9rem;
             cursor: pointer;
 			z-index: 9999;
         }

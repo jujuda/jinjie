@@ -203,6 +203,7 @@ h3{
 	border-radius: 0.1rem;
 	color: #FFFFFF;
 	font-size: 0.24rem;
+	cursor: pointer;
 }
 </style>
 <script>
