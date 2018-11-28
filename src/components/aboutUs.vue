@@ -199,7 +199,7 @@ h3{
   	text-align: center;
 	  bottom: 2rem;
 	  z-index: 99999;
-  	transition: all .5s ease-in;
+  	transition: all .3s ease-in;
   }
 .foot-banner-img :hover h3{
   transform: translateY(-200px);
@@ -220,7 +220,7 @@ h3{
 }
 .foot-banner-img :hover .marker{
   opacity: 1;
-  transition-duration: 1s;
+  transition-duration: .5s;
   
 }
 .foot-banner-img :hover p{

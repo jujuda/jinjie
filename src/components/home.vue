@@ -13,8 +13,11 @@
 					
 				    <div class="swiper-wrapper">
 						 <div class="toheight">
-        <div class="scroll" :class="{show:isAct}">      
-			<div class="below-icon" @click="toclient(step)"></div>
+        <div class="scroll" :class="{show:isAct}"> 
+			<div class="below-icon-h" @click="toclient(step)">			
+				<div class="below-icon" ></div>
+			</div>     
+			
         </div>
     </div>
 				    	
@@ -274,13 +277,21 @@ ul{
 	height: 0.03rem;
 	border-bottom: #FFFFFF solid 2px;
 }
+ .swiper-wrapper .below-icon-h{
+	 width: 0.55rem;
+	height: 2rem;
+	position: absolute;
+	left: 49%;
+	bottom: 0;
+	z-index: 9999;
+ }
 .swiper-wrapper .below-icon{
 	background: url(../assets/img/home_dropdown.png) center no-repeat; 
 	width: 0.55rem;
 	height: 0.3rem;
 	position: absolute;
 	bottom: 1.8rem;
-	left: 48%;
+	/* left: 48%; */
 	z-index: 9999;
 	-webkit-transform:translate3d(0,0,0);
     -moz-transform:translate3d(0,0,0);

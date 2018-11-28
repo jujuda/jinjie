@@ -53,7 +53,7 @@
             position: fixed;
 			width: 0.4rem;
 			height: 0.4rem;
-           right: 0.73rem;
+           right: 0.8rem;
            /* bottom: 2.1rem; */
            bottom: 0.9rem;
             cursor: pointer;

@@ -17,6 +17,16 @@ axios.defaults.withCredentials=true; //全局配置携带跨源凭证
 Vue.use(VueAwesomeSwiper)
 
 Vue.config.productionTip = false
+//高德地图
+import VueAMap from 'vue-amap';
+Vue.use(VueAMap);
+VueAMap.initAMapApiLoader({
+  key: '2d8d5b369101a09df20c42c4582af534',
+  plugin: ['AMap.Autocomplete', 'AMap.PlaceSearch', 'AMap.Scale', 'AMap.OverView', 'AMap.ToolBar', 'AMap.MapType', 'AMap.PolyEditor', 'AMap.CircleEditor'],
+  uiVersion: '1.0.11', // 版本号
+  v: '1.4.4'
+});
+
 
 
 new Vue({

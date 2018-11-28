@@ -16,11 +16,11 @@
 					
 					
 					<ul class="right-navlist" id="show-navlist" >
-						<router-link tag="li" to='/home'><a href="#" class="showmenu" >首页</a></router-link>
+						<router-link tag="li" to="/home"><span class="showmenu">首页</span></router-link>
 							
-						<router-link tag="li" to='/aboutUs'><a href="#">关于进阶</a></router-link>
+						<router-link tag="li" to='/aboutUs'><span>关于进阶</span></router-link>
 						<li >
-							<a href="#" class="showmenu" @click="btnShow()">解决方案</a>
+							<span class="showmenu" @click="btnShow()">解决方案</span>
 							<transition 
 							 enter-active-class = "bounceIn"
                              leave-active-class = "bounceOut"
@@ -37,9 +37,9 @@
 								</transition>
 						</li>
 						
-						<router-link tag="li" to='/caseShow'><a href="#" class="showmenu">案例</a></router-link>
-						<router-link tag="li" to='/jionUs'><a href="#" class="showmenu">加入进阶</a></router-link>
-						<router-link tag="li" to='/contactUs'><a href="#" class="showmenu">联系进阶</a></router-link>
+						<router-link  tag="li" to='/caseShow'><span class="showmenu">案例</span></router-link>
+						<router-link tag="li" to='/jionUs'><span class="showmenu">加入进阶</span></router-link>
+						<router-link tag="li" to='/contactUs'><span class="showmenu">联系进阶</span></router-link>
 					</ul>
 					</div>
 					</div>
@@ -47,6 +47,9 @@
 </template>
 
 <style scoped>
+.active{
+	color: #FF9626;
+}
 ul{
 	list-style: none;
 }
@@ -134,10 +137,13 @@ a{
 	cursor: pointer;
 }
 .right-navlist >li:nth-child(1){
-	margin-top: 1.8rem;
+	margin-top: 1.6rem;
 }
-.right-navlist li a{
+.right-navlist li span{
 	color: #FFFFFF;
+}
+.right-navlist li span:hover{
+	color: #FF9626;
 }
 .right-navlist-child{
     height: 130px;
@@ -151,8 +157,11 @@ a{
 	
 			
 .right-navlist-child li{
-	height: 30px;
+	height: 36px;
 	line-height: 30px;
+}
+.right-navlist-child li:hover{
+	color: #FF9626;
 }
 </style>
 <script>
@@ -174,7 +183,9 @@ export default{
               this.btShow=!this.btShow
 		},
 		linktoMarketing(){
+			
 				this.$router.push('/solutionMarketing')
+				console.log(this.$route.path)
 			},
 			linktoNewretail(){
 				this.$router.push('/solutionNewretail')
@@ -186,9 +197,7 @@ export default{
 				this.$router.push('/solutionSoftware')
 			}
 
-		
-	
-		
 	}
+	
 }
 </script>

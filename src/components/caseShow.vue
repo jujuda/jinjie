@@ -120,7 +120,7 @@ export default{
 				{id:5,img:require('@/assets/images/case_green.png'),content:'格力 全民嘻哈'},
 				{id:6,img:require('@/assets/images/case_lingshi.png'),content:'凌仕皮肤测试黑科技互动'},
 				{id:7,img:require('@/assets/images/case_markfairwhale.png'),content:'马克华菲店铺二楼互动'},
-				{id:8,img:require('@/assets/images/case_nba.png'),content:'马克华菲店铺二楼互动'},
+				{id:8,img:require('@/assets/images/case_lol.png'),content:'马克华菲店铺二楼互动'},
 				{id:9,img:require('@/assets/images/case_iphone.png'),content:'iPhone8/X天猫首发'},
 				{id:10,img:require('@/assets/images/case_hotair.png'),content:'热风吹口气H5'},
 				{id:11,img:require('@/assets/images/case_)smith.png'),content:'A.O.史密斯记忆力大挑战'},

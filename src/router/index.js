@@ -14,7 +14,7 @@ import solutionMarketing from '../components/solutionMarketing';
 import solutionNewretail from '../components/solutionNewretail';
 import solutionService from '../components/solutionService';
 import solutionSoftware from '../components/solutionSoftware';
-import ex from '../components/ex';
+
 
 const routes=[
   {path:'/home',component:home},
@@ -30,7 +30,7 @@ const routes=[
   {path:'/solutionService',component:solutionService}, 
   {path:'/solutionSoftware',component:solutionSoftware},
   {path:'/',redirect:'/home'},
-  {path:'/ex',component:ex},
+
 
 ]
 

@@ -40,7 +40,7 @@
 					</div>
 					<div class="intelligent">
 						<div class="intelligent-c">
-	                        <h3>壁面/柜台货架互动体验</h3>	
+	                        <h3 style="line-height:0.5rem">壁面/柜台货架互动体验</h3>	
 				        	<p>店内商品智能化呈现节省展示空间精准推荐高效购物权益引导帮助销售转化</p>
 						</div>	
 				        <img src="../assets/images/newretail_huogui.png"/>
@@ -51,13 +51,13 @@
 					<div class="flexview">
 						<img src="../assets/images/newretail_zhifu.png"/>
 						<div class="ivewright">
-	                     <h3>智能、自助收银台便捷付款</h3>
+	                     <h3 style="line-height:0.5rem">智能、自助收银台便捷付款</h3>
 					<p> 智能化支付方式提供便捷支付体验更短的时间，更安全的方式利用3D视觉技术更加直观更加真实的表现商品</p>
 						</div>					
 					</div>
 					<div class="intelligent">
 						<div class="intelligent-c">
-	                        <h3>门店全域转化数据可视化报表</h3>	
+	                        <h3 style="line-height:0.5rem">门店全域转化数据可视化报表</h3>	
 				        	<p>线下人货场全链路触点数据统计追溯线下触点引导全域延伸转化</p>
 						</div>	
 				        <img src="../assets/images/newretail_baobiao.png"/>
@@ -190,7 +190,7 @@ h3{
 }
 .ivewright{
 	width: 3.3rem;
-	margin-top: 1.2rem;
+	margin-top: 0.9rem;
 }
 .flexview img{
 	width: 8rem;
@@ -224,7 +224,7 @@ padding-top: 1rem;
 	margin-top: 1.2rem;
 }
 .intelligent-c{
-    margin-top: 1rem;
+    margin-top: 0.8rem;
 }
 .intelligent img{
 	width: 8rem;
@@ -236,6 +236,7 @@ padding-top: 1rem;
 	line-height: 0.48rem;
 	text-align: right;
 	width: 2.55rem;
+	margin-bottom: 0.4rem;
 }
 .intelligent p{
 	width: 2.45rem;

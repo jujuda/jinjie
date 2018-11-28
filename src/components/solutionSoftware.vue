@@ -239,7 +239,7 @@ padding-top: 1rem;
 	margin-top: 1.2rem;
 }
 .intelligent-c{
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 .intelligent img{
 	width: 8rem;
@@ -251,6 +251,7 @@ padding-top: 1rem;
 	line-height: 0.48rem;
 	text-align: right;
 	width: 2.55rem;
+	margin-bottom: 0.3rem;
 }
 .intelligent p{
 	width: 2.55rem;
