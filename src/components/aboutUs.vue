@@ -36,9 +36,9 @@
 					  :key="item.id" >
                <div class="marker"></div>
 						  <img :src="item.img" alt="">
-				     	<h3 @mouseover="bgShow(item)">{{item.title}}</h3>						
+				     	<h3>{{item.title}}</h3>						
 						  <transition name='bounce'>						
-                <p v-show="item.bl">{{item.word}}</p>
+                <p>{{item.word}}</p>
               </transition>
 			     </span>				
 				</div>
@@ -62,8 +62,6 @@
 		</div>
 </template>
 <style scoped>
-
-
  .solution-content{
 	width: 100%;
 	height: 100%;
@@ -81,7 +79,6 @@
    display: flex;
    justify-content:center;
 }
-
 .interactive img{
    /* flex: 1; */
    width:6rem ;
@@ -116,7 +113,6 @@ h3{
 	background-color: #333333;
 	color: #FFFFFF;
 }
-
 .inter-cont p{
 	width: 1.58rem;
 	height: 0.02rem;
@@ -170,14 +166,11 @@ h3{
   	display: flex;
   	overflow: hidden;
 	  justify-content: center;
-
-
   }
   .foot-banner-bg{
 	position: relative;
 	 cursor: pointer;
   }
-
   .foot-banner-img img{ 
 	width:6.38rem ;
 	height:7.5rem ;  
@@ -203,7 +196,6 @@ h3{
   }
 .foot-banner-img :hover h3{
   transform: translateY(-200px);
-
 }
 .foot-banner-bg .marker{
 	width:6.38rem ;
@@ -215,8 +207,6 @@ h3{
   right:0;
   background: rgba(0,0,0,.4);
   opacity: 0;
-
-
 }
 .foot-banner-img :hover .marker{
   opacity: 1;
@@ -236,9 +226,7 @@ h3{
    	bottom: 0.5rem;
    	color:#FFFFFF;
    	padding: 0.3rem 0.75rem 0.7rem 0.7rem;
-
    }
-
 .footer-content h3{
 	text-align: center;
 }
@@ -268,7 +256,6 @@ export default{
 	name:'aboutUs',
 	data(){
 		return{
-
 			content:[
     {id:1,
   img:require("../assets/images/about_yingxiao.png"),

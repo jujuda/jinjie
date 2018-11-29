@@ -101,7 +101,7 @@ h3{
 	width: 9.9rem;
 	font-size: 0.14rem;
 	line-height: 0.28rem;
-	text-align: center;
+	text-align: left;
 	color: #999999;
     margin: 0 auto;
 	margin-top: 0.58rem;

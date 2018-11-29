@@ -1,7 +1,7 @@
 <template>
-    
-	<div class="main-head">
-		<headers></headers>
+    <div>
+<headers></headers>
+	<div class="main-head">		
 	  <swiper id="swiperBox" v-bind:options="swiperOption" ref="mySwiper">
 		   <swiper-slide class="swiper-slide" style="overflow: hidden">	
 			    <div class="page">				
@@ -12,24 +12,24 @@
 				<div class="swiper-container bannerimg">
 					
 				    <div class="swiper-wrapper">
-						 <div class="toheight">
-        <div class="scroll" :class="{show:isAct}"> 
-			<div class="below-icon-h" @click="toclient(step)">			
-				<div class="below-icon" ></div>
-			</div>     
-			
-        </div>
-    </div>
+						<div class="toheight">
+					        <div class="scroll" :class="{show:isAct}"> 
+								<div class="below-icon-h" @click="toclient">			
+									<div class="below-icon" ></div>
+								</div>     
+								
+					        </div>
+					    </div>
 				    	
 				        <div class="swiper-slide banner-midea">
 							<img src="../assets/img/homebanner1.png"/>
-							<span class="animate animated zoomInDown slower">我懂你的了不起</span><h5 class="h5 swiper-h5 animated bounceInUp slower">跟自己作对，才能把难题做对</h5><p class="swiper-p animated bounceInUp"></p><h3 class="swiper-h3 animated bounceInUp"></h3></div>
+							<span class="animate animated fadeInDown ">我懂你的了不起</span><h5 class="h5 swiper-h5 animated fadeInDown ">跟自己作对，才能把难题做对</h5><p class="swiper-p animated fadeInDown"></p><h3 class="swiper-h3 animated fadeInDown"></h3></div>
 				        <div class="swiper-slide banner-midea">
 							<img src="../assets/img/homebanner2.png"/>
-							<span class=" animate animated zoomInDown slower">电商互动营销</span><h5 class=" h5 swiper-h5 animated bounceInUp slower">跟自己作对，才能把难题做对</h5><p class="swiper-p animated bounceInUp"></p><h3 class="swiper-h3 animated bounceInUp"></h3></div>
+							<span class=" animate animated fadeInDown ">电商互动营销</span><h5 class=" h5 swiper-h5 animated fadeInDown ">给品牌带来前所未见的体验与延展</h5><p class="swiper-p animated fadeInDown"></p><h3 class="swiper-h3 animated fadeInDown"></h3></div>
 				        <div class="swiper-slide banner-midea">
 							<img src="../assets/img/homebanner3.png"/>
-							<span class=" animate animated zoomInDown slower">新零售智慧门店</span><h5 class="h5 swiper-h5 animated bounceInUp slower">跟自己作对，才能把难题做对</h5><p class="swiper-p animated bounceInUp" animated bounceInUp></p><h3 class="swiper-h3 animated bounceInUp"></h3></div>
+							<span class=" animate animated fadeInDown ">新零售智慧门店</span><h5 class="h5 swiper-h5 animated fadeInDown ">感受科技的力量，拉近你我的距离</h5><p class="swiper-p animated fadeInDown" ></p><h3 class="swiper-h3 animated fadeInDown"></h3></div>
 				        	
 				        
 				    </div>				   
@@ -42,7 +42,7 @@
 		<!--关于我们-->
 		  <swiper-slide class="swiper-slide" style="overflow: hidden">
 			   <div class="page">
-  <div class="about-as">
+  <div class="about-as" id="about-us">
   	<div class="about-left-img">
   		<img src="../assets/img/homeaboutleft.png"/>
   	</div>
@@ -174,7 +174,7 @@
 
 </div>
 
-
+	</div>
 </template>
 
 <style scoped>
@@ -229,17 +229,17 @@ ul{
 		height: 10.8rem;
 	}
 .h5{
-    animation-duration:6s;animation-iteration-count:Infinite;animation-delay: 1s;
+    animation-duration:8s;animation-iteration-count:Infinite;animation-delay: 1s;
 }
 
 .swiper-p {
-	animation-duration:6s;animation-iteration-count:Infinite;animation-delay: 1s;
+	animation-duration:8s;animation-iteration-count:Infinite;animation-delay: 1s;
 }
 .swiper-h3{
-	animation-duration:6s;animation-iteration-count:Infinite;animation-delay: 1s;
+	animation-duration:8s;animation-iteration-count:Infinite;animation-delay: 1s;
 }
 .animate{
-	animation-duration:6s; animation-iteration-count:Infinite;animation-delay: 1s;
+	animation-duration:8s; animation-iteration-count:Infinite;animation-delay: 1s;
 }
 
 .swiper-wrapper .swiper-slide span{
@@ -570,12 +570,7 @@ import 'swiper/dist/css/swiper.min.css';
 
 export default{
 	name:'home',
-	 props:{
-            step:{   //此数据是控制动画快慢的
-                type:Number,
-                default:1900
-            }
-        },
+	
 	data(){
 		let self=this;
 	
@@ -661,16 +656,16 @@ export default{
   },
 	components:{
 		 swiper,
-    swiperSlide,
-		headers,
+	swiperSlide,
+	headers
 		
 	},
 	mounted(){
 		 var mySwiper = new Swiper ('.bannerimg', {
 				loop: true, // 循环模式选项
-				speed:3500, 
+				speed:3000, 
 				autoplay: {
-				delay: 2000,
+				delay: 1000,
 				stopOnLastSlide: false,
 				disableOnInteraction: false,
 				},
@@ -717,20 +712,15 @@ export default{
 	},
 	    
 
-	 toclient(i){
-                var clientHeight=document.documentElement.clientHeight||document.body.clientHeight;
-                var scrollHeight=document.documentElement.scrollHeight;
-                var height=scrollHeight-clientHeight; //超出窗口上界的值就是底部的scrolTop的值
-                document.documentElement.scrollTop+=i;
-                if (document.documentElement.scrollTop<height) {
-                    var c=setTimeout(()=>this.toBottom(i),16);
-                }else {
-                    clearTimeout(c);
-                }
-            },
-			linkto(){
-				this.$router.push('/aboutUs')
-			}
+	toclient(){
+		console.log(this);
+		//点击按钮滚动到下一屏
+             this.$refs.mySwiper.swiper.slideTo(1, 500, false)
+             
+    },
+	linkto(){
+		this.$router.push('/aboutUs')
+	}
 
 },
 computed: {  

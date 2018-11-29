@@ -28,19 +28,19 @@
              	<div class="customer-info-ipt">
              		<i></i>
              		<span>您的姓名:</span>
-             	<input type="text"  v-model="fromdata.name" @blur='nameBlurReg'/>			 
+             	<input type="text"  v-model="fromnum.name" @blur='nameBlurReg'/>			 
                   <span v-show="showNameErr" class="nextspring"> 用户名不能为空</span>	
              	</div>
              		<div class="customer-info-ipt">
              		<i></i>
              		<span>您的电话:</span>
-             	<input type="text" name='phone' v-model="fromdata.phone" @blur='phoneBlurReg'/>
+             	<input type="text" name='phone' v-model="fromnum.phone" @blur='phoneBlurReg'/>
 				 <span v-show="showPhoneErr" class="nextspring"> 手机号不能为空 </span>		
              	</div>
              		<div class="customer-info-ipt">
              		<i></i>
              		<span>您的邮件:</span>
-             	<input type="text" v-model="fromdata.email" @blur='emailBlurReg'/>	
+             	<input type="text" v-model="fromnum.email" @blur='emailBlurReg'/>	
 				 <span v-show="showEmailErr" class="nextspring" > 邮箱不能为空 </span>	
              	</div>
 				  </div>
@@ -48,7 +48,7 @@
              		<i></i>
              		<span>您的需求/描述:</span>
              
-				 <textarea row="5" cols="5" v-model="fromdata.need" @blur='needBlurReg'></textarea>
+				 <textarea row="5" cols="5" v-model="fromnum.need" @blur='needBlurReg'></textarea>
 				 <div contenteditable="true"></div>
 				 <span v-show="showNeedErr" class="nextspring" >需求不能为空</span>	
              	</div>
@@ -258,7 +258,7 @@ export default{
     data(){
 		 const self = this;
          return{
-			fromdata:{
+			fromnum:{
                 name:"",
 			phone:"",
 			email:"" ,
@@ -341,22 +341,37 @@ export default{
                 }
             },
 	        	submitbtn(){
-		        	   if(this.formData.name==''||this.showNameErr){
-                    toast('请输入正确的用户名');
-                    return;
-                }
-                if(this.formData.phone==''||this.showPhoneErr){
-                    toast('请输入正确的手机号');
-                    return;
-                }
-                if(this.formData.email==''||this.showEmailErr){
-                    toast('请输入正确的邮箱地址');
-                    return;
-				}
-				 if(this.formData.need==''||this.showNeedErr){
-                    toast('请输入正确的需求/描述');
-                    return;
-                }
+					  let formdata = new FormData();
+						   formdata.append('name',this.fromnum.name);
+						 formdata.append('tel',this.fromnum.phone);
+						  formdata.append('email',this.fromnum.email);
+						   formdata.append('demand',this.fromnum.need);
+						   let config = {
+						            headers: {
+						                'Content-Type': 'multipart/form-data'
+						            }
+						        };
+					  this.$http.post('/www.test.com/index.php/?c=pchome&m=set_info', formData, config).then( (res) => {
+						   
+						    }).catch((error) =>{						       
+						    });
+					
+		        // 	   if(this.formData.name==''||this.showNameErr){
+                //     toast('请输入正确的用户名');
+                //     return;
+                // }
+                // if(this.formData.phone==''||this.showPhoneErr){
+                //     toast('请输入正确的手机号');
+                //     return;
+                // }
+                // if(this.formData.email==''||this.showEmailErr){
+                //     toast('请输入正确的邮箱地址');
+                //     return;
+				// }
+				//  if(this.formData.need==''||this.showNeedErr){
+                //     toast('请输入正确的需求/描述');
+                //     return;
+                // }
 		}
 	},
 	  mounted() {
