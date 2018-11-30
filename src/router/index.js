@@ -15,7 +15,6 @@ import solutionNewretail from '../components/solutionNewretail';
 import solutionService from '../components/solutionService';
 import solutionSoftware from '../components/solutionSoftware';
 
-
 const routes=[
   {path:'/home',component:home},
   {path:'/aboutUs',component:aboutUs},

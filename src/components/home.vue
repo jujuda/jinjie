@@ -23,13 +23,13 @@
 				    	
 				        <div class="swiper-slide banner-midea">
 							<img src="../assets/img/homebanner1.png"/>
-							<span class="animate animated fadeInDown ">我懂你的了不起</span><h5 class="h5 swiper-h5 animated fadeInDown ">跟自己作对，才能把难题做对</h5><p class="swiper-p animated fadeInDown"></p><h3 class="swiper-h3 animated fadeInDown"></h3></div>
+							<span class="animate animated fadeIn Infinite">我懂你的了不起</span><h5 class="h5 swiper-h5 animated fadeIn Infinite ">跟自己作对，才能把难题做对</h5><p class="swiper-p animated fadeIn Infinite"></p><h3 class="swiper-h3 animated fadeIn Infinite"></h3></div>
 				        <div class="swiper-slide banner-midea">
 							<img src="../assets/img/homebanner2.png"/>
-							<span class=" animate animated fadeInDown ">电商互动营销</span><h5 class=" h5 swiper-h5 animated fadeInDown ">给品牌带来前所未见的体验与延展</h5><p class="swiper-p animated fadeInDown"></p><h3 class="swiper-h3 animated fadeInDown"></h3></div>
+							<span class=" animate animated fadeIn Infinite">电商互动营销</span><h5 class=" h5 swiper-h5 animated fadeIn Infinite">给品牌带来前所未见的体验与延展</h5><p class="swiper-p animated fadeIn Infinite"></p><h3 class="swiper-h3 animated fadeIn Infinite"></h3></div>
 				        <div class="swiper-slide banner-midea">
 							<img src="../assets/img/homebanner3.png"/>
-							<span class=" animate animated fadeInDown ">新零售智慧门店</span><h5 class="h5 swiper-h5 animated fadeInDown ">感受科技的力量，拉近你我的距离</h5><p class="swiper-p animated fadeInDown" ></p><h3 class="swiper-h3 animated fadeInDown"></h3></div>
+							<span class=" animate animated fadeIn Infinite">新零售智慧门店</span><h5 class="h5 swiper-h5 animated fadeIn Infinite">感受科技的力量，拉近你我的距离</h5><p class="swiper-p animated fadeIn Infinite" ></p><h3 class="swiper-h3 animated fadeIn Infinite"></h3></div>
 				        	
 				        
 				    </div>				   
@@ -228,20 +228,6 @@ ul{
 		width: 19.2rem;
 		height: 10.8rem;
 	}
-.h5{
-    animation-duration:8s;animation-iteration-count:Infinite;animation-delay: 1s;
-}
-
-.swiper-p {
-	animation-duration:8s;animation-iteration-count:Infinite;animation-delay: 1s;
-}
-.swiper-h3{
-	animation-duration:8s;animation-iteration-count:Infinite;animation-delay: 1s;
-}
-.animate{
-	animation-duration:8s; animation-iteration-count:Infinite;animation-delay: 1s;
-}
-
 .swiper-wrapper .swiper-slide span{
 	display: inline-block;
 	font-size: 0.3rem;
@@ -281,7 +267,7 @@ ul{
 	 width: 0.55rem;
 	height: 2rem;
 	position: absolute;
-	left: 49%;
+	left: 48%;
 	bottom: 0;
 	z-index: 9999;
  }

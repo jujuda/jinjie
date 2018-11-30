@@ -29,19 +29,19 @@
              		<i></i>
              		<span>您的姓名:</span>
              	<input type="text"  v-model="fromnum.name" @blur='nameBlurReg'/>			 
-                  <span v-show="showNameErr" class="nextspring"> 用户名不能为空</span>	
+                  <span v-show="showNameErr" class="nextspring"> 用户名格式不正确</span>	
              	</div>
              		<div class="customer-info-ipt">
              		<i></i>
              		<span>您的电话:</span>
              	<input type="text" name='phone' v-model="fromnum.phone" @blur='phoneBlurReg'/>
-				 <span v-show="showPhoneErr" class="nextspring"> 手机号不能为空 </span>		
+				 <span v-show="showPhoneErr" class="nextspring"> 电话号码格式不正确 </span>		
              	</div>
              		<div class="customer-info-ipt">
              		<i></i>
              		<span>您的邮件:</span>
              	<input type="text" v-model="fromnum.email" @blur='emailBlurReg'/>	
-				 <span v-show="showEmailErr" class="nextspring" > 邮箱不能为空 </span>	
+				 <span v-show="showEmailErr" class="nextspring" > 邮箱格式不正确 </span>	
              	</div>
 				  </div>
              		<div class="customer-info-ipt" style="height:2.6rem">
@@ -50,7 +50,7 @@
              
 				 <textarea row="5" cols="5" v-model="fromnum.need" @blur='needBlurReg'></textarea>
 				 <div contenteditable="true"></div>
-				 <span v-show="showNeedErr" class="nextspring" >需求不能为空</span>	
+				 <span v-show="showNeedErr" class="nextspring" >需求格式不正确</span>	
              	</div>
              	 
              	<input type="button" id="btn-submit" value="提交" @click='submitbtn()'/>
@@ -248,7 +248,6 @@ h3{
 
 import headers from './headers';
 import footers from './footers';
-// import VeeValidate, {Validayor} from 'vee-validate';
 import {isChn,isPoneAvailable,isEmail,isneed} from '@/assets/js/jschn';
 import VueAMap from 'vue-amap';
 import { AMapManager } from 'vue-amap';
@@ -341,6 +340,23 @@ export default{
                 }
             },
 	        	submitbtn(){
+			
+                if(this.fromnum.name==''||this.showNameErr){
+                    alert('用户名不能为空');
+                    return;
+                }
+                if(this.fromnum.phone==''||this.showPhoneErr){
+                    alert('电话号码不能为空');
+                    return;
+                }
+                if(this.fromnum.email==''||this.showEmailErr){
+                    alert('邮箱不能为空');
+                    return;
+				}
+				  if(this.fromnum.need==''||this.showNeedErr){
+                    alert('需求/描述不能为空');
+                    return;
+                }
 					  let formdata = new FormData();
 						   formdata.append('name',this.fromnum.name);
 						 formdata.append('tel',this.fromnum.phone);
@@ -351,27 +367,15 @@ export default{
 						                'Content-Type': 'multipart/form-data'
 						            }
 						        };
-					  this.$http.post('/www.test.com/index.php/?c=pchome&m=set_info', formData, config).then( (res) => {
-						   
+					  this.$http.post('/www.test.com/index.php/?c=pchome&m=set_info', formdata, config).then( (res) => {
+
+						          if(res.data.status==true){
+                                    window.location.reload()
+								  }
+								  console.log(res)
 						    }).catch((error) =>{						       
 						    });
-					
-		        // 	   if(this.formData.name==''||this.showNameErr){
-                //     toast('请输入正确的用户名');
-                //     return;
-                // }
-                // if(this.formData.phone==''||this.showPhoneErr){
-                //     toast('请输入正确的手机号');
-                //     return;
-                // }
-                // if(this.formData.email==''||this.showEmailErr){
-                //     toast('请输入正确的邮箱地址');
-                //     return;
-				// }
-				//  if(this.formData.need==''||this.showNeedErr){
-                //     toast('请输入正确的需求/描述');
-                //     return;
-                // }
+				
 		}
 	},
 	  mounted() {

@@ -64,10 +64,10 @@ a{
     }
     @keyframes bounceIn{
       0%{height:0 ;}
-      100%{height:130px;}
+      100%{height:1.3rem;}
     }
     @keyframes bounceOut{
-      0%{height:130px;}
+      0%{height:1.3rem;}
       100%{height:0px}
     }
 .logo {
@@ -126,7 +126,7 @@ a{
 	position: absolute;
 	
 	position: fixed;
-	font-size: 24px;
+	font-size: 0.24rem;
 	background-color:rgba(10,10,20,.5);
 	font-family: "MicrosoftYaHei-Bold";
 	
@@ -146,20 +146,22 @@ a{
 	color: #FF9626;
 }
 .right-navlist-child{
-    height: 130px;
-	font-size: 14px;
-	line-height: 28px;
+    height: 1.35rem;
+	font-size: 0.14rem;
+	line-height: 0.28rem;
 	text-align: center;
 	color: #B3B3B3;
 	font-family:"microsoft yahei";
 	overflow: hidden;
+	margin-bottom: 0.05rem;
 	}
 	
 			
 .right-navlist-child li{
-	height: 36px;
-	line-height: 30px;
+	height: 0.36rem;
+	line-height: 0.36rem;
 }
+
 .right-navlist-child li:hover{
 	color: #FF9626;
 }
