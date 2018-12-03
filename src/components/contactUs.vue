@@ -25,7 +25,7 @@
              </div>
             <div class="customer-info">
              <div class="reg-customer-info">
-				 <toast></toast>
+				 
 				 <div>
              	<div class="customer-info-ipt">
              		<i></i>
@@ -254,7 +254,11 @@ import footers from './footers';
 import {isChn,isPoneAvailable,isEmail,isneed} from '@/assets/js/jschn';
 import VueAMap from 'vue-amap';
 import { AMapManager } from 'vue-amap';
-import toast from "../toast/toast";
+import Vue from 'vue'; 
+
+import toast from "../toast/toast.js";
+
+Vue.prototype.$toast = toast; 
  let amapManager = new VueAMap.AMapManager();
 export default{
 	name:'contactUs',
@@ -313,7 +317,7 @@ export default{
 	components:{
 		footers,
 		headers,
-		toast
+		
 	},
 	methods:{
          nameBlurReg(e){

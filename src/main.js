@@ -6,9 +6,7 @@ import 'animate.css';
 import "@/assets/css/reset.css";
 import VueAwesomeSwiper from 'vue-awesome-swiper';
 import 'swiper/dist/css/swiper.css';
-//弹出框
-import toastRegistry from './toast/toast.js';
-Vue.use(toastRegistry)
+
 
 import axios from 'axios';
 import "@/assets/js/rem.js"

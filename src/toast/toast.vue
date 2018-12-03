@@ -1,18 +1,18 @@
 <template>
  
-     <div class="wrap" v-if="showWrap" :class="showContent ?'fadein':'fadeout'"></div>
+     <div class="wrap" v-show="showWrap" :class="showContent ?'fadein':'fadeout'">{{text}}</div>
  
 </template>
 <style scoped>
 .wrap{
-    width: 3rem;
-    height: 0.5rem;
-    position: absolute; 
-    font-size: 0.24rem;
-    line-height: 0.48rem;
+    width: 2rem;
+    height: 0.4rem;
+    position: fixed; 
+    font-size: 0.18rem;
+    line-height: 0.36rem;
     text-align: center;
     left:50%;
-    top:7%; 
+    top: 40%; 
     background: rgba(0,0,0,.35); 
     padding: 10px;   
     border-radius: 5px; 
@@ -35,6 +35,17 @@
     }
   }
 </style>
+<script>
+export default {
+    data(){
+        return{
+            text:"",
+            showWrap:true,
+            showContent:"true"
+        }
+    }
+}
+</script>
 
 
 
