@@ -1,6 +1,7 @@
 <template>
     		<div class="contact-content">
 				<headers></headers>
+				
 			<div class="contact-banner">
 				<img src="../assets/images/contact_banner.png"/>
 			</div>
@@ -24,6 +25,7 @@
              </div>
             <div class="customer-info">
              <div class="reg-customer-info">
+				 <toast></toast>
 				 <div>
              	<div class="customer-info-ipt">
              		<i></i>
@@ -155,6 +157,7 @@ h3{
 	margin-bottom: 0.8rem;
 }
 .customer-info{
+	position: relative;
 	width: 19.2rem;
 	margin: 0 auto;
 	background: #F2F9FF;
@@ -251,6 +254,7 @@ import footers from './footers';
 import {isChn,isPoneAvailable,isEmail,isneed} from '@/assets/js/jschn';
 import VueAMap from 'vue-amap';
 import { AMapManager } from 'vue-amap';
+import toast from "../toast/toast";
  let amapManager = new VueAMap.AMapManager();
 export default{
 	name:'contactUs',
@@ -308,7 +312,8 @@ export default{
 	},
 	components:{
 		footers,
-		headers
+		headers,
+		toast
 	},
 	methods:{
          nameBlurReg(e){
@@ -340,21 +345,21 @@ export default{
                 }
             },
 	        	submitbtn(){
-			
+			          
                 if(this.fromnum.name==''||this.showNameErr){
-                    alert('用户名不能为空');
+                    this.$toast('用户名不能为空');
                     return;
                 }
                 if(this.fromnum.phone==''||this.showPhoneErr){
-                    alert('电话号码不能为空');
+                    this.$toast('电话号码不能为空');
                     return;
                 }
                 if(this.fromnum.email==''||this.showEmailErr){
-                    alert('邮箱不能为空');
+                    this.$toast('邮箱不能为空');
                     return;
 				}
 				  if(this.fromnum.need==''||this.showNeedErr){
-                    alert('需求/描述不能为空');
+                    this.$toast('需求/描述不能为空');
                     return;
                 }
 					  let formdata = new FormData();

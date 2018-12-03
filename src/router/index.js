@@ -14,7 +14,7 @@ import solutionMarketing from '../components/solutionMarketing';
 import solutionNewretail from '../components/solutionNewretail';
 import solutionService from '../components/solutionService';
 import solutionSoftware from '../components/solutionSoftware';
-
+import toast from '../toast/toast.vue';
 const routes=[
   {path:'/home',component:home},
   {path:'/aboutUs',component:aboutUs},
@@ -29,7 +29,7 @@ const routes=[
   {path:'/solutionService',component:solutionService}, 
   {path:'/solutionSoftware',component:solutionSoftware},
   {path:'/',redirect:'/home'},
-
+  {path:'/toast',component:toast},
 
 ]
 
